@@ -1,0 +1,14 @@
+# Core engine
+PyMuPDF>=1.23
+reportlab>=4.0
+
+# Optional: OCR for scanned statements (also install the Tesseract binary, see README)
+# pytesseract>=0.3.10
+# Pillow>=10
+
+# Django integration
+Django>=4.2
+djangorestframework>=3.14
+
+# Tests
+pytest>=7

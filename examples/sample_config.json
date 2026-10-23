@@ -1,0 +1,28 @@
+{
+  "ocr": {"mode": "auto", "language": "eng", "dpi": 300, "tesseract_cmd": null, "max_pages": 60},
+  "limits": {"max_file_size_bytes": 26214400, "max_pages": 600, "max_processing_seconds": 300},
+  "analysis": {
+    "balance_tolerance": "0.00",
+    "low_balance_threshold": "1000",
+    "low_balance_threshold_secondary": "10000",
+    "recurring_min_months": 3,
+    "recurring_amount_tolerance_pct": "20",
+    "recurring_min_amount": "1000",
+    "emi_min_occurrences": 3,
+    "emi_amount_tolerance_pct": "5",
+    "emi_min_amount": "500",
+    "holder_names": [],
+    "own_account_hints": [],
+    "extra_category_rules": [
+      {"id": "society_maintenance", "category": "RENT", "pattern": "SOCIETY\\s*MAINT", "direction": "DEBIT", "confidence": 0.8}
+    ]
+  },
+  "report": {
+    "title": "Bank Statement Analysis Report",
+    "organization_name": "",
+    "template": "default",
+    "include_transactions": true,
+    "max_transactions_in_report": 400,
+    "show_holder_name": false
+  }
+}

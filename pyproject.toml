@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bank-statement-engine"
+version = "1.0.0"
+description = "Reusable analysis engine for Indian bank statement PDFs, with an optional Django/DRF integration."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Proprietary" }
+dependencies = [
+    "PyMuPDF>=1.23",
+    "reportlab>=4.0",
+]
+
+[project.optional-dependencies]
+ocr = ["pytesseract>=0.3.10", "Pillow>=10"]
+django = ["Django>=4.2", "djangorestframework>=3.14"]
+celery = ["celery>=5.3"]
+test = ["pytest>=7", "Django>=4.2", "djangorestframework>=3.14"]
+
+[project.scripts]
+bank-statement-engine = "bank_statement_engine.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["bank_statement_engine*", "bank_statement_django*"]
+
+[tool.setuptools.package-data]
+bank_statement_engine = ["reports/templates/*.json", "reports/fonts/*.ttf", "reports/fonts/*.txt", "reports/assets/*.png", "reports/assets/*/*.ttf", "reports/assets/*/*.txt", "reports/assets/*/static/*.ttf"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+filterwarnings = ["ignore::DeprecationWarning:pymupdf.*", "ignore:.*fitz.*:DeprecationWarning"]

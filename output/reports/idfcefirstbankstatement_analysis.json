@@ -1,0 +1,932 @@
+{
+  "report_id": "BSA-20261023-20C5D3BE75",
+  "engine_version": "1.0.0",
+  "generated_at": "2026-10-23T13:28:16+05:30",
+  "status": "VERIFIED",
+  "source_sha256": "38abae75cd84016814276c41b8a8fc642ecec8e43f0c389c234242b58b348147",
+  "metadata": {
+    "bank_name": "IDFC FIRST Bank",
+    "bank_code": "IDFC",
+    "bank_detection_method": "ifsc",
+    "ifsc": "IDFB0040335",
+    "account_number_masked": "XXXXXXX7067",
+    "account_type": null,
+    "currency": "INR",
+    "period_start": "2026-06-02",
+    "period_end": "2026-07-08",
+    "page_count": 6,
+    "extraction_method": "text",
+    "ocr_pages": [],
+    "parser": "generic",
+    "reverse_chronological": false,
+    "printed_summary": {
+      "opening_balance": "0.00",
+      "closing_balance": "96.10",
+      "total_debits": "49977.00",
+      "total_credits": "50000.00",
+      "debit_count": null,
+      "credit_count": null,
+      "pages": {
+        "opening_balance": 1,
+        "closing_balance": 5,
+        "total_debits": 5,
+        "total_credits": 5
+      }
+    }
+  },
+  "summary": {
+    "bank_name": "IDFC FIRST Bank",
+    "period_start": "2026-06-02",
+    "period_end": "2026-07-08",
+    "opening_balance": "0.00",
+    "closing_balance": "96.10",
+    "total_credits": "98939.00",
+    "total_debits": "98842.90",
+    "net_cash_flow": "96.10",
+    "transaction_count": 40,
+    "months_covered": "1.20"
+  },
+  "overview": {
+    "bank_name": "IDFC FIRST Bank",
+    "account_number_masked": "XXXXXXX7067",
+    "account_type": null,
+    "period_start": "2026-06-02",
+    "period_end": "2026-07-08",
+    "period_source": "statement",
+    "first_transaction_date": "2026-06-05",
+    "last_transaction_date": "2026-07-05",
+    "months_covered": "1.20",
+    "calendar_months": 2,
+    "transaction_count": 40,
+    "credit_count": 4,
+    "debit_count": 36,
+    "opening_balance": "0.00",
+    "opening_balance_source": "statement",
+    "closing_balance": "96.10",
+    "closing_balance_source": "statement",
+    "total_credits": "98939.00",
+    "total_debits": "98842.90",
+    "net_cash_flow": "96.10",
+    "average_daily_balance": "3169.74",
+    "average_daily_balance_estimate": "3169.74",
+    "min_observed_balance": "69.10",
+    "max_observed_balance": "50073.10",
+    "reconciliation_status": "VERIFIED",
+    "indicator_counts": {
+      "HIGH": 1,
+      "MEDIUM": 1,
+      "LOW": 0,
+      "INFO": 0
+    }
+  },
+  "validation": {
+    "status": "VERIFIED",
+    "reconciled": true,
+    "opening_balance": "0.00",
+    "opening_balance_source": "statement",
+    "closing_balance": "96.10",
+    "closing_balance_source": "statement",
+    "computed_closing_balance": "96.10",
+    "balance_links_checked": 39,
+    "balance_chain_breaks": 0,
+    "completeness": "CONFIRMED_BY_PRINTED_BALANCES",
+    "checks": [
+      {
+        "name": "running_balance_chain",
+        "passed": true,
+        "expected": 0,
+        "actual": 0,
+        "message": "39 of 39 consecutive balance links are consistent."
+      },
+      {
+        "name": "opening_balance_links_first_transaction",
+        "passed": true,
+        "expected": "0.00",
+        "actual": "0.00",
+        "message": "Printed opening balance plus the first transaction equals its printed balance."
+      },
+      {
+        "name": "closing_balance_matches_last_transaction",
+        "passed": true,
+        "expected": "96.10",
+        "actual": "96.10",
+        "message": ""
+      },
+      {
+        "name": "opening_plus_credits_minus_debits_equals_closing",
+        "passed": true,
+        "expected": "96.10",
+        "actual": "96.10",
+        "message": ""
+      }
+    ],
+    "issues": [
+      {
+        "code": "MULTIPLE_STATEMENT_PERIODS",
+        "severity": "INFO",
+        "message": "The file contains 2 statement periods; printed period totals were not compared with whole-file totals. Balance continuity across periods was checked.",
+        "transaction_ids": [],
+        "page": null,
+        "details": {
+          "periods": [
+            [
+              "2026-06-02",
+              "2026-06-30"
+            ],
+            [
+              "2026-07-01",
+              "2026-07-08"
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  "monthly": [
+    {
+      "month": "2026-06",
+      "label": "Jun 2026",
+      "partial_month": true,
+      "transaction_count": 23,
+      "credit_count": 3,
+      "debit_count": 20,
+      "total_credits": "48939.00",
+      "total_debits": "48865.90",
+      "net_cash_flow": "73.10",
+      "external_credits": "48939.00",
+      "cash_withdrawals": "0.00",
+      "cash_deposits": "0.00",
+      "opening_balance": "0.00",
+      "closing_balance": "73.10",
+      "average_daily_balance": "2226.91",
+      "min_eod_balance": "0.00",
+      "max_eod_balance": "41935.00"
+    },
+    {
+      "month": "2026-07",
+      "label": "Jul 2026",
+      "partial_month": true,
+      "transaction_count": 17,
+      "credit_count": 1,
+      "debit_count": 16,
+      "total_credits": "50000.00",
+      "total_debits": "49977.00",
+      "net_cash_flow": "23.00",
+      "external_credits": "50000.00",
+      "cash_withdrawals": "0.00",
+      "cash_deposits": "0.00",
+      "opening_balance": "73.10",
+      "closing_balance": "96.10",
+      "average_daily_balance": "6587.48",
+      "min_eod_balance": "73.10",
+      "max_eod_balance": "50073.10"
+    }
+  ],
+  "balances": {
+    "available": true,
+    "reliable": true,
+    "basis": "Printed running balances (end of day), carried forward on days without transactions.",
+    "reliability_note": null,
+    "days_tracked": 37,
+    "days_with_transactions": 13,
+    "average_daily_balance": "3169.74",
+    "min_eod_balance": "0.00",
+    "min_eod_date": "2026-06-02",
+    "max_eod_balance": "50073.10",
+    "max_eod_date": "2026-07-03",
+    "min_observed_balance": "69.10",
+    "max_observed_balance": "50073.10",
+    "low_balance_threshold": "1000.00",
+    "days_below_low_threshold": 27,
+    "pct_days_below_low_threshold": "72.97",
+    "secondary_threshold": "10000.00",
+    "days_below_secondary_threshold": 35,
+    "pct_days_below_secondary_threshold": "94.59",
+    "negative_balance_days": 0,
+    "first_negative_date": null,
+    "eod_series": [
+      {
+        "date": "2026-06-02",
+        "balance": "0.00"
+      },
+      {
+        "date": "2026-06-03",
+        "balance": "0.00"
+      },
+      {
+        "date": "2026-06-04",
+        "balance": "0.00"
+      },
+      {
+        "date": "2026-06-05",
+        "balance": "41935.00"
+      },
+      {
+        "date": "2026-06-06",
+        "balance": "5645.00"
+      },
+      {
+        "date": "2026-06-07",
+        "balance": "2157.10"
+      },
+      {
+        "date": "2026-06-08",
+        "balance": "2157.10"
+      },
+      {
+        "date": "2026-06-09",
+        "balance": "2157.10"
+      },
+      {
+        "date": "2026-06-10",
+        "balance": "2157.10"
+      },
+      {
+        "date": "2026-06-11",
+        "balance": "2132.10"
+      },
+      {
+        "date": "2026-06-12",
+        "balance": "2132.10"
+      },
+      {
+        "date": "2026-06-13",
+        "balance": "956.10"
+      },
+      {
+        "date": "2026-06-14",
+        "balance": "956.10"
+      },
+      {
+        "date": "2026-06-15",
+        "balance": "886.10"
+      },
+      {
+        "date": "2026-06-16",
+        "balance": "338.10"
+      },
+      {
+        "date": "2026-06-17",
+        "balance": "69.10"
+      },
+      {
+        "date": "2026-06-18",
+        "balance": "69.10"
+      },
+      {
+        "date": "2026-06-19",
+        "balance": "69.10"
+      },
+      {
+        "date": "2026-06-20",
+        "balance": "69.10"
+      },
+      {
+        "date": "2026-06-21",
+        "balance": "69.10"
+      },
+      {
+        "date": "2026-06-22",
+        "balance": "69.10"
+      },
+      {
+        "date": "2026-06-23",
+        "balance": "69.10"
+      },
+      {
+        "date": "2026-06-24",
+        "balance": "69.10"
+      },
+      {
+        "date": "2026-06-25",
+        "balance": "69.10"
+      },
+      {
+        "date": "2026-06-26",
+        "balance": "69.10"
+      },
+      {
+        "date": "2026-06-27",
+        "balance": "69.10"
+      },
+      {
+        "date": "2026-06-28",
+        "balance": "69.10"
+      },
+      {
+        "date": "2026-06-29",
+        "balance": "69.10"
+      },
+      {
+        "date": "2026-06-30",
+        "balance": "73.10"
+      },
+      {
+        "date": "2026-07-01",
+        "balance": "73.10"
+      },
+      {
+        "date": "2026-07-02",
+        "balance": "73.10"
+      },
+      {
+        "date": "2026-07-03",
+        "balance": "50073.10"
+      },
+      {
+        "date": "2026-07-04",
+        "balance": "2096.10"
+      },
+      {
+        "date": "2026-07-05",
+        "balance": "96.10"
+      },
+      {
+        "date": "2026-07-06",
+        "balance": "96.10"
+      },
+      {
+        "date": "2026-07-07",
+        "balance": "96.10"
+      },
+      {
+        "date": "2026-07-08",
+        "balance": "96.10"
+      }
+    ]
+  },
+  "income": {
+    "total_credits": "98939.00",
+    "credit_count": 4,
+    "gross_monthly_credit": "82449.17",
+    "external_inflow_total": "98939.00",
+    "average_monthly_external_inflow": "82449.17",
+    "estimated_monthly_income": "49469.50",
+    "estimated_monthly_income_basis": "Median monthly external inflow over full months (excludes own-account transfers, refunds, loan disbursals and investment redemptions; includes cash deposits).",
+    "income_stability": {
+      "cv_pct": "1.07",
+      "label": "STABLE",
+      "months_used": 2
+    },
+    "self_transfers_in": {
+      "amount": "0.00",
+      "count": 0,
+      "pct_of_credits": "0.00"
+    },
+    "refunds_reversals": {
+      "amount": "0.00",
+      "count": 0,
+      "pct_of_credits": "0.00"
+    },
+    "loan_disbursals": {
+      "amount": "0.00",
+      "count": 0,
+      "pct_of_credits": "0.00"
+    },
+    "investment_income": {
+      "amount": "0.00",
+      "count": 0,
+      "pct_of_credits": "0.00"
+    },
+    "interest": {
+      "amount": "4.00",
+      "count": 1,
+      "pct_of_credits": "0.00"
+    },
+    "pension": {
+      "amount": "0.00",
+      "count": 0,
+      "pct_of_credits": "0.00"
+    },
+    "cash_deposits": {
+      "amount": "0.00",
+      "count": 0,
+      "pct_of_credits": "0.00"
+    },
+    "salary_like": {
+      "status": "SALARY_LIKE_OCCASIONAL",
+      "description": "Salary-labelled credits appear in fewer months than required to treat them as regular.",
+      "count": 2,
+      "total": "91935.00",
+      "months": [
+        "2026-06",
+        "2026-07"
+      ],
+      "monthly_median": "45967.50",
+      "evidence": [
+        {
+          "transaction_id": "T00001",
+          "date": "2026-06-05",
+          "amount": "41935.00",
+          "type": "CREDIT"
+        },
+        {
+          "transaction_id": "T00024",
+          "date": "2026-07-03",
+          "amount": "50000.00",
+          "type": "CREDIT"
+        }
+      ]
+    },
+    "recurring_credits": [],
+    "top_income_sources": [
+      {
+        "source": "SALARYFILE",
+        "amount": "91935.00",
+        "count": 2,
+        "pct_of_credits": "92.92",
+        "type": "EXTERNAL"
+      },
+      {
+        "source": "PUSHPEND",
+        "amount": "7000.00",
+        "count": 1,
+        "pct_of_credits": "7.08",
+        "type": "EXTERNAL"
+      },
+      {
+        "source": "MONTHLY INTEREST",
+        "amount": "4.00",
+        "count": 1,
+        "pct_of_credits": "0.00",
+        "type": "INTEREST"
+      }
+    ]
+  },
+  "expenses": {
+    "total_debits": "98842.90",
+    "debit_count": 36,
+    "average_monthly_debits": "82369.08",
+    "categories": [
+      {
+        "category": "UPI_TRANSFER",
+        "label": "UPI transfer to individuals",
+        "amount": "80534.00",
+        "count": 27,
+        "pct_of_debits": "81.48",
+        "monthly_average": "67111.67",
+        "average_confidence": 0.5
+      },
+      {
+        "category": "RENT",
+        "label": "Rent",
+        "amount": "10000.00",
+        "count": 1,
+        "pct_of_debits": "10.12",
+        "monthly_average": "8333.33",
+        "average_confidence": 0.75
+      },
+      {
+        "category": "UTILITIES",
+        "label": "Utilities & bills",
+        "amount": "4208.00",
+        "count": 3,
+        "pct_of_debits": "4.26",
+        "monthly_average": "3506.67",
+        "average_confidence": 0.75
+      },
+      {
+        "category": "SHOPPING",
+        "label": "Shopping & groceries",
+        "amount": "3688.90",
+        "count": 2,
+        "pct_of_debits": "3.73",
+        "monthly_average": "3074.08",
+        "average_confidence": 0.6
+      },
+      {
+        "category": "FOOD_DINING",
+        "label": "Food & dining",
+        "amount": "257.00",
+        "count": 1,
+        "pct_of_debits": "0.26",
+        "monthly_average": "214.17",
+        "average_confidence": 0.7
+      },
+      {
+        "category": "UPI_MERCHANT",
+        "label": "UPI merchant payment",
+        "amount": "155.00",
+        "count": 2,
+        "pct_of_debits": "0.16",
+        "monthly_average": "129.17",
+        "average_confidence": 0.55
+      }
+    ],
+    "top_destinations": [
+      {
+        "destination": "SHUBHAM",
+        "count": 2,
+        "amount": "20001.00",
+        "pct_of_debits": "20.24",
+        "type": "THIRD_PARTY"
+      },
+      {
+        "destination": "SHAH MAN",
+        "count": 2,
+        "amount": "17660.00",
+        "pct_of_debits": "17.87",
+        "type": "THIRD_PARTY"
+      },
+      {
+        "destination": "PUSHPEND",
+        "count": 2,
+        "amount": "13000.00",
+        "pct_of_debits": "13.15",
+        "type": "THIRD_PARTY"
+      },
+      {
+        "destination": "JUGAL",
+        "count": 1,
+        "amount": "10000.00",
+        "pct_of_debits": "10.12",
+        "type": "THIRD_PARTY"
+      },
+      {
+        "destination": "NIKITA J",
+        "count": 3,
+        "amount": "7388.00",
+        "pct_of_debits": "7.47",
+        "type": "THIRD_PARTY"
+      },
+      {
+        "destination": "PRITI SH",
+        "count": 1,
+        "amount": "7000.00",
+        "pct_of_debits": "7.08",
+        "type": "THIRD_PARTY"
+      },
+      {
+        "destination": "RAGHU S",
+        "count": 1,
+        "amount": "7000.00",
+        "pct_of_debits": "7.08",
+        "type": "THIRD_PARTY"
+      },
+      {
+        "destination": "AIRTEL PREP",
+        "count": 3,
+        "amount": "4208.00",
+        "pct_of_debits": "4.26",
+        "type": "THIRD_PARTY"
+      },
+      {
+        "destination": "POONAWAL",
+        "count": 1,
+        "amount": "3833.00",
+        "pct_of_debits": "3.88",
+        "type": "THIRD_PARTY"
+      },
+      {
+        "destination": "AVENUE S",
+        "count": 1,
+        "amount": "3397.90",
+        "pct_of_debits": "3.44",
+        "type": "THIRD_PARTY"
+      }
+    ],
+    "outflow_modes": [
+      {
+        "channel": "UPI",
+        "label": "UPI",
+        "count": 33,
+        "amount": "94634.90",
+        "pct": "95.74"
+      },
+      {
+        "channel": "OTHER",
+        "label": "Other",
+        "count": 3,
+        "amount": "4208.00",
+        "pct": "4.26"
+      }
+    ],
+    "inflow_modes": [
+      {
+        "channel": "OTHER",
+        "label": "Other",
+        "count": 2,
+        "amount": "91935.00",
+        "pct": "92.92"
+      },
+      {
+        "channel": "UPI",
+        "label": "UPI",
+        "count": 1,
+        "amount": "7000.00",
+        "pct": "7.08"
+      },
+      {
+        "channel": "INTEREST",
+        "label": "Interest",
+        "count": 1,
+        "amount": "4.00",
+        "pct": "0.00"
+      }
+    ],
+    "largest_debits": [
+      {
+        "transaction_id": "T00003",
+        "date": "2026-06-06",
+        "amount": "20000.00",
+        "type": "DEBIT",
+        "counterparty": "SHUBHAM",
+        "category": "UPI_TRANSFER"
+      },
+      {
+        "transaction_id": "T00035",
+        "date": "2026-07-04",
+        "amount": "14000.00",
+        "type": "DEBIT",
+        "counterparty": "SHAH MAN",
+        "category": "UPI_TRANSFER"
+      },
+      {
+        "transaction_id": "T00004",
+        "date": "2026-06-06",
+        "amount": "10000.00",
+        "type": "DEBIT",
+        "counterparty": "JUGAL",
+        "category": "RENT"
+      },
+      {
+        "transaction_id": "T00022",
+        "date": "2026-06-20",
+        "amount": "7000.00",
+        "type": "DEBIT",
+        "counterparty": "PRITI SH",
+        "category": "UPI_TRANSFER"
+      },
+      {
+        "transaction_id": "T00027",
+        "date": "2026-07-04",
+        "amount": "7000.00",
+        "type": "DEBIT",
+        "counterparty": "RAGHU S",
+        "category": "UPI_TRANSFER"
+      },
+      {
+        "transaction_id": "T00029",
+        "date": "2026-07-04",
+        "amount": "7000.00",
+        "type": "DEBIT",
+        "counterparty": "PUSHPEND",
+        "category": "UPI_TRANSFER"
+      },
+      {
+        "transaction_id": "T00005",
+        "date": "2026-06-06",
+        "amount": "6000.00",
+        "type": "DEBIT",
+        "counterparty": "PUSHPEND",
+        "category": "UPI_TRANSFER"
+      },
+      {
+        "transaction_id": "T00026",
+        "date": "2026-07-04",
+        "amount": "3999.00",
+        "type": "DEBIT",
+        "counterparty": "AIRTEL PREP",
+        "category": "UTILITIES"
+      },
+      {
+        "transaction_id": "T00025",
+        "date": "2026-07-04",
+        "amount": "3833.00",
+        "type": "DEBIT",
+        "counterparty": "POONAWAL",
+        "category": "UPI_TRANSFER"
+      },
+      {
+        "transaction_id": "T00036",
+        "date": "2026-07-04",
+        "amount": "3660.00",
+        "type": "DEBIT",
+        "counterparty": "SHAH MAN",
+        "category": "UPI_TRANSFER"
+      }
+    ],
+    "insights": [
+      "Largest outflow category: UPI transfer to individuals (81.48% of debits)."
+    ]
+  },
+  "emi": {
+    "emi_detected": false,
+    "recurring_obligations": [],
+    "other_repayment_debits": [],
+    "active_recurring_loan_count": 0,
+    "estimated_monthly_emi": "0.00",
+    "monthly_emi_status": "NONE_DETECTED",
+    "estimated_emi_to_income_pct": null,
+    "foir_pct": null,
+    "foir_status": "NO_RECURRING_EMI_DETECTED",
+    "foir_probable_only_pct": null,
+    "foir_confidence": null,
+    "foir_income_used": "49469.50",
+    "foir_income_basis": "Median monthly external inflow over full months (excludes own-account transfers, refunds, loan disbursals and investment redemptions; includes cash deposits).",
+    "foir_notes": [
+      "FOIR = estimated monthly EMI ÷ estimated monthly income × 100.",
+      "Only debits from this account are visible; obligations paid from other accounts are not included."
+    ],
+    "recurring_loan_obligation_count": 0,
+    "loan_repayment_debits": {
+      "count": 0,
+      "amount": "0.00"
+    },
+    "credit_card_payments": {
+      "count": 0,
+      "amount": "0.00"
+    },
+    "total_repayment_debits": "0.00",
+    "note": "Obligations are estimated from recurring debits only. They are not verified loan liabilities; outstanding principal, interest rate and sanctioned amount cannot be derived from a bank statement."
+  },
+  "bounces": {
+    "confirmed_event_count": 0,
+    "confirmed_incident_count": 0,
+    "incident_dates": [],
+    "nach_ecs_return_count": 0,
+    "cheque_return_count": 0,
+    "returned_payment_count": 0,
+    "returned_payment_amount": null,
+    "return_charge_count": 0,
+    "return_charges_total": "0.00",
+    "nach_ecs_related_count": 0,
+    "unclear_events": [],
+    "unclear_count": 0,
+    "confirmed_events": [],
+    "pattern_based_reversals": [],
+    "pattern_based_count": 0,
+    "events_by_month": {},
+    "note": "Confirmed events are based on explicit narration. Pattern-based reversals are indicative only. A return charge alone does not establish which obligation was missed or prove a loan default."
+  },
+  "cashflow": {
+    "credit_to_debit_ratio": "1.00",
+    "net_cash_flow": "96.10",
+    "surplus_months": [
+      "2026-06",
+      "2026-07"
+    ],
+    "deficit_months": [],
+    "large_transactions": [],
+    "large_transaction_count": 0,
+    "top_source_share_pct": "92.92",
+    "top3_source_share_pct": "100.00",
+    "self_transfer_in": "0.00",
+    "self_transfer_in_pct": "0.00",
+    "self_transfer_out": "0.00",
+    "self_transfer_out_pct": "0.00",
+    "cash_withdrawals": "0.00",
+    "cash_withdrawal_pct_of_debits": "0.00",
+    "cash_withdrawal_count": 0,
+    "cash_deposits": "0.00",
+    "cash_deposit_pct_of_credits": "0.00",
+    "cash_deposit_count": 0,
+    "pass_through_events": [
+      {
+        "credit": {
+          "transaction_id": "T00024",
+          "date": "2026-07-03",
+          "amount": "50000.00",
+          "type": "CREDIT"
+        },
+        "outflow_within_1_day": "47977.00",
+        "outflow_pct": "95.95",
+        "debit_ids": [
+          "T00025",
+          "T00026",
+          "T00027",
+          "T00028",
+          "T00029",
+          "T00030",
+          "T00031",
+          "T00032",
+          "T00033",
+          "T00034",
+          "T00035",
+          "T00036",
+          "T00037",
+          "T00038",
+          "T00039"
+        ]
+      }
+    ],
+    "pass_through_count": 1,
+    "round_trip_events": [],
+    "round_trip_count": 0,
+    "volume_changes": [],
+    "monthly_cash_trend": [
+      {
+        "month": "2026-06",
+        "cash_withdrawals": "0.00",
+        "cash_deposits": "0.00"
+      },
+      {
+        "month": "2026-07",
+        "cash_withdrawals": "0.00",
+        "cash_deposits": "0.00"
+      }
+    ]
+  },
+  "risk_indicators": [
+    {
+      "code": "LOW_BALANCE_FREQUENCY",
+      "severity": "HIGH",
+      "title": "Frequent low balances",
+      "description": "End-of-day balance was below ₹1,000 on 27 of 37 days (72.97%).",
+      "evidence": [
+        {
+          "min_eod_balance": "0.00",
+          "min_eod_date": "2026-06-02"
+        }
+      ],
+      "confidence": 0.9,
+      "limitations": [
+        "Intraday balances may differ from end-of-day balances.",
+        "Derived from bank statement data only; not verified against other documents."
+      ]
+    },
+    {
+      "code": "PASS_THROUGH_ACTIVITY",
+      "severity": "MEDIUM",
+      "title": "Large inflows moved out quickly",
+      "description": "1 large credit(s) of at least ₹50,000 were followed within one day by outflows of 80% or more of the amount.",
+      "evidence": [
+        {
+          "credit": {
+            "transaction_id": "T00024",
+            "date": "2026-07-03",
+            "amount": "50000.00",
+            "type": "CREDIT"
+          },
+          "outflow_within_1_day": "47977.00",
+          "outflow_pct": "95.95",
+          "debit_ids": [
+            "T00025",
+            "T00026",
+            "T00027",
+            "T00028",
+            "T00029",
+            "T00030",
+            "T00031",
+            "T00032",
+            "T00033",
+            "T00034",
+            "T00035",
+            "T00036",
+            "T00037",
+            "T00038",
+            "T00039"
+          ]
+        }
+      ],
+      "confidence": 0.6,
+      "limitations": [
+        "Business payments, property or vehicle purchases legitimately show this pattern.",
+        "This is not an indication of fraud by itself."
+      ]
+    }
+  ],
+  "data_quality": {
+    "extraction_confidence": "HIGH",
+    "page_count": 6,
+    "pages_with_transactions": 4,
+    "ocr_pages": [],
+    "unreadable_pages": [],
+    "table_pages_without_rows": [],
+    "extraction_method": "text",
+    "parser": "generic",
+    "table_columns": [
+      "date:Transaction Date",
+      "value_date:Value Date",
+      "narration:Particulars",
+      "ref:Cheque No",
+      "debit:Debit",
+      "credit:Credit",
+      "balance:Balance"
+    ],
+    "layout_inferred": false,
+    "row_segmentation": {
+      "bands": 4,
+      "none": 2
+    },
+    "rows_read": 40,
+    "rows_without_amount": 0,
+    "transactions": 40,
+    "balance_links_checked": 39,
+    "balance_chain_breaks": 0,
+    "transactions_without_balance": 0,
+    "direction_inferred": 0,
+    "reordered_within_day": 0,
+    "categorized_pct": 100.0,
+    "low_confidence_categories": 30,
+    "transaction_flags": {}
+  },
+  "limitations": [
+    "This analysis is generated automatically from the uploaded bank statement only. It is not issued or endorsed by any bank and does not replace independent verification.",
+    "Counterparty names are read from transaction narrations on a best-effort basis; banks often truncate them.",
+    "Categories come from deterministic narration rules and are indicative, with a confidence per transaction.",
+    "Salary-like income, recurring inflows and EMI obligations are estimates from transaction patterns, not verified income or loan liabilities.",
+    "No credit score, eligibility or lending decision is produced. Indicators describe observed patterns and do not establish fraud, creditworthiness or default.",
+    "The file combines 2 statement periods; they were analysed as one continuous account history."
+  ]
+}

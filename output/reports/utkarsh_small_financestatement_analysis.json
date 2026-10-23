@@ -1,0 +1,3343 @@
+{
+  "report_id": "BSA-20261023-9F53209C3A",
+  "engine_version": "1.0.0",
+  "generated_at": "2026-10-23T13:28:29+05:30",
+  "status": "VERIFIED",
+  "source_sha256": "9533679106f7dae293dd08bd9a74917fea7f8b9a5d67b1974b2eb05927c91357",
+  "metadata": {
+    "bank_name": "Utkarsh Small Finance Bank",
+    "bank_code": "UTKARSH",
+    "bank_detection_method": "ifsc",
+    "ifsc": "UTKS0001142",
+    "account_number_masked": "XXXXXXXXXXXX1030",
+    "account_type": "SAVINGS",
+    "currency": "INR",
+    "period_start": "2026-01-01",
+    "period_end": "2026-07-27",
+    "page_count": 63,
+    "extraction_method": "text",
+    "ocr_pages": [],
+    "parser": "generic",
+    "reverse_chronological": false,
+    "printed_summary": {
+      "opening_balance": "7391.31",
+      "closing_balance": "4444.26",
+      "total_debits": null,
+      "total_credits": null,
+      "debit_count": null,
+      "credit_count": null,
+      "pages": {
+        "opening_balance": 1,
+        "closing_balance": 1
+      }
+    }
+  },
+  "summary": {
+    "bank_name": "Utkarsh Small Finance Bank",
+    "period_start": "2026-01-01",
+    "period_end": "2026-07-27",
+    "opening_balance": "7391.31",
+    "closing_balance": "4444.26",
+    "total_credits": "1508323.29",
+    "total_debits": "1511270.34",
+    "net_cash_flow": "-2947.05",
+    "transaction_count": 1209,
+    "months_covered": "6.80"
+  },
+  "overview": {
+    "bank_name": "Utkarsh Small Finance Bank",
+    "account_number_masked": "XXXXXXXXXXXX1030",
+    "account_type": "SAVINGS",
+    "period_start": "2026-01-01",
+    "period_end": "2026-07-27",
+    "period_source": "statement",
+    "first_transaction_date": "2026-01-01",
+    "last_transaction_date": "2026-07-27",
+    "months_covered": "6.80",
+    "calendar_months": 7,
+    "transaction_count": 1209,
+    "credit_count": 330,
+    "debit_count": 879,
+    "opening_balance": "7391.31",
+    "opening_balance_source": "statement",
+    "closing_balance": "4444.26",
+    "closing_balance_source": "statement",
+    "total_credits": "1508323.29",
+    "total_debits": "1511270.34",
+    "net_cash_flow": "-2947.05",
+    "average_daily_balance": "4893.36",
+    "average_daily_balance_estimate": "4893.36",
+    "min_observed_balance": "0.05",
+    "max_observed_balance": "102682.26",
+    "reconciliation_status": "VERIFIED",
+    "indicator_counts": {
+      "HIGH": 2,
+      "MEDIUM": 1,
+      "LOW": 1,
+      "INFO": 1
+    }
+  },
+  "validation": {
+    "status": "VERIFIED",
+    "reconciled": true,
+    "opening_balance": "7391.31",
+    "opening_balance_source": "statement",
+    "closing_balance": "4444.26",
+    "closing_balance_source": "statement",
+    "computed_closing_balance": "4444.26",
+    "balance_links_checked": 1208,
+    "balance_chain_breaks": 0,
+    "completeness": "CONFIRMED_BY_PRINTED_BALANCES",
+    "checks": [
+      {
+        "name": "running_balance_chain",
+        "passed": true,
+        "expected": 0,
+        "actual": 0,
+        "message": "1208 of 1208 consecutive balance links are consistent."
+      },
+      {
+        "name": "opening_balance_links_first_transaction",
+        "passed": true,
+        "expected": "7391.31",
+        "actual": "7391.31",
+        "message": "Printed opening balance plus the first transaction equals its printed balance."
+      },
+      {
+        "name": "closing_balance_matches_last_transaction",
+        "passed": true,
+        "expected": "4444.26",
+        "actual": "4444.26",
+        "message": ""
+      },
+      {
+        "name": "opening_plus_credits_minus_debits_equals_closing",
+        "passed": true,
+        "expected": "4444.26",
+        "actual": "4444.26",
+        "message": ""
+      }
+    ],
+    "issues": []
+  },
+  "monthly": [
+    {
+      "month": "2026-01",
+      "label": "Jan 2026",
+      "partial_month": false,
+      "transaction_count": 335,
+      "credit_count": 84,
+      "debit_count": 251,
+      "total_credits": "335308.07",
+      "total_debits": "341017.03",
+      "net_cash_flow": "-5708.96",
+      "external_credits": "328538.82",
+      "cash_withdrawals": "0.00",
+      "cash_deposits": "35000.00",
+      "opening_balance": "7391.31",
+      "closing_balance": "1682.35",
+      "average_daily_balance": "7224.30",
+      "min_eod_balance": "131.19",
+      "max_eod_balance": "30197.63"
+    },
+    {
+      "month": "2026-02",
+      "label": "Feb 2026",
+      "partial_month": false,
+      "transaction_count": 198,
+      "credit_count": 64,
+      "debit_count": 134,
+      "total_credits": "136412.38",
+      "total_debits": "93839.36",
+      "net_cash_flow": "42573.02",
+      "external_credits": "132632.40",
+      "cash_withdrawals": "0.00",
+      "cash_deposits": "0.00",
+      "opening_balance": "1682.35",
+      "closing_balance": "44255.37",
+      "average_daily_balance": "8741.32",
+      "min_eod_balance": "71.67",
+      "max_eod_balance": "46741.60"
+    },
+    {
+      "month": "2026-03",
+      "label": "Mar 2026",
+      "partial_month": false,
+      "transaction_count": 206,
+      "credit_count": 55,
+      "debit_count": 151,
+      "total_credits": "261689.46",
+      "total_debits": "305841.18",
+      "net_cash_flow": "-44151.72",
+      "external_credits": "257449.49",
+      "cash_withdrawals": "0.00",
+      "cash_deposits": "0.00",
+      "opening_balance": "44255.37",
+      "closing_balance": "103.65",
+      "average_daily_balance": "6531.48",
+      "min_eod_balance": "17.65",
+      "max_eod_balance": "45177.97"
+    },
+    {
+      "month": "2026-04",
+      "label": "Apr 2026",
+      "partial_month": false,
+      "transaction_count": 138,
+      "credit_count": 27,
+      "debit_count": 111,
+      "total_credits": "180849.90",
+      "total_debits": "180093.50",
+      "net_cash_flow": "756.40",
+      "external_credits": "177784.94",
+      "cash_withdrawals": "0.00",
+      "cash_deposits": "0.00",
+      "opening_balance": "103.65",
+      "closing_balance": "860.05",
+      "average_daily_balance": "4266.44",
+      "min_eod_balance": "3.65",
+      "max_eod_balance": "37580.68"
+    },
+    {
+      "month": "2026-05",
+      "label": "May 2026",
+      "partial_month": false,
+      "transaction_count": 135,
+      "credit_count": 41,
+      "debit_count": 94,
+      "total_credits": "240708.29",
+      "total_debits": "241476.80",
+      "net_cash_flow": "-768.51",
+      "external_credits": "227036.16",
+      "cash_withdrawals": "0.00",
+      "cash_deposits": "0.00",
+      "opening_balance": "860.05",
+      "closing_balance": "91.54",
+      "average_daily_balance": "1328.15",
+      "min_eod_balance": "15.18",
+      "max_eod_balance": "27675.34"
+    },
+    {
+      "month": "2026-06",
+      "label": "Jun 2026",
+      "partial_month": false,
+      "transaction_count": 105,
+      "credit_count": 35,
+      "debit_count": 70,
+      "total_credits": "123835.69",
+      "total_debits": "121504.65",
+      "net_cash_flow": "2331.04",
+      "external_credits": "113372.74",
+      "cash_withdrawals": "0.00",
+      "cash_deposits": "0.00",
+      "opening_balance": "91.54",
+      "closing_balance": "2422.58",
+      "average_daily_balance": "4158.12",
+      "min_eod_balance": "0.05",
+      "max_eod_balance": "31410.97"
+    },
+    {
+      "month": "2026-07",
+      "label": "Jul 2026",
+      "partial_month": true,
+      "transaction_count": 92,
+      "credit_count": 24,
+      "debit_count": 68,
+      "total_credits": "229519.50",
+      "total_debits": "227497.82",
+      "net_cash_flow": "2021.68",
+      "external_credits": "217603.22",
+      "cash_withdrawals": "0.00",
+      "cash_deposits": "0.00",
+      "opening_balance": "2422.58",
+      "closing_balance": "4444.26",
+      "average_daily_balance": "1952.69",
+      "min_eod_balance": "16.96",
+      "max_eod_balance": "17689.14"
+    }
+  ],
+  "balances": {
+    "available": true,
+    "reliable": true,
+    "basis": "Printed running balances (end of day), carried forward on days without transactions.",
+    "reliability_note": null,
+    "days_tracked": 208,
+    "days_with_transactions": 183,
+    "average_daily_balance": "4893.36",
+    "min_eod_balance": "0.05",
+    "min_eod_date": "2026-06-05",
+    "max_eod_balance": "46741.60",
+    "max_eod_date": "2026-02-15",
+    "min_observed_balance": "0.05",
+    "max_observed_balance": "102682.26",
+    "low_balance_threshold": "1000.00",
+    "days_below_low_threshold": 122,
+    "pct_days_below_low_threshold": "58.65",
+    "secondary_threshold": "10000.00",
+    "days_below_secondary_threshold": 178,
+    "pct_days_below_secondary_threshold": "85.58",
+    "negative_balance_days": 0,
+    "first_negative_date": null,
+    "eod_series": [
+      {
+        "date": "2026-01-01",
+        "balance": "5214.31"
+      },
+      {
+        "date": "2026-01-02",
+        "balance": "1291.30"
+      },
+      {
+        "date": "2026-01-03",
+        "balance": "4026.30"
+      },
+      {
+        "date": "2026-01-04",
+        "balance": "3625.14"
+      },
+      {
+        "date": "2026-01-05",
+        "balance": "1166.14"
+      },
+      {
+        "date": "2026-01-06",
+        "balance": "4668.70"
+      },
+      {
+        "date": "2026-01-07",
+        "balance": "1231.94"
+      },
+      {
+        "date": "2026-01-08",
+        "balance": "1030.94"
+      },
+      {
+        "date": "2026-01-09",
+        "balance": "30197.63"
+      },
+      {
+        "date": "2026-01-10",
+        "balance": "11131.63"
+      },
+      {
+        "date": "2026-01-11",
+        "balance": "930.63"
+      },
+      {
+        "date": "2026-01-12",
+        "balance": "1693.74"
+      },
+      {
+        "date": "2026-01-13",
+        "balance": "6321.17"
+      },
+      {
+        "date": "2026-01-14",
+        "balance": "5395.14"
+      },
+      {
+        "date": "2026-01-15",
+        "balance": "13396.68"
+      },
+      {
+        "date": "2026-01-16",
+        "balance": "5055.68"
+      },
+      {
+        "date": "2026-01-17",
+        "balance": "1371.68"
+      },
+      {
+        "date": "2026-01-18",
+        "balance": "4043.68"
+      },
+      {
+        "date": "2026-01-19",
+        "balance": "1501.35"
+      },
+      {
+        "date": "2026-01-20",
+        "balance": "1054.33"
+      },
+      {
+        "date": "2026-01-21",
+        "balance": "28265.19"
+      },
+      {
+        "date": "2026-01-22",
+        "balance": "1711.19"
+      },
+      {
+        "date": "2026-01-23",
+        "balance": "131.19"
+      },
+      {
+        "date": "2026-01-24",
+        "balance": "28005.21"
+      },
+      {
+        "date": "2026-01-25",
+        "balance": "25937.43"
+      },
+      {
+        "date": "2026-01-26",
+        "balance": "29613.64"
+      },
+      {
+        "date": "2026-01-27",
+        "balance": "1141.64"
+      },
+      {
+        "date": "2026-01-28",
+        "balance": "1402.79"
+      },
+      {
+        "date": "2026-01-29",
+        "balance": "627.76"
+      },
+      {
+        "date": "2026-01-30",
+        "balance": "1086.77"
+      },
+      {
+        "date": "2026-01-31",
+        "balance": "1682.35"
+      },
+      {
+        "date": "2026-02-01",
+        "balance": "150.35"
+      },
+      {
+        "date": "2026-02-02",
+        "balance": "1776.84"
+      },
+      {
+        "date": "2026-02-03",
+        "balance": "224.25"
+      },
+      {
+        "date": "2026-02-04",
+        "balance": "365.57"
+      },
+      {
+        "date": "2026-02-05",
+        "balance": "476.39"
+      },
+      {
+        "date": "2026-02-06",
+        "balance": "75.39"
+      },
+      {
+        "date": "2026-02-07",
+        "balance": "2681.34"
+      },
+      {
+        "date": "2026-02-08",
+        "balance": "2376.34"
+      },
+      {
+        "date": "2026-02-09",
+        "balance": "2439.30"
+      },
+      {
+        "date": "2026-02-10",
+        "balance": "11321.30"
+      },
+      {
+        "date": "2026-02-11",
+        "balance": "9214.43"
+      },
+      {
+        "date": "2026-02-12",
+        "balance": "7868.43"
+      },
+      {
+        "date": "2026-02-13",
+        "balance": "3186.75"
+      },
+      {
+        "date": "2026-02-14",
+        "balance": "46255.62"
+      },
+      {
+        "date": "2026-02-15",
+        "balance": "46741.60"
+      },
+      {
+        "date": "2026-02-16",
+        "balance": "8782.42"
+      },
+      {
+        "date": "2026-02-17",
+        "balance": "4805.42"
+      },
+      {
+        "date": "2026-02-18",
+        "balance": "2447.38"
+      },
+      {
+        "date": "2026-02-19",
+        "balance": "1366.77"
+      },
+      {
+        "date": "2026-02-20",
+        "balance": "409.45"
+      },
+      {
+        "date": "2026-02-21",
+        "balance": "903.45"
+      },
+      {
+        "date": "2026-02-22",
+        "balance": "502.45"
+      },
+      {
+        "date": "2026-02-23",
+        "balance": "71.67"
+      },
+      {
+        "date": "2026-02-24",
+        "balance": "73.67"
+      },
+      {
+        "date": "2026-02-25",
+        "balance": "73.67"
+      },
+      {
+        "date": "2026-02-26",
+        "balance": "933.67"
+      },
+      {
+        "date": "2026-02-27",
+        "balance": "44977.67"
+      },
+      {
+        "date": "2026-02-28",
+        "balance": "44255.37"
+      },
+      {
+        "date": "2026-03-01",
+        "balance": "38214.37"
+      },
+      {
+        "date": "2026-03-02",
+        "balance": "4376.31"
+      },
+      {
+        "date": "2026-03-03",
+        "balance": "39.00"
+      },
+      {
+        "date": "2026-03-04",
+        "balance": "39.00"
+      },
+      {
+        "date": "2026-03-05",
+        "balance": "166.25"
+      },
+      {
+        "date": "2026-03-06",
+        "balance": "46.25"
+      },
+      {
+        "date": "2026-03-07",
+        "balance": "769.55"
+      },
+      {
+        "date": "2026-03-08",
+        "balance": "805.26"
+      },
+      {
+        "date": "2026-03-09",
+        "balance": "323.07"
+      },
+      {
+        "date": "2026-03-10",
+        "balance": "9222.07"
+      },
+      {
+        "date": "2026-03-11",
+        "balance": "14812.55"
+      },
+      {
+        "date": "2026-03-12",
+        "balance": "786.06"
+      },
+      {
+        "date": "2026-03-13",
+        "balance": "44.26"
+      },
+      {
+        "date": "2026-03-14",
+        "balance": "25732.26"
+      },
+      {
+        "date": "2026-03-15",
+        "balance": "9840.24"
+      },
+      {
+        "date": "2026-03-16",
+        "balance": "70.24"
+      },
+      {
+        "date": "2026-03-17",
+        "balance": "893.62"
+      },
+      {
+        "date": "2026-03-18",
+        "balance": "10551.62"
+      },
+      {
+        "date": "2026-03-19",
+        "balance": "1080.97"
+      },
+      {
+        "date": "2026-03-20",
+        "balance": "66.97"
+      },
+      {
+        "date": "2026-03-21",
+        "balance": "96.97"
+      },
+      {
+        "date": "2026-03-22",
+        "balance": "96.97"
+      },
+      {
+        "date": "2026-03-23",
+        "balance": "146.97"
+      },
+      {
+        "date": "2026-03-24",
+        "balance": "45177.97"
+      },
+      {
+        "date": "2026-03-25",
+        "balance": "2216.96"
+      },
+      {
+        "date": "2026-03-26",
+        "balance": "28775.44"
+      },
+      {
+        "date": "2026-03-27",
+        "balance": "7104.12"
+      },
+      {
+        "date": "2026-03-28",
+        "balance": "540.76"
+      },
+      {
+        "date": "2026-03-29",
+        "balance": "318.65"
+      },
+      {
+        "date": "2026-03-30",
+        "balance": "17.65"
+      },
+      {
+        "date": "2026-03-31",
+        "balance": "103.65"
+      },
+      {
+        "date": "2026-04-01",
+        "balance": "3.65"
+      },
+      {
+        "date": "2026-04-02",
+        "balance": "95.65"
+      },
+      {
+        "date": "2026-04-03",
+        "balance": "56.38"
+      },
+      {
+        "date": "2026-04-04",
+        "balance": "68.38"
+      },
+      {
+        "date": "2026-04-05",
+        "balance": "68.38"
+      },
+      {
+        "date": "2026-04-06",
+        "balance": "2868.38"
+      },
+      {
+        "date": "2026-04-07",
+        "balance": "1928.68"
+      },
+      {
+        "date": "2026-04-08",
+        "balance": "1027.68"
+      },
+      {
+        "date": "2026-04-09",
+        "balance": "626.68"
+      },
+      {
+        "date": "2026-04-10",
+        "balance": "21679.96"
+      },
+      {
+        "date": "2026-04-11",
+        "balance": "14946.96"
+      },
+      {
+        "date": "2026-04-12",
+        "balance": "599.96"
+      },
+      {
+        "date": "2026-04-13",
+        "balance": "198.96"
+      },
+      {
+        "date": "2026-04-14",
+        "balance": "821.41"
+      },
+      {
+        "date": "2026-04-15",
+        "balance": "59.41"
+      },
+      {
+        "date": "2026-04-16",
+        "balance": "59.41"
+      },
+      {
+        "date": "2026-04-17",
+        "balance": "59.41"
+      },
+      {
+        "date": "2026-04-18",
+        "balance": "10122.68"
+      },
+      {
+        "date": "2026-04-19",
+        "balance": "256.68"
+      },
+      {
+        "date": "2026-04-20",
+        "balance": "37580.68"
+      },
+      {
+        "date": "2026-04-21",
+        "balance": "958.88"
+      },
+      {
+        "date": "2026-04-22",
+        "balance": "357.88"
+      },
+      {
+        "date": "2026-04-23",
+        "balance": "56.88"
+      },
+      {
+        "date": "2026-04-24",
+        "balance": "726.88"
+      },
+      {
+        "date": "2026-04-25",
+        "balance": "98.05"
+      },
+      {
+        "date": "2026-04-26",
+        "balance": "8.05"
+      },
+      {
+        "date": "2026-04-27",
+        "balance": "8.05"
+      },
+      {
+        "date": "2026-04-28",
+        "balance": "27528.05"
+      },
+      {
+        "date": "2026-04-29",
+        "balance": "4261.05"
+      },
+      {
+        "date": "2026-04-30",
+        "balance": "860.05"
+      },
+      {
+        "date": "2026-05-01",
+        "balance": "1905.05"
+      },
+      {
+        "date": "2026-05-02",
+        "balance": "1504.05"
+      },
+      {
+        "date": "2026-05-03",
+        "balance": "1103.05"
+      },
+      {
+        "date": "2026-05-04",
+        "balance": "673.55"
+      },
+      {
+        "date": "2026-05-05",
+        "balance": "272.55"
+      },
+      {
+        "date": "2026-05-06",
+        "balance": "71.55"
+      },
+      {
+        "date": "2026-05-07",
+        "balance": "71.55"
+      },
+      {
+        "date": "2026-05-08",
+        "balance": "71.55"
+      },
+      {
+        "date": "2026-05-09",
+        "balance": "344.05"
+      },
+      {
+        "date": "2026-05-10",
+        "balance": "46.05"
+      },
+      {
+        "date": "2026-05-11",
+        "balance": "46.05"
+      },
+      {
+        "date": "2026-05-12",
+        "balance": "1856.05"
+      },
+      {
+        "date": "2026-05-13",
+        "balance": "164.05"
+      },
+      {
+        "date": "2026-05-14",
+        "balance": "96.60"
+      },
+      {
+        "date": "2026-05-15",
+        "balance": "96.60"
+      },
+      {
+        "date": "2026-05-16",
+        "balance": "96.60"
+      },
+      {
+        "date": "2026-05-17",
+        "balance": "15.18"
+      },
+      {
+        "date": "2026-05-18",
+        "balance": "78.34"
+      },
+      {
+        "date": "2026-05-19",
+        "balance": "78.34"
+      },
+      {
+        "date": "2026-05-20",
+        "balance": "78.34"
+      },
+      {
+        "date": "2026-05-21",
+        "balance": "56.34"
+      },
+      {
+        "date": "2026-05-22",
+        "balance": "56.34"
+      },
+      {
+        "date": "2026-05-23",
+        "balance": "56.34"
+      },
+      {
+        "date": "2026-05-24",
+        "balance": "56.34"
+      },
+      {
+        "date": "2026-05-25",
+        "balance": "56.34"
+      },
+      {
+        "date": "2026-05-26",
+        "balance": "27675.34"
+      },
+      {
+        "date": "2026-05-27",
+        "balance": "2064.34"
+      },
+      {
+        "date": "2026-05-28",
+        "balance": "1577.34"
+      },
+      {
+        "date": "2026-05-29",
+        "balance": "657.60"
+      },
+      {
+        "date": "2026-05-30",
+        "balance": "155.60"
+      },
+      {
+        "date": "2026-05-31",
+        "balance": "91.54"
+      },
+      {
+        "date": "2026-06-01",
+        "balance": "91.54"
+      },
+      {
+        "date": "2026-06-02",
+        "balance": "91.54"
+      },
+      {
+        "date": "2026-06-03",
+        "balance": "55.49"
+      },
+      {
+        "date": "2026-06-04",
+        "balance": "46.07"
+      },
+      {
+        "date": "2026-06-05",
+        "balance": "0.05"
+      },
+      {
+        "date": "2026-06-06",
+        "balance": "0.05"
+      },
+      {
+        "date": "2026-06-07",
+        "balance": "0.05"
+      },
+      {
+        "date": "2026-06-08",
+        "balance": "0.05"
+      },
+      {
+        "date": "2026-06-09",
+        "balance": "0.05"
+      },
+      {
+        "date": "2026-06-10",
+        "balance": "0.05"
+      },
+      {
+        "date": "2026-06-11",
+        "balance": "0.05"
+      },
+      {
+        "date": "2026-06-12",
+        "balance": "15.05"
+      },
+      {
+        "date": "2026-06-13",
+        "balance": "15.05"
+      },
+      {
+        "date": "2026-06-14",
+        "balance": "15.05"
+      },
+      {
+        "date": "2026-06-15",
+        "balance": "95.05"
+      },
+      {
+        "date": "2026-06-16",
+        "balance": "216.91"
+      },
+      {
+        "date": "2026-06-17",
+        "balance": "16.91"
+      },
+      {
+        "date": "2026-06-18",
+        "balance": "16.91"
+      },
+      {
+        "date": "2026-06-19",
+        "balance": "16.91"
+      },
+      {
+        "date": "2026-06-20",
+        "balance": "24.79"
+      },
+      {
+        "date": "2026-06-21",
+        "balance": "44.79"
+      },
+      {
+        "date": "2026-06-22",
+        "balance": "44.79"
+      },
+      {
+        "date": "2026-06-23",
+        "balance": "66.79"
+      },
+      {
+        "date": "2026-06-24",
+        "balance": "7661.97"
+      },
+      {
+        "date": "2026-06-25",
+        "balance": "7260.97"
+      },
+      {
+        "date": "2026-06-26",
+        "balance": "31410.97"
+      },
+      {
+        "date": "2026-06-27",
+        "balance": "25509.97"
+      },
+      {
+        "date": "2026-06-28",
+        "balance": "25108.97"
+      },
+      {
+        "date": "2026-06-29",
+        "balance": "24494.18"
+      },
+      {
+        "date": "2026-06-30",
+        "balance": "2422.58"
+      },
+      {
+        "date": "2026-07-01",
+        "balance": "288.58"
+      },
+      {
+        "date": "2026-07-02",
+        "balance": "413.63"
+      },
+      {
+        "date": "2026-07-03",
+        "balance": "136.92"
+      },
+      {
+        "date": "2026-07-04",
+        "balance": "66.92"
+      },
+      {
+        "date": "2026-07-05",
+        "balance": "66.96"
+      },
+      {
+        "date": "2026-07-06",
+        "balance": "16.96"
+      },
+      {
+        "date": "2026-07-07",
+        "balance": "16.96"
+      },
+      {
+        "date": "2026-07-08",
+        "balance": "171.98"
+      },
+      {
+        "date": "2026-07-09",
+        "balance": "71.98"
+      },
+      {
+        "date": "2026-07-10",
+        "balance": "2970.98"
+      },
+      {
+        "date": "2026-07-11",
+        "balance": "84.98"
+      },
+      {
+        "date": "2026-07-12",
+        "balance": "84.98"
+      },
+      {
+        "date": "2026-07-13",
+        "balance": "84.98"
+      },
+      {
+        "date": "2026-07-14",
+        "balance": "84.98"
+      },
+      {
+        "date": "2026-07-15",
+        "balance": "6534.98"
+      },
+      {
+        "date": "2026-07-16",
+        "balance": "17689.14"
+      },
+      {
+        "date": "2026-07-17",
+        "balance": "13658.14"
+      },
+      {
+        "date": "2026-07-18",
+        "balance": "4003.32"
+      },
+      {
+        "date": "2026-07-19",
+        "balance": "215.26"
+      },
+      {
+        "date": "2026-07-20",
+        "balance": "1365.26"
+      },
+      {
+        "date": "2026-07-21",
+        "balance": "64.26"
+      },
+      {
+        "date": "2026-07-22",
+        "balance": "64.26"
+      },
+      {
+        "date": "2026-07-23",
+        "balance": "64.26"
+      },
+      {
+        "date": "2026-07-24",
+        "balance": "19.26"
+      },
+      {
+        "date": "2026-07-25",
+        "balance": "19.26"
+      },
+      {
+        "date": "2026-07-26",
+        "balance": "19.26"
+      },
+      {
+        "date": "2026-07-27",
+        "balance": "4444.26"
+      }
+    ]
+  },
+  "income": {
+    "total_credits": "1508323.29",
+    "credit_count": 330,
+    "gross_monthly_credit": "221812.25",
+    "external_inflow_total": "1454417.77",
+    "average_monthly_external_inflow": "213884.97",
+    "estimated_monthly_income": "202410.55",
+    "estimated_monthly_income_basis": "Median monthly external inflow over full months (excludes own-account transfers, refunds, loan disbursals and investment redemptions; includes cash deposits).",
+    "income_stability": {
+      "cv_pct": "35.90",
+      "label": "MODERATE",
+      "months_used": 6
+    },
+    "self_transfers_in": {
+      "amount": "0.00",
+      "count": 0,
+      "pct_of_credits": "0.00"
+    },
+    "refunds_reversals": {
+      "amount": "30992.00",
+      "count": 7,
+      "pct_of_credits": "2.05"
+    },
+    "loan_disbursals": {
+      "amount": "0.00",
+      "count": 0,
+      "pct_of_credits": "0.00"
+    },
+    "investment_income": {
+      "amount": "22913.52",
+      "count": 29,
+      "pct_of_credits": "1.52"
+    },
+    "interest": {
+      "amount": "79.04",
+      "count": 3,
+      "pct_of_credits": "0.01"
+    },
+    "pension": {
+      "amount": "0.00",
+      "count": 0,
+      "pct_of_credits": "0.00"
+    },
+    "cash_deposits": {
+      "amount": "35000.00",
+      "count": 1,
+      "pct_of_credits": "2.32"
+    },
+    "salary_like": {
+      "status": "NONE_IDENTIFIED",
+      "description": "No credits with salary-related narration were identified.",
+      "count": 0,
+      "total": "0.00",
+      "months": [],
+      "monthly_median": null,
+      "evidence": []
+    },
+    "recurring_credits": [
+      {
+        "occurrences": 6,
+        "months": [
+          "2026-01",
+          "2026-02",
+          "2026-03",
+          "2026-04",
+          "2026-05",
+          "2026-06"
+        ],
+        "month_count": 6,
+        "total": "162641.00",
+        "median_amount": "27617.50",
+        "min_amount": "24551.00",
+        "max_amount": "27620.00",
+        "amount_cv_pct": "4.22",
+        "typical_day_of_month": 26,
+        "first_date": "2026-01-24",
+        "last_date": "2026-06-26",
+        "source": "TEJAS FLEET SOLUTION",
+        "monthly_estimate": "27617.50",
+        "coverage_pct": "85.71",
+        "is_salary_labelled": false,
+        "evidence": [
+          {
+            "transaction_id": "T00259",
+            "date": "2026-01-24",
+            "amount": "27615.00",
+            "type": "CREDIT"
+          },
+          {
+            "transaction_id": "T00524",
+            "date": "2026-02-27",
+            "amount": "27615.00",
+            "type": "CREDIT"
+          },
+          {
+            "transaction_id": "T00709",
+            "date": "2026-03-26",
+            "amount": "27620.00",
+            "type": "CREDIT"
+          },
+          {
+            "transaction_id": "T00862",
+            "date": "2026-04-28",
+            "amount": "27620.00",
+            "type": "CREDIT"
+          },
+          {
+            "transaction_id": "T00964",
+            "date": "2026-05-26",
+            "amount": "27620.00",
+            "type": "CREDIT"
+          },
+          {
+            "transaction_id": "T01089",
+            "date": "2026-06-26",
+            "amount": "24551.00",
+            "type": "CREDIT"
+          }
+        ]
+      },
+      {
+        "occurrences": 6,
+        "months": [
+          "2026-01",
+          "2026-03",
+          "2026-04",
+          "2026-05",
+          "2026-06",
+          "2026-07"
+        ],
+        "month_count": 6,
+        "total": "60000.00",
+        "median_amount": "10000.00",
+        "min_amount": "10000.00",
+        "max_amount": "10000.00",
+        "amount_cv_pct": "0.00",
+        "typical_day_of_month": 18,
+        "first_date": "2026-01-13",
+        "last_date": "2026-07-15",
+        "source": "TEJAS FLEET SOLUTION",
+        "monthly_estimate": "10000.00",
+        "coverage_pct": "85.71",
+        "is_salary_labelled": false,
+        "evidence": [
+          {
+            "transaction_id": "T00142",
+            "date": "2026-01-13",
+            "amount": "10000.00",
+            "type": "CREDIT"
+          },
+          {
+            "transaction_id": "T00667",
+            "date": "2026-03-18",
+            "amount": "10000.00",
+            "type": "CREDIT"
+          },
+          {
+            "transaction_id": "T00826",
+            "date": "2026-04-18",
+            "amount": "10000.00",
+            "type": "CREDIT"
+          },
+          {
+            "transaction_id": "T00953",
+            "date": "2026-05-18",
+            "amount": "10000.00",
+            "type": "CREDIT"
+          },
+          {
+            "transaction_id": "T01045",
+            "date": "2026-06-11",
+            "amount": "10000.00",
+            "type": "CREDIT"
+          },
+          {
+            "transaction_id": "T01158",
+            "date": "2026-07-15",
+            "amount": "10000.00",
+            "type": "CREDIT"
+          }
+        ]
+      },
+      {
+        "occurrences": 3,
+        "months": [
+          "2026-03",
+          "2026-04",
+          "2026-05"
+        ],
+        "month_count": 3,
+        "total": "30000.00",
+        "median_amount": "10000.00",
+        "min_amount": "10000.00",
+        "max_amount": "10000.00",
+        "amount_cv_pct": "0.00",
+        "typical_day_of_month": 13,
+        "first_date": "2026-03-30",
+        "last_date": "2026-05-13",
+        "source": "ALICE BLUE FI N SER PVT LTD DSCNBA",
+        "monthly_estimate": "10000.00",
+        "coverage_pct": "42.86",
+        "is_salary_labelled": false,
+        "evidence": [
+          {
+            "transaction_id": "T00734",
+            "date": "2026-03-30",
+            "amount": "10000.00",
+            "type": "CREDIT"
+          },
+          {
+            "transaction_id": "T00741",
+            "date": "2026-04-02",
+            "amount": "10000.00",
+            "type": "CREDIT"
+          },
+          {
+            "transaction_id": "T00931",
+            "date": "2026-05-13",
+            "amount": "10000.00",
+            "type": "CREDIT"
+          }
+        ]
+      },
+      {
+        "occurrences": 4,
+        "months": [
+          "2026-03",
+          "2026-04",
+          "2026-05",
+          "2026-06"
+        ],
+        "month_count": 4,
+        "total": "7800.00",
+        "median_amount": "2000.00",
+        "min_amount": "1800.00",
+        "max_amount": "2000.00",
+        "amount_cv_pct": "4.44",
+        "typical_day_of_month": 16,
+        "first_date": "2026-03-16",
+        "last_date": "2026-06-02",
+        "source": "SUNIL KU",
+        "monthly_estimate": "2000.00",
+        "coverage_pct": "57.14",
+        "is_salary_labelled": false,
+        "evidence": [
+          {
+            "transaction_id": "T00650",
+            "date": "2026-03-16",
+            "amount": "1800.00",
+            "type": "CREDIT"
+          },
+          {
+            "transaction_id": "T00801",
+            "date": "2026-04-12",
+            "amount": "2000.00",
+            "type": "CREDIT"
+          },
+          {
+            "transaction_id": "T00955",
+            "date": "2026-05-18",
+            "amount": "2000.00",
+            "type": "CREDIT"
+          },
+          {
+            "transaction_id": "T01013",
+            "date": "2026-06-02",
+            "amount": "2000.00",
+            "type": "CREDIT"
+          }
+        ]
+      },
+      {
+        "occurrences": 4,
+        "months": [
+          "2026-03",
+          "2026-05",
+          "2026-07"
+        ],
+        "month_count": 3,
+        "total": "4000.00",
+        "median_amount": "1000.00",
+        "min_amount": "1000.00",
+        "max_amount": "1000.00",
+        "amount_cv_pct": "0.00",
+        "typical_day_of_month": 13,
+        "first_date": "2026-03-13",
+        "last_date": "2026-07-11",
+        "source": "SUNIL KU",
+        "monthly_estimate": "1000.00",
+        "coverage_pct": "42.86",
+        "is_salary_labelled": false,
+        "evidence": [
+          {
+            "transaction_id": "T00619",
+            "date": "2026-03-13",
+            "amount": "1000.00",
+            "type": "CREDIT"
+          },
+          {
+            "transaction_id": "T00730",
+            "date": "2026-03-29",
+            "amount": "1000.00",
+            "type": "CREDIT"
+          },
+          {
+            "transaction_id": "T00935",
+            "date": "2026-05-13",
+            "amount": "1000.00",
+            "type": "CREDIT"
+          },
+          {
+            "transaction_id": "T01156",
+            "date": "2026-07-11",
+            "amount": "1000.00",
+            "type": "CREDIT"
+          }
+        ]
+      },
+      {
+        "occurrences": 3,
+        "months": [
+          "2026-04",
+          "2026-05",
+          "2026-07"
+        ],
+        "month_count": 3,
+        "total": "3000.00",
+        "median_amount": "1000.00",
+        "min_amount": "1000.00",
+        "max_amount": "1000.00",
+        "amount_cv_pct": "0.00",
+        "typical_day_of_month": 10,
+        "first_date": "2026-04-10",
+        "last_date": "2026-07-20",
+        "source": "NAVEEN K",
+        "monthly_estimate": "1000.00",
+        "coverage_pct": "42.86",
+        "is_salary_labelled": false,
+        "evidence": [
+          {
+            "transaction_id": "T00782",
+            "date": "2026-04-10",
+            "amount": "1000.00",
+            "type": "CREDIT"
+          },
+          {
+            "transaction_id": "T00913",
+            "date": "2026-05-09",
+            "amount": "1000.00",
+            "type": "CREDIT"
+          },
+          {
+            "transaction_id": "T01194",
+            "date": "2026-07-20",
+            "amount": "1000.00",
+            "type": "CREDIT"
+          }
+        ]
+      }
+    ],
+    "top_income_sources": [
+      {
+        "source": "TEJAS FLEET SOLUTION",
+        "amount": "222641.00",
+        "count": 12,
+        "pct_of_credits": "14.76",
+        "type": "EXTERNAL"
+      },
+      {
+        "source": "SUNIL KU",
+        "amount": "194248.00",
+        "count": 24,
+        "pct_of_credits": "12.88",
+        "type": "EXTERNAL"
+      },
+      {
+        "source": "INDIA INFOLIN E FINANCE LTD",
+        "amount": "119836.00",
+        "count": 2,
+        "pct_of_credits": "7.94",
+        "type": "EXTERNAL"
+      },
+      {
+        "source": "AARITYA BROKING PRIVATE LIMITED DS",
+        "amount": "90593.18",
+        "count": 5,
+        "pct_of_credits": "6.01",
+        "type": "EXTERNAL"
+      },
+      {
+        "source": "ALICE BLUE FI N SER PVT LTD DSCNBA",
+        "amount": "75778.00",
+        "count": 9,
+        "pct_of_credits": "5.02",
+        "type": "EXTERNAL"
+      },
+      {
+        "source": "RAJESH S",
+        "amount": "62280.00",
+        "count": 2,
+        "pct_of_credits": "4.13",
+        "type": "EXTERNAL"
+      },
+      {
+        "source": "MUTHOOTFINCOR PLTD",
+        "amount": "61936.00",
+        "count": 2,
+        "pct_of_credits": "4.11",
+        "type": "EXTERNAL"
+      },
+      {
+        "source": "KRISHNAB",
+        "amount": "51716.00",
+        "count": 2,
+        "pct_of_credits": "3.43",
+        "type": "EXTERNAL"
+      },
+      {
+        "source": "WHIZDM FINANCE PRIVATE LIMITED DIS",
+        "amount": "45210.00",
+        "count": 1,
+        "pct_of_credits": "3.00",
+        "type": "EXTERNAL"
+      },
+      {
+        "source": "KRISHNABHI CONSULTANTS LLP",
+        "amount": "44136.00",
+        "count": 1,
+        "pct_of_credits": "2.93",
+        "type": "EXTERNAL"
+      }
+    ]
+  },
+  "expenses": {
+    "total_debits": "1511270.34",
+    "debit_count": 879,
+    "average_monthly_debits": "222245.64",
+    "categories": [
+      {
+        "category": "UPI_TRANSFER",
+        "label": "UPI transfer to individuals",
+        "amount": "1258730.02",
+        "count": 581,
+        "pct_of_debits": "83.29",
+        "monthly_average": "185107.36",
+        "average_confidence": 0.5
+      },
+      {
+        "category": "EMI_LOAN",
+        "label": "EMI / loan repayment",
+        "amount": "92909.00",
+        "count": 6,
+        "pct_of_debits": "6.15",
+        "monthly_average": "13663.09",
+        "average_confidence": 0.8
+      },
+      {
+        "category": "UPI_MERCHANT",
+        "label": "UPI merchant payment",
+        "amount": "58864.10",
+        "count": 91,
+        "pct_of_debits": "3.90",
+        "monthly_average": "8656.49",
+        "average_confidence": 0.55
+      },
+      {
+        "category": "INVESTMENT",
+        "label": "Investments",
+        "amount": "33700.00",
+        "count": 125,
+        "pct_of_debits": "2.23",
+        "monthly_average": "4955.88",
+        "average_confidence": 0.8
+      },
+      {
+        "category": "RETURN_CHARGES",
+        "label": "Return / bounce charges",
+        "amount": "31582.00",
+        "count": 9,
+        "pct_of_debits": "2.09",
+        "monthly_average": "4644.41",
+        "average_confidence": 0.9
+      },
+      {
+        "category": "CREDIT_CARD_PAYMENT",
+        "label": "Credit card payment",
+        "amount": "16450.00",
+        "count": 2,
+        "pct_of_debits": "1.09",
+        "monthly_average": "2419.12",
+        "average_confidence": 0.85
+      },
+      {
+        "category": "UTILITIES",
+        "label": "Utilities & bills",
+        "amount": "10605.38",
+        "count": 20,
+        "pct_of_debits": "0.70",
+        "monthly_average": "1559.61",
+        "average_confidence": 0.75
+      },
+      {
+        "category": "FUEL_TRANSPORT",
+        "label": "Fuel, transport & travel",
+        "amount": "3330.83",
+        "count": 25,
+        "pct_of_debits": "0.22",
+        "monthly_average": "489.83",
+        "average_confidence": 0.75
+      },
+      {
+        "category": "SHOPPING",
+        "label": "Shopping & groceries",
+        "amount": "1744.00",
+        "count": 4,
+        "pct_of_debits": "0.12",
+        "monthly_average": "256.47",
+        "average_confidence": 0.6
+      },
+      {
+        "category": "HEALTHCARE",
+        "label": "Healthcare",
+        "amount": "1093.00",
+        "count": 2,
+        "pct_of_debits": "0.07",
+        "monthly_average": "160.74",
+        "average_confidence": 0.7
+      },
+      {
+        "category": "EDUCATION",
+        "label": "Education",
+        "amount": "1000.00",
+        "count": 1,
+        "pct_of_debits": "0.07",
+        "monthly_average": "147.06",
+        "average_confidence": 0.7
+      },
+      {
+        "category": "FOOD_DINING",
+        "label": "Food & dining",
+        "amount": "790.01",
+        "count": 5,
+        "pct_of_debits": "0.05",
+        "monthly_average": "116.18",
+        "average_confidence": 0.7
+      },
+      {
+        "category": "BANK_CHARGES",
+        "label": "Bank charges",
+        "amount": "472.00",
+        "count": 8,
+        "pct_of_debits": "0.03",
+        "monthly_average": "69.41",
+        "average_confidence": 0.85
+      }
+    ],
+    "top_destinations": [
+      {
+        "destination": "AU SMALL",
+        "count": 9,
+        "amount": "163735.00",
+        "pct_of_debits": "10.83",
+        "type": "THIRD_PARTY"
+      },
+      {
+        "destination": "SUNIL KU",
+        "count": 34,
+        "amount": "162590.00",
+        "pct_of_debits": "10.76",
+        "type": "THIRD_PARTY"
+      },
+      {
+        "destination": "ALICE BL",
+        "count": 9,
+        "amount": "136800.00",
+        "pct_of_debits": "9.05",
+        "type": "THIRD_PARTY"
+      },
+      {
+        "destination": "AARITYA",
+        "count": 4,
+        "amount": "102000.00",
+        "pct_of_debits": "6.75",
+        "type": "THIRD_PARTY"
+      },
+      {
+        "destination": "HARSHVAR",
+        "count": 4,
+        "amount": "89180.00",
+        "pct_of_debits": "5.90",
+        "type": "THIRD_PARTY"
+      },
+      {
+        "destination": "DEEPIKA",
+        "count": 6,
+        "amount": "89000.00",
+        "pct_of_debits": "5.89",
+        "type": "THIRD_PARTY"
+      },
+      {
+        "destination": "PARVE",
+        "count": 4,
+        "amount": "65150.00",
+        "pct_of_debits": "4.31",
+        "type": "THIRD_PARTY"
+      },
+      {
+        "destination": "IIFL",
+        "count": 3,
+        "amount": "56117.00",
+        "pct_of_debits": "3.71",
+        "type": "THIRD_PARTY"
+      },
+      {
+        "destination": "CHOLAMAN",
+        "count": 2,
+        "amount": "45277.00",
+        "pct_of_debits": "3.00",
+        "type": "THIRD_PARTY"
+      },
+      {
+        "destination": "PARVEEN",
+        "count": 7,
+        "amount": "42040.00",
+        "pct_of_debits": "2.78",
+        "type": "THIRD_PARTY"
+      }
+    ],
+    "outflow_modes": [
+      {
+        "channel": "UPI",
+        "label": "UPI",
+        "count": 862,
+        "amount": "1479216.34",
+        "pct": "97.88"
+      },
+      {
+        "channel": "NACH",
+        "label": "NACH / ECS / auto-debit",
+        "count": 9,
+        "amount": "31582.00",
+        "pct": "2.09"
+      },
+      {
+        "channel": "CARD",
+        "label": "Card / POS",
+        "count": 2,
+        "amount": "295.00",
+        "pct": "0.02"
+      },
+      {
+        "channel": "CHARGES",
+        "label": "Bank charges",
+        "count": 6,
+        "amount": "177.00",
+        "pct": "0.01"
+      }
+    ],
+    "inflow_modes": [
+      {
+        "channel": "UPI",
+        "label": "UPI",
+        "count": 226,
+        "amount": "563371.38",
+        "pct": "37.35"
+      },
+      {
+        "channel": "NEFT",
+        "label": "NEFT",
+        "count": 28,
+        "amount": "461986.42",
+        "pct": "30.63"
+      },
+      {
+        "channel": "IMPS",
+        "label": "IMPS",
+        "count": 65,
+        "amount": "416894.45",
+        "pct": "27.64"
+      },
+      {
+        "channel": "CASH",
+        "label": "Cash deposit",
+        "count": 1,
+        "amount": "35000.00",
+        "pct": "2.32"
+      },
+      {
+        "channel": "NACH",
+        "label": "NACH / ECS / auto-debit",
+        "count": 7,
+        "amount": "30992.00",
+        "pct": "2.05"
+      },
+      {
+        "channel": "INTEREST",
+        "label": "Interest",
+        "count": 3,
+        "amount": "79.04",
+        "pct": "0.01"
+      }
+    ],
+    "largest_debits": [
+      {
+        "transaction_id": "T01127",
+        "date": "2026-07-02",
+        "amount": "75000.00",
+        "type": "DEBIT",
+        "counterparty": "AARITYA",
+        "category": "UPI_TRANSFER"
+      },
+      {
+        "transaction_id": "T00629",
+        "date": "2026-03-14",
+        "amount": "60000.00",
+        "type": "DEBIT",
+        "counterparty": "PARVE",
+        "category": "UPI_TRANSFER"
+      },
+      {
+        "transaction_id": "T00699",
+        "date": "2026-03-25",
+        "amount": "40000.00",
+        "type": "DEBIT",
+        "counterparty": "ALICE BL",
+        "category": "UPI_TRANSFER"
+      },
+      {
+        "transaction_id": "T00211",
+        "date": "2026-01-20",
+        "amount": "35000.00",
+        "type": "DEBIT",
+        "counterparty": "IIFL",
+        "category": "EMI_LOAN"
+      },
+      {
+        "transaction_id": "T01145",
+        "date": "2026-07-08",
+        "amount": "31000.00",
+        "type": "DEBIT",
+        "counterparty": "DEEPIKA",
+        "category": "UPI_TRANSFER"
+      },
+      {
+        "transaction_id": "T00228",
+        "date": "2026-01-21",
+        "amount": "30000.00",
+        "type": "DEBIT",
+        "counterparty": "IIFL FIN",
+        "category": "EMI_LOAN"
+      },
+      {
+        "transaction_id": "T00761",
+        "date": "2026-04-06",
+        "amount": "25000.00",
+        "type": "DEBIT",
+        "counterparty": "ALICE BL",
+        "category": "UPI_TRANSFER"
+      },
+      {
+        "transaction_id": "T00969",
+        "date": "2026-05-27",
+        "amount": "25000.00",
+        "type": "DEBIT",
+        "counterparty": "SUNIL KU",
+        "category": "UPI_TRANSFER"
+      },
+      {
+        "transaction_id": "T00843",
+        "date": "2026-04-21",
+        "amount": "23000.00",
+        "type": "DEBIT",
+        "counterparty": "CHOLAMAN",
+        "category": "UPI_TRANSFER"
+      },
+      {
+        "transaction_id": "T00949",
+        "date": "2026-05-15",
+        "amount": "23000.00",
+        "type": "DEBIT",
+        "counterparty": "SUNIL KU",
+        "category": "UPI_TRANSFER"
+      }
+    ],
+    "insights": [
+      "Largest outflow category: UPI transfer to individuals (83.29% of debits)."
+    ]
+  },
+  "emi": {
+    "emi_detected": false,
+    "recurring_obligations": [],
+    "other_repayment_debits": [
+      {
+        "lender_or_payee": "IIFL",
+        "type": "LOAN_EMI",
+        "basis": "emi_loan_keyword",
+        "confidence": 0.8,
+        "estimated_monthly_amount": "35000.00",
+        "occurrences": 1,
+        "months_seen": 1,
+        "total_paid": "35000.00",
+        "first_date": "2026-01-20",
+        "last_date": "2026-01-20",
+        "typical_day_of_month": 20,
+        "status": "NOT_SEEN_RECENTLY",
+        "evidence_level": "PROBABLE",
+        "evidence": [
+          {
+            "transaction_id": "T00211",
+            "date": "2026-01-20",
+            "amount": "35000.00",
+            "type": "DEBIT"
+          }
+        ]
+      },
+      {
+        "lender_or_payee": "IIFL FIN",
+        "type": "LOAN_EMI",
+        "basis": "emi_loan_keyword",
+        "confidence": 0.8,
+        "estimated_monthly_amount": "30000.00",
+        "occurrences": 1,
+        "months_seen": 1,
+        "total_paid": "30000.00",
+        "first_date": "2026-01-21",
+        "last_date": "2026-01-21",
+        "typical_day_of_month": 21,
+        "status": "NOT_SEEN_RECENTLY",
+        "evidence_level": "PROBABLE",
+        "evidence": [
+          {
+            "transaction_id": "T00228",
+            "date": "2026-01-21",
+            "amount": "30000.00",
+            "type": "DEBIT"
+          }
+        ]
+      },
+      {
+        "lender_or_payee": "IIFL",
+        "type": "LOAN_EMI",
+        "basis": "emi_loan_keyword",
+        "confidence": 0.8,
+        "estimated_monthly_amount": "16117.00",
+        "occurrences": 1,
+        "months_seen": 1,
+        "total_paid": "16117.00",
+        "first_date": "2026-03-14",
+        "last_date": "2026-03-14",
+        "typical_day_of_month": 14,
+        "status": "NOT_SEEN_RECENTLY",
+        "evidence_level": "PROBABLE",
+        "evidence": [
+          {
+            "transaction_id": "T00627",
+            "date": "2026-03-14",
+            "amount": "16117.00",
+            "type": "DEBIT"
+          }
+        ]
+      },
+      {
+        "lender_or_payee": "ICICI BA",
+        "type": "CREDIT_CARD",
+        "basis": "credit_card_payment",
+        "confidence": 0.85,
+        "estimated_monthly_amount": "10000.00",
+        "occurrences": 1,
+        "months_seen": 1,
+        "total_paid": "10000.00",
+        "first_date": "2026-01-11",
+        "last_date": "2026-01-11",
+        "typical_day_of_month": 11,
+        "status": "NOT_SEEN_RECENTLY",
+        "evidence_level": "CARD_PAYMENT",
+        "evidence": [
+          {
+            "transaction_id": "T00124",
+            "date": "2026-01-11",
+            "amount": "10000.00",
+            "type": "DEBIT"
+          }
+        ]
+      },
+      {
+        "lender_or_payee": "ICICI BA",
+        "type": "CREDIT_CARD",
+        "basis": "credit_card_payment",
+        "confidence": 0.85,
+        "estimated_monthly_amount": "6450.00",
+        "occurrences": 1,
+        "months_seen": 1,
+        "total_paid": "6450.00",
+        "first_date": "2026-03-14",
+        "last_date": "2026-03-14",
+        "typical_day_of_month": 14,
+        "status": "NOT_SEEN_RECENTLY",
+        "evidence_level": "CARD_PAYMENT",
+        "evidence": [
+          {
+            "transaction_id": "T00633",
+            "date": "2026-03-14",
+            "amount": "6450.00",
+            "type": "DEBIT"
+          }
+        ]
+      },
+      {
+        "lender_or_payee": "IIFL",
+        "type": "LOAN_EMI",
+        "basis": "emi_loan_keyword",
+        "confidence": 0.8,
+        "estimated_monthly_amount": "5000.00",
+        "occurrences": 1,
+        "months_seen": 1,
+        "total_paid": "5000.00",
+        "first_date": "2026-01-20",
+        "last_date": "2026-01-20",
+        "typical_day_of_month": 20,
+        "status": "NOT_SEEN_RECENTLY",
+        "evidence_level": "PROBABLE",
+        "evidence": [
+          {
+            "transaction_id": "T00213",
+            "date": "2026-01-20",
+            "amount": "5000.00",
+            "type": "DEBIT"
+          }
+        ]
+      },
+      {
+        "lender_or_payee": "MUTHOOT",
+        "type": "LOAN_EMI",
+        "basis": "emi_loan_keyword",
+        "confidence": 0.8,
+        "estimated_monthly_amount": "4410.00",
+        "occurrences": 1,
+        "months_seen": 1,
+        "total_paid": "4410.00",
+        "first_date": "2026-01-10",
+        "last_date": "2026-01-10",
+        "typical_day_of_month": 10,
+        "status": "NOT_SEEN_RECENTLY",
+        "evidence_level": "PROBABLE",
+        "evidence": [
+          {
+            "transaction_id": "T00107",
+            "date": "2026-01-10",
+            "amount": "4410.00",
+            "type": "DEBIT"
+          }
+        ]
+      },
+      {
+        "lender_or_payee": "MUTHOOT",
+        "type": "LOAN_EMI",
+        "basis": "emi_loan_keyword",
+        "confidence": 0.8,
+        "estimated_monthly_amount": "2382.00",
+        "occurrences": 1,
+        "months_seen": 1,
+        "total_paid": "2382.00",
+        "first_date": "2026-02-16",
+        "last_date": "2026-02-16",
+        "typical_day_of_month": 16,
+        "status": "NOT_SEEN_RECENTLY",
+        "evidence_level": "PROBABLE",
+        "evidence": [
+          {
+            "transaction_id": "T00466",
+            "date": "2026-02-16",
+            "amount": "2382.00",
+            "type": "DEBIT"
+          }
+        ]
+      }
+    ],
+    "active_recurring_loan_count": 0,
+    "estimated_monthly_emi": "0.00",
+    "monthly_emi_status": "NONE_DETECTED",
+    "estimated_emi_to_income_pct": null,
+    "foir_pct": null,
+    "foir_status": "NO_RECURRING_EMI_DETECTED",
+    "foir_probable_only_pct": null,
+    "foir_confidence": null,
+    "foir_income_used": "202410.55",
+    "foir_income_basis": "Median monthly external inflow over full months (excludes own-account transfers, refunds, loan disbursals and investment redemptions; includes cash deposits).",
+    "foir_notes": [
+      "FOIR = estimated monthly EMI ÷ estimated monthly income × 100.",
+      "Only debits from this account are visible; obligations paid from other accounts are not included."
+    ],
+    "recurring_loan_obligation_count": 0,
+    "loan_repayment_debits": {
+      "count": 6,
+      "amount": "92909.00"
+    },
+    "credit_card_payments": {
+      "count": 2,
+      "amount": "16450.00"
+    },
+    "total_repayment_debits": "109359.00",
+    "note": "Obligations are estimated from recurring debits only. They are not verified loan liabilities; outstanding principal, interest rate and sanctioned amount cannot be derived from a bank statement."
+  },
+  "bounces": {
+    "confirmed_event_count": 16,
+    "confirmed_incident_count": 9,
+    "incident_dates": [
+      "2026-05-03",
+      "2026-05-07",
+      "2026-05-31",
+      "2026-06-03",
+      "2026-06-07",
+      "2026-07-03",
+      "2026-07-07",
+      "2026-07-24",
+      "2026-07-27"
+    ],
+    "nach_ecs_return_count": 16,
+    "cheque_return_count": 0,
+    "returned_payment_count": 7,
+    "returned_payment_amount": "30992.00",
+    "return_charge_count": 2,
+    "return_charges_total": "590.00",
+    "nach_ecs_related_count": 16,
+    "unclear_events": [],
+    "unclear_count": 0,
+    "confirmed_events": [
+      {
+        "transaction_id": "T00890",
+        "date": "2026-05-03",
+        "amount": "5400.00",
+        "type": "CREDIT",
+        "kind": "RETURNED_PAYMENT_CREDIT",
+        "status": "CONFIRMED",
+        "channel": "NACH",
+        "nach_ecs": true,
+        "cheque": false
+      },
+      {
+        "transaction_id": "T00891",
+        "date": "2026-05-03",
+        "amount": "5400.00",
+        "type": "DEBIT",
+        "kind": "RETURN_DEBIT",
+        "status": "CONFIRMED",
+        "channel": "NACH",
+        "nach_ecs": true,
+        "cheque": false
+      },
+      {
+        "transaction_id": "T00904",
+        "date": "2026-05-07",
+        "amount": "5400.00",
+        "type": "CREDIT",
+        "kind": "RETURNED_PAYMENT_CREDIT",
+        "status": "CONFIRMED",
+        "channel": "NACH",
+        "nach_ecs": true,
+        "cheque": false
+      },
+      {
+        "transaction_id": "T00905",
+        "date": "2026-05-07",
+        "amount": "5400.00",
+        "type": "DEBIT",
+        "kind": "RETURN_DEBIT",
+        "status": "CONFIRMED",
+        "channel": "NACH",
+        "nach_ecs": true,
+        "cheque": false
+      },
+      {
+        "transaction_id": "T01000",
+        "date": "2026-05-31",
+        "amount": "400.00",
+        "type": "CREDIT",
+        "kind": "RETURNED_PAYMENT_CREDIT",
+        "status": "CONFIRMED",
+        "channel": "NACH",
+        "nach_ecs": true,
+        "cheque": false
+      },
+      {
+        "transaction_id": "T01001",
+        "date": "2026-05-31",
+        "amount": "400.00",
+        "type": "DEBIT",
+        "kind": "RETURN_DEBIT",
+        "status": "CONFIRMED",
+        "channel": "NACH",
+        "nach_ecs": true,
+        "cheque": false
+      },
+      {
+        "transaction_id": "T01015",
+        "date": "2026-06-03",
+        "amount": "4948.00",
+        "type": "CREDIT",
+        "kind": "RETURNED_PAYMENT_CREDIT",
+        "status": "CONFIRMED",
+        "channel": "NACH",
+        "nach_ecs": true,
+        "cheque": false
+      },
+      {
+        "transaction_id": "T01016",
+        "date": "2026-06-03",
+        "amount": "4948.00",
+        "type": "DEBIT",
+        "kind": "RETURN_DEBIT",
+        "status": "CONFIRMED",
+        "channel": "NACH",
+        "nach_ecs": true,
+        "cheque": false
+      },
+      {
+        "transaction_id": "T01036",
+        "date": "2026-06-07",
+        "amount": "4948.00",
+        "type": "CREDIT",
+        "kind": "RETURNED_PAYMENT_CREDIT",
+        "status": "CONFIRMED",
+        "channel": "NACH",
+        "nach_ecs": true,
+        "cheque": false
+      },
+      {
+        "transaction_id": "T01037",
+        "date": "2026-06-07",
+        "amount": "4948.00",
+        "type": "DEBIT",
+        "kind": "RETURN_DEBIT",
+        "status": "CONFIRMED",
+        "channel": "NACH",
+        "nach_ecs": true,
+        "cheque": false
+      },
+      {
+        "transaction_id": "T01133",
+        "date": "2026-07-03",
+        "amount": "4948.00",
+        "type": "CREDIT",
+        "kind": "RETURNED_PAYMENT_CREDIT",
+        "status": "CONFIRMED",
+        "channel": "NACH",
+        "nach_ecs": true,
+        "cheque": false
+      },
+      {
+        "transaction_id": "T01134",
+        "date": "2026-07-03",
+        "amount": "4948.00",
+        "type": "DEBIT",
+        "kind": "RETURN_DEBIT",
+        "status": "CONFIRMED",
+        "channel": "NACH",
+        "nach_ecs": true,
+        "cheque": false
+      },
+      {
+        "transaction_id": "T01142",
+        "date": "2026-07-07",
+        "amount": "4948.00",
+        "type": "CREDIT",
+        "kind": "RETURNED_PAYMENT_CREDIT",
+        "status": "CONFIRMED",
+        "channel": "NACH",
+        "nach_ecs": true,
+        "cheque": false
+      },
+      {
+        "transaction_id": "T01143",
+        "date": "2026-07-07",
+        "amount": "4948.00",
+        "type": "DEBIT",
+        "kind": "RETURN_DEBIT",
+        "status": "CONFIRMED",
+        "channel": "NACH",
+        "nach_ecs": true,
+        "cheque": false
+      },
+      {
+        "transaction_id": "T01201",
+        "date": "2026-07-24",
+        "amount": "295.00",
+        "type": "DEBIT",
+        "kind": "RETURN_CHARGE",
+        "status": "CONFIRMED",
+        "channel": "NACH",
+        "nach_ecs": true,
+        "cheque": false
+      },
+      {
+        "transaction_id": "T01205",
+        "date": "2026-07-27",
+        "amount": "295.00",
+        "type": "DEBIT",
+        "kind": "RETURN_CHARGE",
+        "status": "CONFIRMED",
+        "channel": "NACH",
+        "nach_ecs": true,
+        "cheque": false
+      }
+    ],
+    "pattern_based_reversals": [
+      {
+        "status": "POSSIBLE",
+        "debit": {
+          "transaction_id": "T00242",
+          "date": "2026-01-23",
+          "amount": "100.00",
+          "type": "DEBIT"
+        },
+        "credit": {
+          "transaction_id": "T00285",
+          "date": "2026-01-26",
+          "amount": "100.00",
+          "type": "CREDIT"
+        },
+        "counterparty": "MMTCPAMP",
+        "same_counterparty": false
+      },
+      {
+        "status": "POSSIBLE",
+        "debit": {
+          "transaction_id": "T00891",
+          "date": "2026-05-03",
+          "amount": "5400.00",
+          "type": "DEBIT"
+        },
+        "credit": {
+          "transaction_id": "T00890",
+          "date": "2026-05-03",
+          "amount": "5400.00",
+          "type": "CREDIT"
+        },
+        "counterparty": "BOUNCE",
+        "same_counterparty": true
+      },
+      {
+        "status": "POSSIBLE",
+        "debit": {
+          "transaction_id": "T00905",
+          "date": "2026-05-07",
+          "amount": "5400.00",
+          "type": "DEBIT"
+        },
+        "credit": {
+          "transaction_id": "T00904",
+          "date": "2026-05-07",
+          "amount": "5400.00",
+          "type": "CREDIT"
+        },
+        "counterparty": "BOUNCE",
+        "same_counterparty": true
+      },
+      {
+        "status": "POSSIBLE",
+        "debit": {
+          "transaction_id": "T01001",
+          "date": "2026-05-31",
+          "amount": "400.00",
+          "type": "DEBIT"
+        },
+        "credit": {
+          "transaction_id": "T01000",
+          "date": "2026-05-31",
+          "amount": "400.00",
+          "type": "CREDIT"
+        },
+        "counterparty": "BOUNCE",
+        "same_counterparty": true
+      },
+      {
+        "status": "POSSIBLE",
+        "debit": {
+          "transaction_id": "T01016",
+          "date": "2026-06-03",
+          "amount": "4948.00",
+          "type": "DEBIT"
+        },
+        "credit": {
+          "transaction_id": "T01015",
+          "date": "2026-06-03",
+          "amount": "4948.00",
+          "type": "CREDIT"
+        },
+        "counterparty": "BOUNCE",
+        "same_counterparty": true
+      },
+      {
+        "status": "POSSIBLE",
+        "debit": {
+          "transaction_id": "T01037",
+          "date": "2026-06-07",
+          "amount": "4948.00",
+          "type": "DEBIT"
+        },
+        "credit": {
+          "transaction_id": "T01036",
+          "date": "2026-06-07",
+          "amount": "4948.00",
+          "type": "CREDIT"
+        },
+        "counterparty": "BOUNCE",
+        "same_counterparty": true
+      },
+      {
+        "status": "POSSIBLE",
+        "debit": {
+          "transaction_id": "T01134",
+          "date": "2026-07-03",
+          "amount": "4948.00",
+          "type": "DEBIT"
+        },
+        "credit": {
+          "transaction_id": "T01133",
+          "date": "2026-07-03",
+          "amount": "4948.00",
+          "type": "CREDIT"
+        },
+        "counterparty": "BOUNCE",
+        "same_counterparty": true
+      },
+      {
+        "status": "POSSIBLE",
+        "debit": {
+          "transaction_id": "T01143",
+          "date": "2026-07-07",
+          "amount": "4948.00",
+          "type": "DEBIT"
+        },
+        "credit": {
+          "transaction_id": "T01142",
+          "date": "2026-07-07",
+          "amount": "4948.00",
+          "type": "CREDIT"
+        },
+        "counterparty": "BOUNCE",
+        "same_counterparty": true
+      }
+    ],
+    "pattern_based_count": 8,
+    "events_by_month": {
+      "2026-05": 6,
+      "2026-06": 4,
+      "2026-07": 6
+    },
+    "note": "Confirmed events are based on explicit narration. Pattern-based reversals are indicative only. A return charge alone does not establish which obligation was missed or prove a loan default."
+  },
+  "cashflow": {
+    "credit_to_debit_ratio": "1.00",
+    "net_cash_flow": "-2947.05",
+    "surplus_months": [
+      "2026-02",
+      "2026-04",
+      "2026-06",
+      "2026-07"
+    ],
+    "deficit_months": [
+      "2026-01",
+      "2026-03",
+      "2026-05"
+    ],
+    "large_transactions": [
+      {
+        "transaction_id": "T01126",
+        "date": "2026-07-02",
+        "amount": "75000.00",
+        "type": "CREDIT",
+        "counterparty": "SUNIL KU",
+        "threshold": "50000.00",
+        "multiple_of_median": "150.00"
+      },
+      {
+        "transaction_id": "T01127",
+        "date": "2026-07-02",
+        "amount": "75000.00",
+        "type": "DEBIT",
+        "counterparty": "AARITYA",
+        "threshold": "50000.00",
+        "multiple_of_median": "373.13"
+      },
+      {
+        "transaction_id": "T00628",
+        "date": "2026-03-14",
+        "amount": "73455.00",
+        "type": "CREDIT",
+        "counterparty": "INDIA INFOLIN E FINANCE LTD",
+        "threshold": "50000.00",
+        "multiple_of_median": "146.91"
+      },
+      {
+        "transaction_id": "T00629",
+        "date": "2026-03-14",
+        "amount": "60000.00",
+        "type": "DEBIT",
+        "counterparty": "PARVE",
+        "threshold": "50000.00",
+        "multiple_of_median": "298.51"
+      },
+      {
+        "transaction_id": "T00106",
+        "date": "2026-01-10",
+        "amount": "54575.00",
+        "type": "CREDIT",
+        "counterparty": "MUTHOOTFINCOR PLTD",
+        "threshold": "50000.00",
+        "multiple_of_median": "109.15"
+      }
+    ],
+    "large_transaction_count": 5,
+    "top_source_share_pct": "14.76",
+    "top3_source_share_pct": "35.58",
+    "self_transfer_in": "0.00",
+    "self_transfer_in_pct": "0.00",
+    "self_transfer_out": "0.00",
+    "self_transfer_out_pct": "0.00",
+    "cash_withdrawals": "0.00",
+    "cash_withdrawal_pct_of_debits": "0.00",
+    "cash_withdrawal_count": 0,
+    "cash_deposits": "35000.00",
+    "cash_deposit_pct_of_credits": "2.32",
+    "cash_deposit_count": 1,
+    "pass_through_events": [
+      {
+        "credit": {
+          "transaction_id": "T00106",
+          "date": "2026-01-10",
+          "amount": "54575.00",
+          "type": "CREDIT"
+        },
+        "outflow_within_1_day": "83842.00",
+        "outflow_pct": "153.63",
+        "debit_ids": [
+          "T00102",
+          "T00103",
+          "T00104",
+          "T00105",
+          "T00107",
+          "T00108",
+          "T00109",
+          "T00110",
+          "T00111",
+          "T00112",
+          "T00113",
+          "T00114",
+          "T00115",
+          "T00116",
+          "T00117",
+          "T00118",
+          "T00119",
+          "T00120",
+          "T00121",
+          "T00122"
+        ]
+      },
+      {
+        "credit": {
+          "transaction_id": "T00628",
+          "date": "2026-03-14",
+          "amount": "73455.00",
+          "type": "CREDIT"
+        },
+        "outflow_within_1_day": "108959.02",
+        "outflow_pct": "148.33",
+        "debit_ids": [
+          "T00627",
+          "T00629",
+          "T00630",
+          "T00631",
+          "T00632",
+          "T00633",
+          "T00634",
+          "T00635",
+          "T00636",
+          "T00637",
+          "T00638",
+          "T00639",
+          "T00640",
+          "T00641",
+          "T00642",
+          "T00643",
+          "T00644",
+          "T00645"
+        ]
+      },
+      {
+        "credit": {
+          "transaction_id": "T01126",
+          "date": "2026-07-02",
+          "amount": "75000.00",
+          "type": "CREDIT"
+        },
+        "outflow_within_1_day": "82069.00",
+        "outflow_pct": "109.43",
+        "debit_ids": [
+          "T01124",
+          "T01125",
+          "T01127",
+          "T01129",
+          "T01130",
+          "T01131",
+          "T01132",
+          "T01134",
+          "T01137"
+        ]
+      }
+    ],
+    "pass_through_count": 3,
+    "round_trip_events": [
+      {
+        "counterparty": "SUNIL KU",
+        "out": {
+          "transaction_id": "T00736",
+          "date": "2026-03-30",
+          "amount": "1000.00",
+          "type": "DEBIT"
+        },
+        "in": {
+          "transaction_id": "T00730",
+          "date": "2026-03-29",
+          "amount": "1000.00",
+          "type": "CREDIT"
+        },
+        "is_self": false
+      },
+      {
+        "counterparty": "SUNIL KU",
+        "out": {
+          "transaction_id": "T00949",
+          "date": "2026-05-15",
+          "amount": "23000.00",
+          "type": "DEBIT"
+        },
+        "in": {
+          "transaction_id": "T00933",
+          "date": "2026-05-13",
+          "amount": "23000.00",
+          "type": "CREDIT"
+        },
+        "is_self": false
+      },
+      {
+        "counterparty": "SUNIL KU",
+        "out": {
+          "transaction_id": "T00951",
+          "date": "2026-05-16",
+          "amount": "1000.00",
+          "type": "DEBIT"
+        },
+        "in": {
+          "transaction_id": "T00935",
+          "date": "2026-05-13",
+          "amount": "1000.00",
+          "type": "CREDIT"
+        },
+        "is_self": false
+      },
+      {
+        "counterparty": "SUNIL KU",
+        "out": {
+          "transaction_id": "T00957",
+          "date": "2026-05-18",
+          "amount": "2000.00",
+          "type": "DEBIT"
+        },
+        "in": {
+          "transaction_id": "T00955",
+          "date": "2026-05-18",
+          "amount": "2000.00",
+          "type": "CREDIT"
+        },
+        "is_self": false
+      },
+      {
+        "counterparty": "SUNIL KU",
+        "out": {
+          "transaction_id": "T00991",
+          "date": "2026-05-29",
+          "amount": "20000.00",
+          "type": "DEBIT"
+        },
+        "in": {
+          "transaction_id": "T00970",
+          "date": "2026-05-27",
+          "amount": "20000.00",
+          "type": "CREDIT"
+        },
+        "is_self": false
+      },
+      {
+        "counterparty": "SUNIL KU",
+        "out": {
+          "transaction_id": "T01063",
+          "date": "2026-06-19",
+          "amount": "3500.00",
+          "type": "DEBIT"
+        },
+        "in": {
+          "transaction_id": "T01062",
+          "date": "2026-06-19",
+          "amount": "3500.00",
+          "type": "CREDIT"
+        },
+        "is_self": false
+      },
+      {
+        "counterparty": "BOUNCE",
+        "out": {
+          "transaction_id": "T00891",
+          "date": "2026-05-03",
+          "amount": "5400.00",
+          "type": "DEBIT"
+        },
+        "in": {
+          "transaction_id": "T00890",
+          "date": "2026-05-03",
+          "amount": "5400.00",
+          "type": "CREDIT"
+        },
+        "is_self": false
+      },
+      {
+        "counterparty": "BOUNCE",
+        "out": {
+          "transaction_id": "T00905",
+          "date": "2026-05-07",
+          "amount": "5400.00",
+          "type": "DEBIT"
+        },
+        "in": {
+          "transaction_id": "T00904",
+          "date": "2026-05-07",
+          "amount": "5400.00",
+          "type": "CREDIT"
+        },
+        "is_self": false
+      },
+      {
+        "counterparty": "BOUNCE",
+        "out": {
+          "transaction_id": "T01016",
+          "date": "2026-06-03",
+          "amount": "4948.00",
+          "type": "DEBIT"
+        },
+        "in": {
+          "transaction_id": "T01015",
+          "date": "2026-06-03",
+          "amount": "4948.00",
+          "type": "CREDIT"
+        },
+        "is_self": false
+      },
+      {
+        "counterparty": "BOUNCE",
+        "out": {
+          "transaction_id": "T01037",
+          "date": "2026-06-07",
+          "amount": "4948.00",
+          "type": "DEBIT"
+        },
+        "in": {
+          "transaction_id": "T01036",
+          "date": "2026-06-07",
+          "amount": "4948.00",
+          "type": "CREDIT"
+        },
+        "is_self": false
+      },
+      {
+        "counterparty": "BOUNCE",
+        "out": {
+          "transaction_id": "T01134",
+          "date": "2026-07-03",
+          "amount": "4948.00",
+          "type": "DEBIT"
+        },
+        "in": {
+          "transaction_id": "T01133",
+          "date": "2026-07-03",
+          "amount": "4948.00",
+          "type": "CREDIT"
+        },
+        "is_self": false
+      },
+      {
+        "counterparty": "BOUNCE",
+        "out": {
+          "transaction_id": "T01143",
+          "date": "2026-07-07",
+          "amount": "4948.00",
+          "type": "DEBIT"
+        },
+        "in": {
+          "transaction_id": "T01142",
+          "date": "2026-07-07",
+          "amount": "4948.00",
+          "type": "CREDIT"
+        },
+        "is_self": false
+      }
+    ],
+    "round_trip_count": 12,
+    "volume_changes": [],
+    "monthly_cash_trend": [
+      {
+        "month": "2026-01",
+        "cash_withdrawals": "0.00",
+        "cash_deposits": "35000.00"
+      },
+      {
+        "month": "2026-02",
+        "cash_withdrawals": "0.00",
+        "cash_deposits": "0.00"
+      },
+      {
+        "month": "2026-03",
+        "cash_withdrawals": "0.00",
+        "cash_deposits": "0.00"
+      },
+      {
+        "month": "2026-04",
+        "cash_withdrawals": "0.00",
+        "cash_deposits": "0.00"
+      },
+      {
+        "month": "2026-05",
+        "cash_withdrawals": "0.00",
+        "cash_deposits": "0.00"
+      },
+      {
+        "month": "2026-06",
+        "cash_withdrawals": "0.00",
+        "cash_deposits": "0.00"
+      },
+      {
+        "month": "2026-07",
+        "cash_withdrawals": "0.00",
+        "cash_deposits": "0.00"
+      }
+    ]
+  },
+  "risk_indicators": [
+    {
+      "code": "LOW_BALANCE_FREQUENCY",
+      "severity": "HIGH",
+      "title": "Frequent low balances",
+      "description": "End-of-day balance was below ₹1,000 on 122 of 208 days (58.65%).",
+      "evidence": [
+        {
+          "min_eod_balance": "0.05",
+          "min_eod_date": "2026-06-05"
+        }
+      ],
+      "confidence": 0.9,
+      "limitations": [
+        "Intraday balances may differ from end-of-day balances.",
+        "Derived from bank statement data only; not verified against other documents."
+      ]
+    },
+    {
+      "code": "PAYMENT_RETURN_EVIDENCE",
+      "severity": "HIGH",
+      "title": "Returned payments / return charges",
+      "description": "16 transaction(s) explicitly reference a return, bounce or return charge (2 charge(s), ₹590.00).",
+      "evidence": [
+        {
+          "transaction_id": "T00890",
+          "date": "2026-05-03",
+          "amount": "5400.00",
+          "type": "CREDIT",
+          "kind": "RETURNED_PAYMENT_CREDIT",
+          "status": "CONFIRMED",
+          "channel": "NACH",
+          "nach_ecs": true,
+          "cheque": false
+        },
+        {
+          "transaction_id": "T00891",
+          "date": "2026-05-03",
+          "amount": "5400.00",
+          "type": "DEBIT",
+          "kind": "RETURN_DEBIT",
+          "status": "CONFIRMED",
+          "channel": "NACH",
+          "nach_ecs": true,
+          "cheque": false
+        },
+        {
+          "transaction_id": "T00904",
+          "date": "2026-05-07",
+          "amount": "5400.00",
+          "type": "CREDIT",
+          "kind": "RETURNED_PAYMENT_CREDIT",
+          "status": "CONFIRMED",
+          "channel": "NACH",
+          "nach_ecs": true,
+          "cheque": false
+        },
+        {
+          "transaction_id": "T00905",
+          "date": "2026-05-07",
+          "amount": "5400.00",
+          "type": "DEBIT",
+          "kind": "RETURN_DEBIT",
+          "status": "CONFIRMED",
+          "channel": "NACH",
+          "nach_ecs": true,
+          "cheque": false
+        },
+        {
+          "transaction_id": "T01000",
+          "date": "2026-05-31",
+          "amount": "400.00",
+          "type": "CREDIT",
+          "kind": "RETURNED_PAYMENT_CREDIT",
+          "status": "CONFIRMED",
+          "channel": "NACH",
+          "nach_ecs": true,
+          "cheque": false
+        },
+        {
+          "transaction_id": "T01001",
+          "date": "2026-05-31",
+          "amount": "400.00",
+          "type": "DEBIT",
+          "kind": "RETURN_DEBIT",
+          "status": "CONFIRMED",
+          "channel": "NACH",
+          "nach_ecs": true,
+          "cheque": false
+        },
+        {
+          "transaction_id": "T01015",
+          "date": "2026-06-03",
+          "amount": "4948.00",
+          "type": "CREDIT",
+          "kind": "RETURNED_PAYMENT_CREDIT",
+          "status": "CONFIRMED",
+          "channel": "NACH",
+          "nach_ecs": true,
+          "cheque": false
+        },
+        {
+          "transaction_id": "T01016",
+          "date": "2026-06-03",
+          "amount": "4948.00",
+          "type": "DEBIT",
+          "kind": "RETURN_DEBIT",
+          "status": "CONFIRMED",
+          "channel": "NACH",
+          "nach_ecs": true,
+          "cheque": false
+        },
+        {
+          "transaction_id": "T01036",
+          "date": "2026-06-07",
+          "amount": "4948.00",
+          "type": "CREDIT",
+          "kind": "RETURNED_PAYMENT_CREDIT",
+          "status": "CONFIRMED",
+          "channel": "NACH",
+          "nach_ecs": true,
+          "cheque": false
+        },
+        {
+          "transaction_id": "T01037",
+          "date": "2026-06-07",
+          "amount": "4948.00",
+          "type": "DEBIT",
+          "kind": "RETURN_DEBIT",
+          "status": "CONFIRMED",
+          "channel": "NACH",
+          "nach_ecs": true,
+          "cheque": false
+        }
+      ],
+      "confidence": 0.85,
+      "limitations": [
+        "A return charge alone does not identify which obligation was missed or prove a loan default."
+      ]
+    },
+    {
+      "code": "PASS_THROUGH_ACTIVITY",
+      "severity": "MEDIUM",
+      "title": "Large inflows moved out quickly",
+      "description": "3 large credit(s) of at least ₹50,000 were followed within one day by outflows of 80% or more of the amount.",
+      "evidence": [
+        {
+          "credit": {
+            "transaction_id": "T00106",
+            "date": "2026-01-10",
+            "amount": "54575.00",
+            "type": "CREDIT"
+          },
+          "outflow_within_1_day": "83842.00",
+          "outflow_pct": "153.63",
+          "debit_ids": [
+            "T00102",
+            "T00103",
+            "T00104",
+            "T00105",
+            "T00107",
+            "T00108",
+            "T00109",
+            "T00110",
+            "T00111",
+            "T00112",
+            "T00113",
+            "T00114",
+            "T00115",
+            "T00116",
+            "T00117",
+            "T00118",
+            "T00119",
+            "T00120",
+            "T00121",
+            "T00122"
+          ]
+        },
+        {
+          "credit": {
+            "transaction_id": "T00628",
+            "date": "2026-03-14",
+            "amount": "73455.00",
+            "type": "CREDIT"
+          },
+          "outflow_within_1_day": "108959.02",
+          "outflow_pct": "148.33",
+          "debit_ids": [
+            "T00627",
+            "T00629",
+            "T00630",
+            "T00631",
+            "T00632",
+            "T00633",
+            "T00634",
+            "T00635",
+            "T00636",
+            "T00637",
+            "T00638",
+            "T00639",
+            "T00640",
+            "T00641",
+            "T00642",
+            "T00643",
+            "T00644",
+            "T00645"
+          ]
+        },
+        {
+          "credit": {
+            "transaction_id": "T01126",
+            "date": "2026-07-02",
+            "amount": "75000.00",
+            "type": "CREDIT"
+          },
+          "outflow_within_1_day": "82069.00",
+          "outflow_pct": "109.43",
+          "debit_ids": [
+            "T01124",
+            "T01125",
+            "T01127",
+            "T01129",
+            "T01130",
+            "T01131",
+            "T01132",
+            "T01134",
+            "T01137"
+          ]
+        }
+      ],
+      "confidence": 0.6,
+      "limitations": [
+        "Business payments, property or vehicle purchases legitimately show this pattern.",
+        "This is not an indication of fraud by itself."
+      ]
+    },
+    {
+      "code": "POSSIBLE_REVERSED_PAYMENTS",
+      "severity": "LOW",
+      "title": "Possible reversed or failed payments",
+      "description": "8 debit(s) were followed within 3 days by a credit of the same amount from the same counterparty.",
+      "evidence": [
+        {
+          "status": "POSSIBLE",
+          "debit": {
+            "transaction_id": "T00242",
+            "date": "2026-01-23",
+            "amount": "100.00",
+            "type": "DEBIT"
+          },
+          "credit": {
+            "transaction_id": "T00285",
+            "date": "2026-01-26",
+            "amount": "100.00",
+            "type": "CREDIT"
+          },
+          "counterparty": "MMTCPAMP",
+          "same_counterparty": false
+        },
+        {
+          "status": "POSSIBLE",
+          "debit": {
+            "transaction_id": "T00891",
+            "date": "2026-05-03",
+            "amount": "5400.00",
+            "type": "DEBIT"
+          },
+          "credit": {
+            "transaction_id": "T00890",
+            "date": "2026-05-03",
+            "amount": "5400.00",
+            "type": "CREDIT"
+          },
+          "counterparty": "BOUNCE",
+          "same_counterparty": true
+        },
+        {
+          "status": "POSSIBLE",
+          "debit": {
+            "transaction_id": "T00905",
+            "date": "2026-05-07",
+            "amount": "5400.00",
+            "type": "DEBIT"
+          },
+          "credit": {
+            "transaction_id": "T00904",
+            "date": "2026-05-07",
+            "amount": "5400.00",
+            "type": "CREDIT"
+          },
+          "counterparty": "BOUNCE",
+          "same_counterparty": true
+        },
+        {
+          "status": "POSSIBLE",
+          "debit": {
+            "transaction_id": "T01001",
+            "date": "2026-05-31",
+            "amount": "400.00",
+            "type": "DEBIT"
+          },
+          "credit": {
+            "transaction_id": "T01000",
+            "date": "2026-05-31",
+            "amount": "400.00",
+            "type": "CREDIT"
+          },
+          "counterparty": "BOUNCE",
+          "same_counterparty": true
+        },
+        {
+          "status": "POSSIBLE",
+          "debit": {
+            "transaction_id": "T01016",
+            "date": "2026-06-03",
+            "amount": "4948.00",
+            "type": "DEBIT"
+          },
+          "credit": {
+            "transaction_id": "T01015",
+            "date": "2026-06-03",
+            "amount": "4948.00",
+            "type": "CREDIT"
+          },
+          "counterparty": "BOUNCE",
+          "same_counterparty": true
+        },
+        {
+          "status": "POSSIBLE",
+          "debit": {
+            "transaction_id": "T01037",
+            "date": "2026-06-07",
+            "amount": "4948.00",
+            "type": "DEBIT"
+          },
+          "credit": {
+            "transaction_id": "T01036",
+            "date": "2026-06-07",
+            "amount": "4948.00",
+            "type": "CREDIT"
+          },
+          "counterparty": "BOUNCE",
+          "same_counterparty": true
+        },
+        {
+          "status": "POSSIBLE",
+          "debit": {
+            "transaction_id": "T01134",
+            "date": "2026-07-03",
+            "amount": "4948.00",
+            "type": "DEBIT"
+          },
+          "credit": {
+            "transaction_id": "T01133",
+            "date": "2026-07-03",
+            "amount": "4948.00",
+            "type": "CREDIT"
+          },
+          "counterparty": "BOUNCE",
+          "same_counterparty": true
+        },
+        {
+          "status": "POSSIBLE",
+          "debit": {
+            "transaction_id": "T01143",
+            "date": "2026-07-07",
+            "amount": "4948.00",
+            "type": "DEBIT"
+          },
+          "credit": {
+            "transaction_id": "T01142",
+            "date": "2026-07-07",
+            "amount": "4948.00",
+            "type": "CREDIT"
+          },
+          "counterparty": "BOUNCE",
+          "same_counterparty": true
+        }
+      ],
+      "confidence": 0.5,
+      "limitations": [
+        "Pattern-based; refunds and corrected payments produce the same pattern."
+      ]
+    },
+    {
+      "code": "LARGE_TRANSACTIONS",
+      "severity": "INFO",
+      "title": "Transactions much larger than usual",
+      "description": "5 transaction(s) are at least 10x the account's median transaction and ₹50,000+.",
+      "evidence": [
+        {
+          "transaction_id": "T01126",
+          "date": "2026-07-02",
+          "amount": "75000.00",
+          "type": "CREDIT",
+          "counterparty": "SUNIL KU",
+          "threshold": "50000.00",
+          "multiple_of_median": "150.00"
+        },
+        {
+          "transaction_id": "T01127",
+          "date": "2026-07-02",
+          "amount": "75000.00",
+          "type": "DEBIT",
+          "counterparty": "AARITYA",
+          "threshold": "50000.00",
+          "multiple_of_median": "373.13"
+        },
+        {
+          "transaction_id": "T00628",
+          "date": "2026-03-14",
+          "amount": "73455.00",
+          "type": "CREDIT",
+          "counterparty": "INDIA INFOLIN E FINANCE LTD",
+          "threshold": "50000.00",
+          "multiple_of_median": "146.91"
+        },
+        {
+          "transaction_id": "T00629",
+          "date": "2026-03-14",
+          "amount": "60000.00",
+          "type": "DEBIT",
+          "counterparty": "PARVE",
+          "threshold": "50000.00",
+          "multiple_of_median": "298.51"
+        },
+        {
+          "transaction_id": "T00106",
+          "date": "2026-01-10",
+          "amount": "54575.00",
+          "type": "CREDIT",
+          "counterparty": "MUTHOOTFINCOR PLTD",
+          "threshold": "50000.00",
+          "multiple_of_median": "109.15"
+        }
+      ],
+      "confidence": 0.9,
+      "limitations": [
+        "Unusual size alone does not indicate anything improper."
+      ]
+    }
+  ],
+  "data_quality": {
+    "extraction_confidence": "HIGH",
+    "page_count": 63,
+    "pages_with_transactions": 61,
+    "ocr_pages": [],
+    "unreadable_pages": [],
+    "table_pages_without_rows": [],
+    "extraction_method": "text",
+    "parser": "generic",
+    "table_columns": [
+      "date:Txn Date",
+      "value_date:Value Date",
+      "other:Mode",
+      "narration:Description",
+      "debit:Debit",
+      "credit:Credit",
+      "balance:Balance"
+    ],
+    "layout_inferred": false,
+    "row_segmentation": {
+      "bands": 61,
+      "none": 2
+    },
+    "rows_read": 1209,
+    "rows_without_amount": 0,
+    "transactions": 1209,
+    "balance_links_checked": 1208,
+    "balance_chain_breaks": 0,
+    "transactions_without_balance": 0,
+    "direction_inferred": 0,
+    "reordered_within_day": 0,
+    "categorized_pct": 100.0,
+    "low_confidence_categories": 962,
+    "transaction_flags": {}
+  },
+  "limitations": [
+    "This analysis is generated automatically from the uploaded bank statement only. It is not issued or endorsed by any bank and does not replace independent verification.",
+    "Counterparty names are read from transaction narrations on a best-effort basis; banks often truncate them.",
+    "Categories come from deterministic narration rules and are indicative, with a confidence per transaction.",
+    "Salary-like income, recurring inflows and EMI obligations are estimates from transaction patterns, not verified income or loan liabilities.",
+    "No credit score, eligibility or lending decision is produced. Indicators describe observed patterns and do not establish fraud, creditworthiness or default."
+  ]
+}
