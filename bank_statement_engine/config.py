@@ -19,12 +19,26 @@ class OCRConfig:
     mode: str = "auto"
     language: str = "eng"
     dpi: int = 300
-    #: Optional explicit path to the tesseract binary.
+    #: Optional explicit path to the tesseract binary. When unset: $TESSERACT_CMD /
+    #: $BSA_TESSERACT_CMD, then ``tesseract`` on PATH, then the standard install locations
+    #: (``C:\Program Files\Tesseract-OCR\tesseract.exe``, ``/usr/bin/tesseract`` ...).
     tesseract_cmd: str | None = None
+    #: Optional directory holding ``*.traineddata`` (passed as ``--tessdata-dir``).
+    #: When unset Tesseract uses $TESSDATA_PREFIX or its built-in location.
+    tessdata_dir: str | None = None
+    #: Tesseract page segmentation mode (6 = uniform block of text, best for tables).
+    psm: int = 6
     #: A page with fewer extractable characters than this is treated as image-only.
     min_text_chars: int = 40
-    max_pages: int = 60
+    #: Maximum pages OCR'd per statement; further image-only pages are reported as unreadable.
+    max_pages: int = 200
     page_timeout_seconds: int = 60
+    #: Pages OCR'd in parallel (each runs its own tesseract process). 0 = automatic
+    #: (half the CPU cores, at most 4).
+    workers: int = 0
+    #: Blank out vector table ruling lines in the page image before OCR. Borders are
+    #: otherwise read as "|" / "[" and can swallow neighbouring digits.
+    mask_ruling_lines: bool = True
 
 
 # @dataclass

@@ -86,7 +86,8 @@ class BankStatementAnalyzer:
         self.config = config if isinstance(config, EngineConfig) else EngineConfig.from_dict(config)
         if ocr_provider is None and self.config.ocr.mode != "off":
             ocr_provider = TesseractOCRProvider(
-                self.config.ocr.language, self.config.ocr.tesseract_cmd, self.config.ocr.page_timeout_seconds
+                self.config.ocr.language, self.config.ocr.tesseract_cmd, self.config.ocr.page_timeout_seconds,
+                tessdata_dir=self.config.ocr.tessdata_dir, psm=self.config.ocr.psm,
             )
         self.ocr_provider = ocr_provider
         self.registry = parser_registry or default_registry
