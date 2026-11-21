@@ -7,3 +7,6 @@ demo_project/private_reports/
 private_reports/
 .env
 .demo_token
+input/
+output/
+NUL*
