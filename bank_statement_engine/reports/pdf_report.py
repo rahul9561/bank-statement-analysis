@@ -735,7 +735,7 @@ class ReportBuilder:
                              ", ".join(str(p) for p in inc["source_pages"]) or NA])
             out += [SubHeading(self.t, f"Return incidents ({len(incidents)}) — one per returned instrument"),
                     self.table(["Ref", "Date", "Instrument", "Whose payment", "Returned", "Charges", "Reason", "Status", "Page"],
-                               rows, [0.1, 0.09, 0.09, 0.13, 0.12, 0.1, 0.15, 0.12, 0.1],
+                               rows, [0.1, 0.09, 0.11, 0.14, 0.12, 0.09, 0.15, 0.13, 0.07],
                                ["LEFT", "CENTER", "LEFT", "LEFT", "RIGHT", "RIGHT", "LEFT", "CENTER", "CENTER"])]
             role_label = {"REJECTED_INSTRUMENT": "Rejected instrument", "RETURN_CHARGE": "Return charge",
                           "RETURNED_PAYMENT_CREDIT": "Returned payment", "RETURN_DEBIT": "Return-worded debit"}

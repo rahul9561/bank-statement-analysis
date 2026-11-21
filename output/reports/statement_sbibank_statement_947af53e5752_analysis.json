@@ -1,7 +1,7 @@
 {
-  "report_id": "BSA-20261023-A0A15A9465",
+  "report_id": "BSA-20261023-D4A285777D",
   "engine_version": "1.0.0",
-  "generated_at": "2026-10-23T13:28:26+05:30",
+  "generated_at": "2026-10-23T15:42:36+05:30",
   "status": "VERIFIED",
   "source_sha256": "34781d756d22414b08ff60c2ca28fd19478fabf42ac3adce2b87876333c95942",
   "metadata": {
@@ -1772,7 +1772,7 @@
         "count": 14,
         "pct_of_debits": "12.83",
         "monthly_average": "47265.57",
-        "average_confidence": 0.57
+        "average_confidence": 0.7
       },
       {
         "category": "UTILITIES",
@@ -2093,8 +2093,8 @@
       {
         "lender_or_payee": "INDIA SHELTER FINANCE CORPORATI",
         "type": "LOAN_EMI",
-        "basis": "nach_debit_unspecified",
-        "confidence": 0.55,
+        "basis": "nach_lender_name",
+        "confidence": 0.75,
         "estimated_monthly_amount": "32843.00",
         "occurrences": 3,
         "months_seen": 3,
@@ -2103,7 +2103,7 @@
         "last_date": "2026-07-07",
         "typical_day_of_month": 7,
         "status": "NOT_SEEN_RECENTLY",
-        "evidence_level": "POSSIBLE",
+        "evidence_level": "PROBABLE",
         "evidence": [
           {
             "transaction_id": "T00108",
@@ -2128,8 +2128,8 @@
       {
         "lender_or_payee": "INDUSIND BANK",
         "type": "LOAN_EMI",
-        "basis": "nach_debit_unspecified",
-        "confidence": 0.55,
+        "basis": "nach_lender_name",
+        "confidence": 0.75,
         "estimated_monthly_amount": "15867.00",
         "occurrences": 6,
         "months_seen": 6,
@@ -2138,7 +2138,7 @@
         "last_date": "2026-10-07",
         "typical_day_of_month": 7,
         "status": "SEEN_RECENTLY",
-        "evidence_level": "POSSIBLE",
+        "evidence_level": "PROBABLE",
         "evidence": [
           {
             "transaction_id": "T00109",
@@ -2371,13 +2371,12 @@
     "estimated_emi_to_income_pct": "8.91",
     "foir_pct": "8.91",
     "foir_status": "CALCULATED",
-    "foir_probable_only_pct": null,
+    "foir_probable_only_pct": "8.91",
     "foir_confidence": "LOW",
     "foir_income_used": "177984.07",
     "foir_income_basis": "Median monthly external inflow over full months (excludes own-account transfers, refunds, loan disbursals and investment redemptions; includes cash deposits).",
     "foir_notes": [
       "FOIR = estimated monthly EMI ÷ estimated monthly income × 100.",
-      "Includes recurring NACH/ECS debits with no lender or EMI wording (possible EMIs); these may also be SIPs, insurance or subscriptions.",
       "Monthly income is volatile, so the income used for FOIR is uncertain.",
       "Only debits from this account are visible; obligations paid from other accounts are not included."
     ],
@@ -2385,6 +2384,10 @@
     "loan_repayment_debits": {
       "count": 14,
       "amount": "288320.00"
+    },
+    "unspecified_auto_debits": {
+      "count": 0,
+      "amount": "0.00"
     },
     "credit_card_payments": {
       "count": 3,
@@ -2394,23 +2397,30 @@
     "note": "Obligations are estimated from recurring debits only. They are not verified loan liabilities; outstanding principal, interest rate and sanctioned amount cannot be derived from a bank statement."
   },
   "bounces": {
-    "confirmed_event_count": 0,
+    "incidents": [],
     "confirmed_incident_count": 0,
+    "rejected_instrument_count": 0,
+    "charge_only_incident_count": 0,
+    "deposited_instrument_return_count": 0,
+    "deposited_instrument_return_amount": "0.00",
+    "outgoing_payment_return_count": 0,
+    "outgoing_payment_return_amount": "0.00",
     "incident_dates": [],
     "nach_ecs_return_count": 0,
     "cheque_return_count": 0,
-    "returned_payment_count": 0,
     "returned_payment_amount": null,
+    "returned_payment_count": 0,
+    "confirmed_event_count": 0,
+    "confirmed_events": [],
     "return_charge_count": 0,
     "return_charges_total": "0.00",
     "nach_ecs_related_count": 0,
     "unclear_events": [],
     "unclear_count": 0,
-    "confirmed_events": [],
     "pattern_based_reversals": [],
     "pattern_based_count": 0,
     "events_by_month": {},
-    "note": "Confirmed events are based on explicit narration. Pattern-based reversals are indicative only. A return charge alone does not establish which obligation was missed or prove a loan default."
+    "note": "Incidents group the entries of one returned instrument by its reference, so a rejected cheque and its return charge count as one bounce and the amount is counted once. Confirmed means explicit return wording. Pattern-based reversals are indicative only. A return charge alone does not establish which obligation was missed or prove a loan default."
   },
   "cashflow": {
     "credit_to_debit_ratio": "1.14",
@@ -2831,7 +2841,14 @@
     "direction_inferred": 0,
     "reordered_within_day": 0,
     "categorized_pct": 99.6,
-    "low_confidence_categories": 623,
+    "low_confidence_categories": 614,
+    "category_basis_counts": {
+      "CHANNEL_ONLY": 614,
+      "MERCHANT_NAME": 43,
+      "NARRATION_RULE": 182,
+      "NONE": 3
+    },
+    "channel_only_categories": 614,
     "transaction_flags": {}
   },
   "limitations": [

@@ -1,7 +1,7 @@
 {
-  "report_id": "BSA-20261023-F4FF087583",
+  "report_id": "BSA-20261023-66EEA63839",
   "engine_version": "1.0.0",
-  "generated_at": "2026-10-23T13:28:00+05:30",
+  "generated_at": "2026-10-23T15:42:02+05:30",
   "status": "VERIFIED",
   "source_sha256": "3c17902a46be2667c548eed00dec60de1f389a0330935ec739dd743d0dd052c5",
   "metadata": {
@@ -2729,6 +2729,10 @@
       "count": 0,
       "amount": "0.00"
     },
+    "unspecified_auto_debits": {
+      "count": 0,
+      "amount": "0.00"
+    },
     "credit_card_payments": {
       "count": 0,
       "amount": "0.00"
@@ -2737,19 +2741,26 @@
     "note": "Obligations are estimated from recurring debits only. They are not verified loan liabilities; outstanding principal, interest rate and sanctioned amount cannot be derived from a bank statement."
   },
   "bounces": {
-    "confirmed_event_count": 0,
+    "incidents": [],
     "confirmed_incident_count": 0,
+    "rejected_instrument_count": 0,
+    "charge_only_incident_count": 0,
+    "deposited_instrument_return_count": 0,
+    "deposited_instrument_return_amount": "0.00",
+    "outgoing_payment_return_count": 0,
+    "outgoing_payment_return_amount": "0.00",
     "incident_dates": [],
     "nach_ecs_return_count": 0,
     "cheque_return_count": 0,
-    "returned_payment_count": 0,
     "returned_payment_amount": null,
+    "returned_payment_count": 0,
+    "confirmed_event_count": 0,
+    "confirmed_events": [],
     "return_charge_count": 0,
     "return_charges_total": "0.00",
     "nach_ecs_related_count": 0,
     "unclear_events": [],
     "unclear_count": 0,
-    "confirmed_events": [],
     "pattern_based_reversals": [
       {
         "status": "POSSIBLE",
@@ -2771,7 +2782,7 @@
     ],
     "pattern_based_count": 1,
     "events_by_month": {},
-    "note": "Confirmed events are based on explicit narration. Pattern-based reversals are indicative only. A return charge alone does not establish which obligation was missed or prove a loan default."
+    "note": "Incidents group the entries of one returned instrument by its reference, so a rejected cheque and its return charge count as one bounce and the amount is counted once. Confirmed means explicit return wording. Pattern-based reversals are indicative only. A return charge alone does not establish which obligation was missed or prove a loan default."
   },
   "cashflow": {
     "credit_to_debit_ratio": "1.00",
@@ -3193,6 +3204,13 @@
     "reordered_within_day": 0,
     "categorized_pct": 100.0,
     "low_confidence_categories": 1493,
+    "category_basis_counts": {
+      "CHANNEL_ONLY": 1493,
+      "MERCHANT_NAME": 164,
+      "NARRATION_RULE": 99,
+      "SELF_TRANSFER_MATCH": 17
+    },
+    "channel_only_categories": 1493,
     "transaction_flags": {}
   },
   "limitations": [

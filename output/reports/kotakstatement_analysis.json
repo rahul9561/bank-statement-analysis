@@ -1,7 +1,7 @@
 {
-  "report_id": "BSA-20261023-FB87AD4F51",
+  "report_id": "BSA-20261023-B60D6E6A90",
   "engine_version": "1.0.0",
-  "generated_at": "2026-10-23T13:28:18+05:30",
+  "generated_at": "2026-10-23T15:42:21+05:30",
   "status": "VERIFIED",
   "source_sha256": "255a61438ac9a1897b06111aaa8c61b7fadd338cd7bb2397952846339df4e21c",
   "metadata": {
@@ -2377,11 +2377,20 @@
       {
         "category": "EMI_LOAN",
         "label": "EMI / loan repayment",
-        "amount": "103618.00",
-        "count": 28,
-        "pct_of_debits": "11.39",
-        "monthly_average": "8634.83",
-        "average_confidence": 0.45
+        "amount": "68476.00",
+        "count": 22,
+        "pct_of_debits": "7.53",
+        "monthly_average": "5706.33",
+        "average_confidence": 0.65
+      },
+      {
+        "category": "NACH_AUTO_DEBIT",
+        "label": "Auto-debit (purpose not stated)",
+        "amount": "35142.00",
+        "count": 6,
+        "pct_of_debits": "3.86",
+        "monthly_average": "2928.50",
+        "average_confidence": 0.3
       },
       {
         "category": "FUEL_TRANSPORT",
@@ -2677,7 +2686,6 @@
     ],
     "insights": [
       "Largest outflow category: UPI transfer to individuals (55.57% of debits).",
-      "11.39% of outflows go to EMI, loan or credit-card repayments.",
       "14.87% of outflows are cash withdrawals, whose end use is not visible.",
       "13.80% of outflows are transfers to the holder's own accounts."
     ]
@@ -2688,8 +2696,8 @@
       {
         "lender_or_payee": "IDFC FIRST BANK",
         "type": "LOAN_EMI",
-        "basis": "nach_debit_unspecified",
-        "confidence": 0.55,
+        "basis": "nach_lender_name",
+        "confidence": 0.75,
         "estimated_monthly_amount": "6085.00",
         "occurrences": 9,
         "months_seen": 9,
@@ -2698,7 +2706,7 @@
         "last_date": "2026-08-03",
         "typical_day_of_month": 3,
         "status": "NOT_SEEN_RECENTLY",
-        "evidence_level": "POSSIBLE",
+        "evidence_level": "PROBABLE",
         "evidence": [
           {
             "transaction_id": "T00213",
@@ -2760,7 +2768,7 @@
         "lender_or_payee": "TVS SERVICES",
         "type": "LOAN_EMI",
         "basis": "nach_debit_unspecified",
-        "confidence": 0.55,
+        "confidence": 0.4,
         "estimated_monthly_amount": "5746.00",
         "occurrences": 5,
         "months_seen": 5,
@@ -2806,8 +2814,8 @@
       {
         "lender_or_payee": "IDFC FIRST BANK",
         "type": "LOAN_EMI",
-        "basis": "nach_debit_unspecified",
-        "confidence": 0.55,
+        "basis": "nach_lender_name",
+        "confidence": 0.75,
         "estimated_monthly_amount": "2897.00",
         "occurrences": 4,
         "months_seen": 4,
@@ -2816,7 +2824,7 @@
         "last_date": "2026-02-03",
         "typical_day_of_month": 3,
         "status": "NOT_SEEN_RECENTLY",
-        "evidence_level": "POSSIBLE",
+        "evidence_level": "PROBABLE",
         "evidence": [
           {
             "transaction_id": "T00047",
@@ -2850,7 +2858,7 @@
         "lender_or_payee": "TVS SERVICES",
         "type": "LOAN_EMI",
         "basis": "nach_debit_unspecified",
-        "confidence": 0.45,
+        "confidence": 0.3,
         "estimated_monthly_amount": "6412.00",
         "occurrences": 1,
         "months_seen": 1,
@@ -2872,8 +2880,8 @@
       {
         "lender_or_payee": "IDFC FIRST BANK",
         "type": "LOAN_EMI",
-        "basis": "nach_debit_unspecified",
-        "confidence": 0.45,
+        "basis": "nach_lender_name",
+        "confidence": 0.65,
         "estimated_monthly_amount": "236.00",
         "occurrences": 9,
         "months_seen": 9,
@@ -2882,7 +2890,7 @@
         "last_date": "2026-08-03",
         "typical_day_of_month": 3,
         "status": "NOT_SEEN_RECENTLY",
-        "evidence_level": "POSSIBLE",
+        "evidence_level": "PROBABLE",
         "evidence": [
           {
             "transaction_id": "T00215",
@@ -2959,8 +2967,12 @@
     ],
     "recurring_loan_obligation_count": 3,
     "loan_repayment_debits": {
-      "count": 28,
-      "amount": "103618.00"
+      "count": 22,
+      "amount": "68476.00"
+    },
+    "unspecified_auto_debits": {
+      "count": 6,
+      "amount": "35142.00"
     },
     "credit_card_payments": {
       "count": 0,
@@ -2970,13 +2982,21 @@
     "note": "Obligations are estimated from recurring debits only. They are not verified loan liabilities; outstanding principal, interest rate and sanctioned amount cannot be derived from a bank statement."
   },
   "bounces": {
-    "confirmed_event_count": 0,
+    "incidents": [],
     "confirmed_incident_count": 0,
+    "rejected_instrument_count": 0,
+    "charge_only_incident_count": 0,
+    "deposited_instrument_return_count": 0,
+    "deposited_instrument_return_amount": "0.00",
+    "outgoing_payment_return_count": 0,
+    "outgoing_payment_return_amount": "0.00",
     "incident_dates": [],
     "nach_ecs_return_count": 0,
     "cheque_return_count": 0,
-    "returned_payment_count": 0,
     "returned_payment_amount": null,
+    "returned_payment_count": 0,
+    "confirmed_event_count": 0,
+    "confirmed_events": [],
     "return_charge_count": 0,
     "return_charges_total": "0.00",
     "nach_ecs_related_count": 0,
@@ -2988,11 +3008,11 @@
         "type": "CREDIT",
         "kind": "REVERSAL_WORDING",
         "status": "UNCLEAR",
-        "channel": "UPI"
+        "channel": "UPI",
+        "source_page": 3
       }
     ],
     "unclear_count": 1,
-    "confirmed_events": [],
     "pattern_based_reversals": [
       {
         "status": "POSSIBLE",
@@ -3116,7 +3136,7 @@
     ],
     "pattern_based_count": 7,
     "events_by_month": {},
-    "note": "Confirmed events are based on explicit narration. Pattern-based reversals are indicative only. A return charge alone does not establish which obligation was missed or prove a loan default."
+    "note": "Incidents group the entries of one returned instrument by its reference, so a rejected cheque and its return charge count as one bounce and the amount is counted once. Confirmed means explicit return wording. Pattern-based reversals are indicative only. A return charge alone does not establish which obligation was missed or prove a loan default."
   },
   "cashflow": {
     "credit_to_debit_ratio": "1.00",
@@ -3623,7 +3643,14 @@
     "direction_inferred": 0,
     "reordered_within_day": 0,
     "categorized_pct": 100.0,
-    "low_confidence_categories": 805,
+    "low_confidence_categories": 783,
+    "category_basis_counts": {
+      "CHANNEL_ONLY": 783,
+      "MERCHANT_NAME": 131,
+      "NARRATION_RULE": 93,
+      "SELF_TRANSFER_MATCH": 55
+    },
+    "channel_only_categories": 783,
     "transaction_flags": {
       "NARRATION_CONTINUED_ACROSS_PAGE": 7,
       "DUPLICATE_LOOKING": 8

@@ -27,11 +27,17 @@ class OCRConfig:
     page_timeout_seconds: int = 60
 
 
+# @dataclass
+# class LimitsConfig:
+#     max_file_size_bytes: int = 25 * 1024 * 1024
+#     max_pages: int = 600
+#     #: Wall-clock budget for one analysis run (extraction + parsing + analysis).
+#     max_processing_seconds: int = 300
+    
 @dataclass
 class LimitsConfig:
-    max_file_size_bytes: int = 25 * 1024 * 1024
+    max_file_size_bytes: int = 100 * 1024 * 1024
     max_pages: int = 600
-    #: Wall-clock budget for one analysis run (extraction + parsing + analysis).
     max_processing_seconds: int = 300
 
 

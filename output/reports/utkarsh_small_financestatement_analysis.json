@@ -1,7 +1,7 @@
 {
-  "report_id": "BSA-20261023-9F53209C3A",
+  "report_id": "BSA-20261023-A06B9FC0A1",
   "engine_version": "1.0.0",
-  "generated_at": "2026-10-23T13:28:29+05:30",
+  "generated_at": "2026-10-23T15:42:41+05:30",
   "status": "VERIFIED",
   "source_sha256": "9533679106f7dae293dd08bd9a74917fea7f8b9a5d67b1974b2eb05927c91357",
   "metadata": {
@@ -2108,6 +2108,10 @@
       "count": 6,
       "amount": "92909.00"
     },
+    "unspecified_auto_debits": {
+      "count": 0,
+      "amount": "0.00"
+    },
     "credit_card_payments": {
       "count": 2,
       "amount": "16450.00"
@@ -2116,8 +2120,435 @@
     "note": "Obligations are estimated from recurring debits only. They are not verified loan liabilities; outstanding principal, interest rate and sanctioned amount cannot be derived from a bank statement."
   },
   "bounces": {
-    "confirmed_event_count": 16,
+    "incidents": [
+      {
+        "incident_id": "R001",
+        "reference": "248237255155A03052026",
+        "date": "2026-05-03",
+        "instrument": "NACH_ECS",
+        "direction": "OUTGOING_PAYMENT_RETURNED",
+        "status": "CONFIRMED",
+        "evidence": "RETURNED_PAYMENT_CREDIT",
+        "returned_amount": "5400.00",
+        "charges_total": "0.00",
+        "charge_count": 0,
+        "reason": null,
+        "original": null,
+        "entries": [
+          {
+            "transaction_id": "T00890",
+            "date": "2026-05-03",
+            "amount": "5400.00",
+            "type": "CREDIT",
+            "kind": "RETURNED_PAYMENT_CREDIT",
+            "role": "RETURNED_PAYMENT_CREDIT",
+            "reference": "248237255155A03052026",
+            "source_page": 46,
+            "status": "CONFIRMED",
+            "channel": "NACH",
+            "nach_ecs": true,
+            "cheque": false,
+            "incident_id": "R001"
+          },
+          {
+            "transaction_id": "T00891",
+            "date": "2026-05-03",
+            "amount": "5400.00",
+            "type": "DEBIT",
+            "kind": "RETURN_DEBIT",
+            "role": "RETURN_DEBIT",
+            "reference": "248237255155A03052026",
+            "source_page": 46,
+            "status": "CONFIRMED",
+            "channel": "NACH",
+            "nach_ecs": true,
+            "cheque": false,
+            "incident_id": "R001"
+          }
+        ],
+        "source_pages": [
+          46
+        ],
+        "confidence": 0.8
+      },
+      {
+        "incident_id": "R002",
+        "reference": "248237255155A07052026",
+        "date": "2026-05-07",
+        "instrument": "NACH_ECS",
+        "direction": "OUTGOING_PAYMENT_RETURNED",
+        "status": "CONFIRMED",
+        "evidence": "RETURNED_PAYMENT_CREDIT",
+        "returned_amount": "5400.00",
+        "charges_total": "0.00",
+        "charge_count": 0,
+        "reason": null,
+        "original": null,
+        "entries": [
+          {
+            "transaction_id": "T00904",
+            "date": "2026-05-07",
+            "amount": "5400.00",
+            "type": "CREDIT",
+            "kind": "RETURNED_PAYMENT_CREDIT",
+            "role": "RETURNED_PAYMENT_CREDIT",
+            "reference": "248237255155A07052026",
+            "source_page": 46,
+            "status": "CONFIRMED",
+            "channel": "NACH",
+            "nach_ecs": true,
+            "cheque": false,
+            "incident_id": "R002"
+          },
+          {
+            "transaction_id": "T00905",
+            "date": "2026-05-07",
+            "amount": "5400.00",
+            "type": "DEBIT",
+            "kind": "RETURN_DEBIT",
+            "role": "RETURN_DEBIT",
+            "reference": "248237255155A07052026",
+            "source_page": 46,
+            "status": "CONFIRMED",
+            "channel": "NACH",
+            "nach_ecs": true,
+            "cheque": false,
+            "incident_id": "R002"
+          }
+        ],
+        "source_pages": [
+          46
+        ],
+        "confidence": 0.8
+      },
+      {
+        "incident_id": "R003",
+        "reference": "248237255155A31052026",
+        "date": "2026-05-31",
+        "instrument": "NACH_ECS",
+        "direction": "OUTGOING_PAYMENT_RETURNED",
+        "status": "CONFIRMED",
+        "evidence": "RETURNED_PAYMENT_CREDIT",
+        "returned_amount": "400.00",
+        "charges_total": "0.00",
+        "charge_count": 0,
+        "reason": null,
+        "original": null,
+        "entries": [
+          {
+            "transaction_id": "T01000",
+            "date": "2026-05-31",
+            "amount": "400.00",
+            "type": "CREDIT",
+            "kind": "RETURNED_PAYMENT_CREDIT",
+            "role": "RETURNED_PAYMENT_CREDIT",
+            "reference": "248237255155A31052026",
+            "source_page": 51,
+            "status": "CONFIRMED",
+            "channel": "NACH",
+            "nach_ecs": true,
+            "cheque": false,
+            "incident_id": "R003"
+          },
+          {
+            "transaction_id": "T01001",
+            "date": "2026-05-31",
+            "amount": "400.00",
+            "type": "DEBIT",
+            "kind": "RETURN_DEBIT",
+            "role": "RETURN_DEBIT",
+            "reference": "248237255155A31052026",
+            "source_page": 51,
+            "status": "CONFIRMED",
+            "channel": "NACH",
+            "nach_ecs": true,
+            "cheque": false,
+            "incident_id": "R003"
+          }
+        ],
+        "source_pages": [
+          51
+        ],
+        "confidence": 0.8
+      },
+      {
+        "incident_id": "R004",
+        "reference": "248237255155A03062026",
+        "date": "2026-06-03",
+        "instrument": "NACH_ECS",
+        "direction": "OUTGOING_PAYMENT_RETURNED",
+        "status": "CONFIRMED",
+        "evidence": "RETURNED_PAYMENT_CREDIT",
+        "returned_amount": "4948.00",
+        "charges_total": "0.00",
+        "charge_count": 0,
+        "reason": null,
+        "original": null,
+        "entries": [
+          {
+            "transaction_id": "T01015",
+            "date": "2026-06-03",
+            "amount": "4948.00",
+            "type": "CREDIT",
+            "kind": "RETURNED_PAYMENT_CREDIT",
+            "role": "RETURNED_PAYMENT_CREDIT",
+            "reference": "248237255155A03062026",
+            "source_page": 52,
+            "status": "CONFIRMED",
+            "channel": "NACH",
+            "nach_ecs": true,
+            "cheque": false,
+            "incident_id": "R004"
+          },
+          {
+            "transaction_id": "T01016",
+            "date": "2026-06-03",
+            "amount": "4948.00",
+            "type": "DEBIT",
+            "kind": "RETURN_DEBIT",
+            "role": "RETURN_DEBIT",
+            "reference": "248237255155A03062026",
+            "source_page": 52,
+            "status": "CONFIRMED",
+            "channel": "NACH",
+            "nach_ecs": true,
+            "cheque": false,
+            "incident_id": "R004"
+          }
+        ],
+        "source_pages": [
+          52
+        ],
+        "confidence": 0.8
+      },
+      {
+        "incident_id": "R005",
+        "reference": "248237255155A07062026",
+        "date": "2026-06-07",
+        "instrument": "NACH_ECS",
+        "direction": "OUTGOING_PAYMENT_RETURNED",
+        "status": "CONFIRMED",
+        "evidence": "RETURNED_PAYMENT_CREDIT",
+        "returned_amount": "4948.00",
+        "charges_total": "0.00",
+        "charge_count": 0,
+        "reason": null,
+        "original": null,
+        "entries": [
+          {
+            "transaction_id": "T01036",
+            "date": "2026-06-07",
+            "amount": "4948.00",
+            "type": "CREDIT",
+            "kind": "RETURNED_PAYMENT_CREDIT",
+            "role": "RETURNED_PAYMENT_CREDIT",
+            "reference": "248237255155A07062026",
+            "source_page": 53,
+            "status": "CONFIRMED",
+            "channel": "NACH",
+            "nach_ecs": true,
+            "cheque": false,
+            "incident_id": "R005"
+          },
+          {
+            "transaction_id": "T01037",
+            "date": "2026-06-07",
+            "amount": "4948.00",
+            "type": "DEBIT",
+            "kind": "RETURN_DEBIT",
+            "role": "RETURN_DEBIT",
+            "reference": "248237255155A07062026",
+            "source_page": 53,
+            "status": "CONFIRMED",
+            "channel": "NACH",
+            "nach_ecs": true,
+            "cheque": false,
+            "incident_id": "R005"
+          }
+        ],
+        "source_pages": [
+          53
+        ],
+        "confidence": 0.8
+      },
+      {
+        "incident_id": "R006",
+        "reference": "248237255155A03072026",
+        "date": "2026-07-03",
+        "instrument": "NACH_ECS",
+        "direction": "OUTGOING_PAYMENT_RETURNED",
+        "status": "CONFIRMED",
+        "evidence": "RETURNED_PAYMENT_CREDIT",
+        "returned_amount": "4948.00",
+        "charges_total": "0.00",
+        "charge_count": 0,
+        "reason": null,
+        "original": null,
+        "entries": [
+          {
+            "transaction_id": "T01133",
+            "date": "2026-07-03",
+            "amount": "4948.00",
+            "type": "CREDIT",
+            "kind": "RETURNED_PAYMENT_CREDIT",
+            "role": "RETURNED_PAYMENT_CREDIT",
+            "reference": "248237255155A03072026",
+            "source_page": 58,
+            "status": "CONFIRMED",
+            "channel": "NACH",
+            "nach_ecs": true,
+            "cheque": false,
+            "incident_id": "R006"
+          },
+          {
+            "transaction_id": "T01134",
+            "date": "2026-07-03",
+            "amount": "4948.00",
+            "type": "DEBIT",
+            "kind": "RETURN_DEBIT",
+            "role": "RETURN_DEBIT",
+            "reference": "248237255155A03072026",
+            "source_page": 58,
+            "status": "CONFIRMED",
+            "channel": "NACH",
+            "nach_ecs": true,
+            "cheque": false,
+            "incident_id": "R006"
+          }
+        ],
+        "source_pages": [
+          58
+        ],
+        "confidence": 0.8
+      },
+      {
+        "incident_id": "R007",
+        "reference": "248237255155A07072026",
+        "date": "2026-07-07",
+        "instrument": "NACH_ECS",
+        "direction": "OUTGOING_PAYMENT_RETURNED",
+        "status": "CONFIRMED",
+        "evidence": "RETURNED_PAYMENT_CREDIT",
+        "returned_amount": "4948.00",
+        "charges_total": "0.00",
+        "charge_count": 0,
+        "reason": null,
+        "original": null,
+        "entries": [
+          {
+            "transaction_id": "T01142",
+            "date": "2026-07-07",
+            "amount": "4948.00",
+            "type": "CREDIT",
+            "kind": "RETURNED_PAYMENT_CREDIT",
+            "role": "RETURNED_PAYMENT_CREDIT",
+            "reference": "248237255155A07072026",
+            "source_page": 58,
+            "status": "CONFIRMED",
+            "channel": "NACH",
+            "nach_ecs": true,
+            "cheque": false,
+            "incident_id": "R007"
+          },
+          {
+            "transaction_id": "T01143",
+            "date": "2026-07-07",
+            "amount": "4948.00",
+            "type": "DEBIT",
+            "kind": "RETURN_DEBIT",
+            "role": "RETURN_DEBIT",
+            "reference": "248237255155A07072026",
+            "source_page": 58,
+            "status": "CONFIRMED",
+            "channel": "NACH",
+            "nach_ecs": true,
+            "cheque": false,
+            "incident_id": "R007"
+          }
+        ],
+        "source_pages": [
+          58
+        ],
+        "confidence": 0.8
+      },
+      {
+        "incident_id": "R008",
+        "reference": "CHG030726UTKS7032403262000143",
+        "date": "2026-07-24",
+        "instrument": "NACH_ECS",
+        "direction": "UNKNOWN",
+        "status": "CONFIRMED",
+        "evidence": "RETURN_CHARGE_ONLY",
+        "returned_amount": null,
+        "charges_total": "295.00",
+        "charge_count": 1,
+        "reason": null,
+        "original": null,
+        "entries": [
+          {
+            "transaction_id": "T01201",
+            "date": "2026-07-24",
+            "amount": "295.00",
+            "type": "DEBIT",
+            "kind": "RETURN_CHARGE",
+            "role": "RETURN_CHARGE",
+            "reference": "CHG030726UTKS7032403262000143",
+            "source_page": 61,
+            "status": "CONFIRMED",
+            "channel": "NACH",
+            "nach_ecs": true,
+            "cheque": false,
+            "incident_id": "R008"
+          }
+        ],
+        "source_pages": [
+          61
+        ],
+        "confidence": 0.75
+      },
+      {
+        "incident_id": "R009",
+        "reference": "CHG070726UTKS7032403262000143",
+        "date": "2026-07-27",
+        "instrument": "NACH_ECS",
+        "direction": "UNKNOWN",
+        "status": "CONFIRMED",
+        "evidence": "RETURN_CHARGE_ONLY",
+        "returned_amount": null,
+        "charges_total": "295.00",
+        "charge_count": 1,
+        "reason": null,
+        "original": null,
+        "entries": [
+          {
+            "transaction_id": "T01205",
+            "date": "2026-07-27",
+            "amount": "295.00",
+            "type": "DEBIT",
+            "kind": "RETURN_CHARGE",
+            "role": "RETURN_CHARGE",
+            "reference": "CHG070726UTKS7032403262000143",
+            "source_page": 61,
+            "status": "CONFIRMED",
+            "channel": "NACH",
+            "nach_ecs": true,
+            "cheque": false,
+            "incident_id": "R009"
+          }
+        ],
+        "source_pages": [
+          61
+        ],
+        "confidence": 0.75
+      }
+    ],
     "confirmed_incident_count": 9,
+    "rejected_instrument_count": 0,
+    "charge_only_incident_count": 2,
+    "deposited_instrument_return_count": 0,
+    "deposited_instrument_return_amount": "0.00",
+    "outgoing_payment_return_count": 7,
+    "outgoing_payment_return_amount": "30992.00",
     "incident_dates": [
       "2026-05-03",
       "2026-05-07",
@@ -2129,15 +2560,11 @@
       "2026-07-24",
       "2026-07-27"
     ],
-    "nach_ecs_return_count": 16,
+    "nach_ecs_return_count": 9,
     "cheque_return_count": 0,
-    "returned_payment_count": 7,
     "returned_payment_amount": "30992.00",
-    "return_charge_count": 2,
-    "return_charges_total": "590.00",
-    "nach_ecs_related_count": 16,
-    "unclear_events": [],
-    "unclear_count": 0,
+    "returned_payment_count": 7,
+    "confirmed_event_count": 16,
     "confirmed_events": [
       {
         "transaction_id": "T00890",
@@ -2145,10 +2572,14 @@
         "amount": "5400.00",
         "type": "CREDIT",
         "kind": "RETURNED_PAYMENT_CREDIT",
+        "role": "RETURNED_PAYMENT_CREDIT",
+        "reference": "248237255155A03052026",
+        "source_page": 46,
         "status": "CONFIRMED",
         "channel": "NACH",
         "nach_ecs": true,
-        "cheque": false
+        "cheque": false,
+        "incident_id": "R001"
       },
       {
         "transaction_id": "T00891",
@@ -2156,10 +2587,14 @@
         "amount": "5400.00",
         "type": "DEBIT",
         "kind": "RETURN_DEBIT",
+        "role": "RETURN_DEBIT",
+        "reference": "248237255155A03052026",
+        "source_page": 46,
         "status": "CONFIRMED",
         "channel": "NACH",
         "nach_ecs": true,
-        "cheque": false
+        "cheque": false,
+        "incident_id": "R001"
       },
       {
         "transaction_id": "T00904",
@@ -2167,10 +2602,14 @@
         "amount": "5400.00",
         "type": "CREDIT",
         "kind": "RETURNED_PAYMENT_CREDIT",
+        "role": "RETURNED_PAYMENT_CREDIT",
+        "reference": "248237255155A07052026",
+        "source_page": 46,
         "status": "CONFIRMED",
         "channel": "NACH",
         "nach_ecs": true,
-        "cheque": false
+        "cheque": false,
+        "incident_id": "R002"
       },
       {
         "transaction_id": "T00905",
@@ -2178,10 +2617,14 @@
         "amount": "5400.00",
         "type": "DEBIT",
         "kind": "RETURN_DEBIT",
+        "role": "RETURN_DEBIT",
+        "reference": "248237255155A07052026",
+        "source_page": 46,
         "status": "CONFIRMED",
         "channel": "NACH",
         "nach_ecs": true,
-        "cheque": false
+        "cheque": false,
+        "incident_id": "R002"
       },
       {
         "transaction_id": "T01000",
@@ -2189,10 +2632,14 @@
         "amount": "400.00",
         "type": "CREDIT",
         "kind": "RETURNED_PAYMENT_CREDIT",
+        "role": "RETURNED_PAYMENT_CREDIT",
+        "reference": "248237255155A31052026",
+        "source_page": 51,
         "status": "CONFIRMED",
         "channel": "NACH",
         "nach_ecs": true,
-        "cheque": false
+        "cheque": false,
+        "incident_id": "R003"
       },
       {
         "transaction_id": "T01001",
@@ -2200,10 +2647,14 @@
         "amount": "400.00",
         "type": "DEBIT",
         "kind": "RETURN_DEBIT",
+        "role": "RETURN_DEBIT",
+        "reference": "248237255155A31052026",
+        "source_page": 51,
         "status": "CONFIRMED",
         "channel": "NACH",
         "nach_ecs": true,
-        "cheque": false
+        "cheque": false,
+        "incident_id": "R003"
       },
       {
         "transaction_id": "T01015",
@@ -2211,10 +2662,14 @@
         "amount": "4948.00",
         "type": "CREDIT",
         "kind": "RETURNED_PAYMENT_CREDIT",
+        "role": "RETURNED_PAYMENT_CREDIT",
+        "reference": "248237255155A03062026",
+        "source_page": 52,
         "status": "CONFIRMED",
         "channel": "NACH",
         "nach_ecs": true,
-        "cheque": false
+        "cheque": false,
+        "incident_id": "R004"
       },
       {
         "transaction_id": "T01016",
@@ -2222,10 +2677,14 @@
         "amount": "4948.00",
         "type": "DEBIT",
         "kind": "RETURN_DEBIT",
+        "role": "RETURN_DEBIT",
+        "reference": "248237255155A03062026",
+        "source_page": 52,
         "status": "CONFIRMED",
         "channel": "NACH",
         "nach_ecs": true,
-        "cheque": false
+        "cheque": false,
+        "incident_id": "R004"
       },
       {
         "transaction_id": "T01036",
@@ -2233,10 +2692,14 @@
         "amount": "4948.00",
         "type": "CREDIT",
         "kind": "RETURNED_PAYMENT_CREDIT",
+        "role": "RETURNED_PAYMENT_CREDIT",
+        "reference": "248237255155A07062026",
+        "source_page": 53,
         "status": "CONFIRMED",
         "channel": "NACH",
         "nach_ecs": true,
-        "cheque": false
+        "cheque": false,
+        "incident_id": "R005"
       },
       {
         "transaction_id": "T01037",
@@ -2244,10 +2707,14 @@
         "amount": "4948.00",
         "type": "DEBIT",
         "kind": "RETURN_DEBIT",
+        "role": "RETURN_DEBIT",
+        "reference": "248237255155A07062026",
+        "source_page": 53,
         "status": "CONFIRMED",
         "channel": "NACH",
         "nach_ecs": true,
-        "cheque": false
+        "cheque": false,
+        "incident_id": "R005"
       },
       {
         "transaction_id": "T01133",
@@ -2255,10 +2722,14 @@
         "amount": "4948.00",
         "type": "CREDIT",
         "kind": "RETURNED_PAYMENT_CREDIT",
+        "role": "RETURNED_PAYMENT_CREDIT",
+        "reference": "248237255155A03072026",
+        "source_page": 58,
         "status": "CONFIRMED",
         "channel": "NACH",
         "nach_ecs": true,
-        "cheque": false
+        "cheque": false,
+        "incident_id": "R006"
       },
       {
         "transaction_id": "T01134",
@@ -2266,10 +2737,14 @@
         "amount": "4948.00",
         "type": "DEBIT",
         "kind": "RETURN_DEBIT",
+        "role": "RETURN_DEBIT",
+        "reference": "248237255155A03072026",
+        "source_page": 58,
         "status": "CONFIRMED",
         "channel": "NACH",
         "nach_ecs": true,
-        "cheque": false
+        "cheque": false,
+        "incident_id": "R006"
       },
       {
         "transaction_id": "T01142",
@@ -2277,10 +2752,14 @@
         "amount": "4948.00",
         "type": "CREDIT",
         "kind": "RETURNED_PAYMENT_CREDIT",
+        "role": "RETURNED_PAYMENT_CREDIT",
+        "reference": "248237255155A07072026",
+        "source_page": 58,
         "status": "CONFIRMED",
         "channel": "NACH",
         "nach_ecs": true,
-        "cheque": false
+        "cheque": false,
+        "incident_id": "R007"
       },
       {
         "transaction_id": "T01143",
@@ -2288,10 +2767,14 @@
         "amount": "4948.00",
         "type": "DEBIT",
         "kind": "RETURN_DEBIT",
+        "role": "RETURN_DEBIT",
+        "reference": "248237255155A07072026",
+        "source_page": 58,
         "status": "CONFIRMED",
         "channel": "NACH",
         "nach_ecs": true,
-        "cheque": false
+        "cheque": false,
+        "incident_id": "R007"
       },
       {
         "transaction_id": "T01201",
@@ -2299,10 +2782,14 @@
         "amount": "295.00",
         "type": "DEBIT",
         "kind": "RETURN_CHARGE",
+        "role": "RETURN_CHARGE",
+        "reference": "CHG030726UTKS7032403262000143",
+        "source_page": 61,
         "status": "CONFIRMED",
         "channel": "NACH",
         "nach_ecs": true,
-        "cheque": false
+        "cheque": false,
+        "incident_id": "R008"
       },
       {
         "transaction_id": "T01205",
@@ -2310,12 +2797,21 @@
         "amount": "295.00",
         "type": "DEBIT",
         "kind": "RETURN_CHARGE",
+        "role": "RETURN_CHARGE",
+        "reference": "CHG070726UTKS7032403262000143",
+        "source_page": 61,
         "status": "CONFIRMED",
         "channel": "NACH",
         "nach_ecs": true,
-        "cheque": false
+        "cheque": false,
+        "incident_id": "R009"
       }
     ],
+    "return_charge_count": 2,
+    "return_charges_total": "590.00",
+    "nach_ecs_related_count": 16,
+    "unclear_events": [],
+    "unclear_count": 0,
     "pattern_based_reversals": [
       {
         "status": "POSSIBLE",
@@ -2333,134 +2829,15 @@
         },
         "counterparty": "MMTCPAMP",
         "same_counterparty": false
-      },
-      {
-        "status": "POSSIBLE",
-        "debit": {
-          "transaction_id": "T00891",
-          "date": "2026-05-03",
-          "amount": "5400.00",
-          "type": "DEBIT"
-        },
-        "credit": {
-          "transaction_id": "T00890",
-          "date": "2026-05-03",
-          "amount": "5400.00",
-          "type": "CREDIT"
-        },
-        "counterparty": "BOUNCE",
-        "same_counterparty": true
-      },
-      {
-        "status": "POSSIBLE",
-        "debit": {
-          "transaction_id": "T00905",
-          "date": "2026-05-07",
-          "amount": "5400.00",
-          "type": "DEBIT"
-        },
-        "credit": {
-          "transaction_id": "T00904",
-          "date": "2026-05-07",
-          "amount": "5400.00",
-          "type": "CREDIT"
-        },
-        "counterparty": "BOUNCE",
-        "same_counterparty": true
-      },
-      {
-        "status": "POSSIBLE",
-        "debit": {
-          "transaction_id": "T01001",
-          "date": "2026-05-31",
-          "amount": "400.00",
-          "type": "DEBIT"
-        },
-        "credit": {
-          "transaction_id": "T01000",
-          "date": "2026-05-31",
-          "amount": "400.00",
-          "type": "CREDIT"
-        },
-        "counterparty": "BOUNCE",
-        "same_counterparty": true
-      },
-      {
-        "status": "POSSIBLE",
-        "debit": {
-          "transaction_id": "T01016",
-          "date": "2026-06-03",
-          "amount": "4948.00",
-          "type": "DEBIT"
-        },
-        "credit": {
-          "transaction_id": "T01015",
-          "date": "2026-06-03",
-          "amount": "4948.00",
-          "type": "CREDIT"
-        },
-        "counterparty": "BOUNCE",
-        "same_counterparty": true
-      },
-      {
-        "status": "POSSIBLE",
-        "debit": {
-          "transaction_id": "T01037",
-          "date": "2026-06-07",
-          "amount": "4948.00",
-          "type": "DEBIT"
-        },
-        "credit": {
-          "transaction_id": "T01036",
-          "date": "2026-06-07",
-          "amount": "4948.00",
-          "type": "CREDIT"
-        },
-        "counterparty": "BOUNCE",
-        "same_counterparty": true
-      },
-      {
-        "status": "POSSIBLE",
-        "debit": {
-          "transaction_id": "T01134",
-          "date": "2026-07-03",
-          "amount": "4948.00",
-          "type": "DEBIT"
-        },
-        "credit": {
-          "transaction_id": "T01133",
-          "date": "2026-07-03",
-          "amount": "4948.00",
-          "type": "CREDIT"
-        },
-        "counterparty": "BOUNCE",
-        "same_counterparty": true
-      },
-      {
-        "status": "POSSIBLE",
-        "debit": {
-          "transaction_id": "T01143",
-          "date": "2026-07-07",
-          "amount": "4948.00",
-          "type": "DEBIT"
-        },
-        "credit": {
-          "transaction_id": "T01142",
-          "date": "2026-07-07",
-          "amount": "4948.00",
-          "type": "CREDIT"
-        },
-        "counterparty": "BOUNCE",
-        "same_counterparty": true
       }
     ],
-    "pattern_based_count": 8,
+    "pattern_based_count": 1,
     "events_by_month": {
-      "2026-05": 6,
-      "2026-06": 4,
-      "2026-07": 6
+      "2026-05": 3,
+      "2026-06": 2,
+      "2026-07": 4
     },
-    "note": "Confirmed events are based on explicit narration. Pattern-based reversals are indicative only. A return charge alone does not establish which obligation was missed or prove a loan default."
+    "note": "Incidents group the entries of one returned instrument by its reference, so a rejected cheque and its return charge count as one bounce and the amount is counted once. Confirmed means explicit return wording. Pattern-based reversals are indicative only. A return charge alone does not establish which obligation was missed or prove a loan default."
   },
   "cashflow": {
     "credit_to_debit_ratio": "1.00",
@@ -2718,105 +3095,9 @@
           "type": "CREDIT"
         },
         "is_self": false
-      },
-      {
-        "counterparty": "BOUNCE",
-        "out": {
-          "transaction_id": "T00891",
-          "date": "2026-05-03",
-          "amount": "5400.00",
-          "type": "DEBIT"
-        },
-        "in": {
-          "transaction_id": "T00890",
-          "date": "2026-05-03",
-          "amount": "5400.00",
-          "type": "CREDIT"
-        },
-        "is_self": false
-      },
-      {
-        "counterparty": "BOUNCE",
-        "out": {
-          "transaction_id": "T00905",
-          "date": "2026-05-07",
-          "amount": "5400.00",
-          "type": "DEBIT"
-        },
-        "in": {
-          "transaction_id": "T00904",
-          "date": "2026-05-07",
-          "amount": "5400.00",
-          "type": "CREDIT"
-        },
-        "is_self": false
-      },
-      {
-        "counterparty": "BOUNCE",
-        "out": {
-          "transaction_id": "T01016",
-          "date": "2026-06-03",
-          "amount": "4948.00",
-          "type": "DEBIT"
-        },
-        "in": {
-          "transaction_id": "T01015",
-          "date": "2026-06-03",
-          "amount": "4948.00",
-          "type": "CREDIT"
-        },
-        "is_self": false
-      },
-      {
-        "counterparty": "BOUNCE",
-        "out": {
-          "transaction_id": "T01037",
-          "date": "2026-06-07",
-          "amount": "4948.00",
-          "type": "DEBIT"
-        },
-        "in": {
-          "transaction_id": "T01036",
-          "date": "2026-06-07",
-          "amount": "4948.00",
-          "type": "CREDIT"
-        },
-        "is_self": false
-      },
-      {
-        "counterparty": "BOUNCE",
-        "out": {
-          "transaction_id": "T01134",
-          "date": "2026-07-03",
-          "amount": "4948.00",
-          "type": "DEBIT"
-        },
-        "in": {
-          "transaction_id": "T01133",
-          "date": "2026-07-03",
-          "amount": "4948.00",
-          "type": "CREDIT"
-        },
-        "is_self": false
-      },
-      {
-        "counterparty": "BOUNCE",
-        "out": {
-          "transaction_id": "T01143",
-          "date": "2026-07-07",
-          "amount": "4948.00",
-          "type": "DEBIT"
-        },
-        "in": {
-          "transaction_id": "T01142",
-          "date": "2026-07-07",
-          "amount": "4948.00",
-          "type": "CREDIT"
-        },
-        "is_self": false
       }
     ],
-    "round_trip_count": 12,
+    "round_trip_count": 6,
     "volume_changes": [],
     "monthly_cash_trend": [
       {
@@ -2878,122 +3159,76 @@
       "code": "PAYMENT_RETURN_EVIDENCE",
       "severity": "HIGH",
       "title": "Returned payments / return charges",
-      "description": "16 transaction(s) explicitly reference a return, bounce or return charge (2 charge(s), ₹590.00).",
+      "description": "9 returned payment(s) made by the account holder or of unstated direction. 2 return charge(s) totalling ₹590.00; each returned instrument is counted once.",
       "evidence": [
         {
-          "transaction_id": "T00890",
+          "incident_id": "R001",
+          "reference": "248237255155A03052026",
           "date": "2026-05-03",
-          "amount": "5400.00",
-          "type": "CREDIT",
-          "kind": "RETURNED_PAYMENT_CREDIT",
-          "status": "CONFIRMED",
-          "channel": "NACH",
-          "nach_ecs": true,
-          "cheque": false
+          "direction": "OUTGOING_PAYMENT_RETURNED",
+          "returned_amount": "5400.00"
         },
         {
-          "transaction_id": "T00891",
-          "date": "2026-05-03",
-          "amount": "5400.00",
-          "type": "DEBIT",
-          "kind": "RETURN_DEBIT",
-          "status": "CONFIRMED",
-          "channel": "NACH",
-          "nach_ecs": true,
-          "cheque": false
-        },
-        {
-          "transaction_id": "T00904",
+          "incident_id": "R002",
+          "reference": "248237255155A07052026",
           "date": "2026-05-07",
-          "amount": "5400.00",
-          "type": "CREDIT",
-          "kind": "RETURNED_PAYMENT_CREDIT",
-          "status": "CONFIRMED",
-          "channel": "NACH",
-          "nach_ecs": true,
-          "cheque": false
+          "direction": "OUTGOING_PAYMENT_RETURNED",
+          "returned_amount": "5400.00"
         },
         {
-          "transaction_id": "T00905",
-          "date": "2026-05-07",
-          "amount": "5400.00",
-          "type": "DEBIT",
-          "kind": "RETURN_DEBIT",
-          "status": "CONFIRMED",
-          "channel": "NACH",
-          "nach_ecs": true,
-          "cheque": false
-        },
-        {
-          "transaction_id": "T01000",
+          "incident_id": "R003",
+          "reference": "248237255155A31052026",
           "date": "2026-05-31",
-          "amount": "400.00",
-          "type": "CREDIT",
-          "kind": "RETURNED_PAYMENT_CREDIT",
-          "status": "CONFIRMED",
-          "channel": "NACH",
-          "nach_ecs": true,
-          "cheque": false
+          "direction": "OUTGOING_PAYMENT_RETURNED",
+          "returned_amount": "400.00"
         },
         {
-          "transaction_id": "T01001",
-          "date": "2026-05-31",
-          "amount": "400.00",
-          "type": "DEBIT",
-          "kind": "RETURN_DEBIT",
-          "status": "CONFIRMED",
-          "channel": "NACH",
-          "nach_ecs": true,
-          "cheque": false
-        },
-        {
-          "transaction_id": "T01015",
+          "incident_id": "R004",
+          "reference": "248237255155A03062026",
           "date": "2026-06-03",
-          "amount": "4948.00",
-          "type": "CREDIT",
-          "kind": "RETURNED_PAYMENT_CREDIT",
-          "status": "CONFIRMED",
-          "channel": "NACH",
-          "nach_ecs": true,
-          "cheque": false
+          "direction": "OUTGOING_PAYMENT_RETURNED",
+          "returned_amount": "4948.00"
         },
         {
-          "transaction_id": "T01016",
-          "date": "2026-06-03",
-          "amount": "4948.00",
-          "type": "DEBIT",
-          "kind": "RETURN_DEBIT",
-          "status": "CONFIRMED",
-          "channel": "NACH",
-          "nach_ecs": true,
-          "cheque": false
-        },
-        {
-          "transaction_id": "T01036",
+          "incident_id": "R005",
+          "reference": "248237255155A07062026",
           "date": "2026-06-07",
-          "amount": "4948.00",
-          "type": "CREDIT",
-          "kind": "RETURNED_PAYMENT_CREDIT",
-          "status": "CONFIRMED",
-          "channel": "NACH",
-          "nach_ecs": true,
-          "cheque": false
+          "direction": "OUTGOING_PAYMENT_RETURNED",
+          "returned_amount": "4948.00"
         },
         {
-          "transaction_id": "T01037",
-          "date": "2026-06-07",
-          "amount": "4948.00",
-          "type": "DEBIT",
-          "kind": "RETURN_DEBIT",
-          "status": "CONFIRMED",
-          "channel": "NACH",
-          "nach_ecs": true,
-          "cheque": false
+          "incident_id": "R006",
+          "reference": "248237255155A03072026",
+          "date": "2026-07-03",
+          "direction": "OUTGOING_PAYMENT_RETURNED",
+          "returned_amount": "4948.00"
+        },
+        {
+          "incident_id": "R007",
+          "reference": "248237255155A07072026",
+          "date": "2026-07-07",
+          "direction": "OUTGOING_PAYMENT_RETURNED",
+          "returned_amount": "4948.00"
+        },
+        {
+          "incident_id": "R008",
+          "reference": "CHG030726UTKS7032403262000143",
+          "date": "2026-07-24",
+          "direction": "UNKNOWN",
+          "returned_amount": null
+        },
+        {
+          "incident_id": "R009",
+          "reference": "CHG070726UTKS7032403262000143",
+          "date": "2026-07-27",
+          "direction": "UNKNOWN",
+          "returned_amount": null
         }
       ],
       "confidence": 0.85,
       "limitations": [
-        "A return charge alone does not identify which obligation was missed or prove a loan default."
+        "A return charge alone does not identify which obligation was missed or prove a loan default.",
+        "A bounced cheque received from a third party reflects the drawer's funds."
       ]
     },
     {
@@ -3096,7 +3331,7 @@
       "code": "POSSIBLE_REVERSED_PAYMENTS",
       "severity": "LOW",
       "title": "Possible reversed or failed payments",
-      "description": "8 debit(s) were followed within 3 days by a credit of the same amount from the same counterparty.",
+      "description": "1 debit(s) were followed within 3 days by a credit of the same amount from the same counterparty.",
       "evidence": [
         {
           "status": "POSSIBLE",
@@ -3114,125 +3349,6 @@
           },
           "counterparty": "MMTCPAMP",
           "same_counterparty": false
-        },
-        {
-          "status": "POSSIBLE",
-          "debit": {
-            "transaction_id": "T00891",
-            "date": "2026-05-03",
-            "amount": "5400.00",
-            "type": "DEBIT"
-          },
-          "credit": {
-            "transaction_id": "T00890",
-            "date": "2026-05-03",
-            "amount": "5400.00",
-            "type": "CREDIT"
-          },
-          "counterparty": "BOUNCE",
-          "same_counterparty": true
-        },
-        {
-          "status": "POSSIBLE",
-          "debit": {
-            "transaction_id": "T00905",
-            "date": "2026-05-07",
-            "amount": "5400.00",
-            "type": "DEBIT"
-          },
-          "credit": {
-            "transaction_id": "T00904",
-            "date": "2026-05-07",
-            "amount": "5400.00",
-            "type": "CREDIT"
-          },
-          "counterparty": "BOUNCE",
-          "same_counterparty": true
-        },
-        {
-          "status": "POSSIBLE",
-          "debit": {
-            "transaction_id": "T01001",
-            "date": "2026-05-31",
-            "amount": "400.00",
-            "type": "DEBIT"
-          },
-          "credit": {
-            "transaction_id": "T01000",
-            "date": "2026-05-31",
-            "amount": "400.00",
-            "type": "CREDIT"
-          },
-          "counterparty": "BOUNCE",
-          "same_counterparty": true
-        },
-        {
-          "status": "POSSIBLE",
-          "debit": {
-            "transaction_id": "T01016",
-            "date": "2026-06-03",
-            "amount": "4948.00",
-            "type": "DEBIT"
-          },
-          "credit": {
-            "transaction_id": "T01015",
-            "date": "2026-06-03",
-            "amount": "4948.00",
-            "type": "CREDIT"
-          },
-          "counterparty": "BOUNCE",
-          "same_counterparty": true
-        },
-        {
-          "status": "POSSIBLE",
-          "debit": {
-            "transaction_id": "T01037",
-            "date": "2026-06-07",
-            "amount": "4948.00",
-            "type": "DEBIT"
-          },
-          "credit": {
-            "transaction_id": "T01036",
-            "date": "2026-06-07",
-            "amount": "4948.00",
-            "type": "CREDIT"
-          },
-          "counterparty": "BOUNCE",
-          "same_counterparty": true
-        },
-        {
-          "status": "POSSIBLE",
-          "debit": {
-            "transaction_id": "T01134",
-            "date": "2026-07-03",
-            "amount": "4948.00",
-            "type": "DEBIT"
-          },
-          "credit": {
-            "transaction_id": "T01133",
-            "date": "2026-07-03",
-            "amount": "4948.00",
-            "type": "CREDIT"
-          },
-          "counterparty": "BOUNCE",
-          "same_counterparty": true
-        },
-        {
-          "status": "POSSIBLE",
-          "debit": {
-            "transaction_id": "T01143",
-            "date": "2026-07-07",
-            "amount": "4948.00",
-            "type": "DEBIT"
-          },
-          "credit": {
-            "transaction_id": "T01142",
-            "date": "2026-07-07",
-            "amount": "4948.00",
-            "type": "CREDIT"
-          },
-          "counterparty": "BOUNCE",
-          "same_counterparty": true
         }
       ],
       "confidence": 0.5,
@@ -3331,7 +3447,15 @@
     "reordered_within_day": 0,
     "categorized_pct": 100.0,
     "low_confidence_categories": 962,
-    "transaction_flags": {}
+    "category_basis_counts": {
+      "CHANNEL_ONLY": 962,
+      "MERCHANT_NAME": 57,
+      "NARRATION_RULE": 190
+    },
+    "channel_only_categories": 962,
+    "transaction_flags": {
+      "RETURN_CHARGE": 2
+    }
   },
   "limitations": [
     "This analysis is generated automatically from the uploaded bank statement only. It is not issued or endorsed by any bank and does not replace independent verification.",

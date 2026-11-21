@@ -1,7 +1,7 @@
 {
-  "report_id": "BSA-20261023-70725E9EFC",
+  "report_id": "BSA-20261023-BE0581638E",
   "engine_version": "1.0.0",
-  "generated_at": "2026-10-23T13:28:20+05:30",
+  "generated_at": "2026-10-23T15:42:29+05:30",
   "status": "VERIFIED",
   "source_sha256": "d7dae9249bf04ec80e47f2c5c4eba2db26cf26448d788baa78670437aeb1ab9f",
   "metadata": {
@@ -68,9 +68,9 @@
     "max_observed_balance": "557472.04",
     "reconciliation_status": "VERIFIED",
     "indicator_counts": {
-      "HIGH": 1,
+      "HIGH": 0,
       "MEDIUM": 3,
-      "LOW": 0,
+      "LOW": 1,
       "INFO": 2
     }
   },
@@ -149,7 +149,7 @@
       "total_credits": "200000.00",
       "total_debits": "217080.00",
       "net_cash_flow": "-17080.00",
-      "external_credits": "200000.00",
+      "external_credits": "0.00",
       "cash_withdrawals": "0.00",
       "cash_deposits": "0.00",
       "opening_balance": "373844.04",
@@ -1880,8 +1880,8 @@
     "total_credits": "762403.00",
     "credit_count": 35,
     "gross_monthly_credit": "63533.58",
-    "external_inflow_total": "762403.00",
-    "average_monthly_external_inflow": "63533.58",
+    "external_inflow_total": "562403.00",
+    "average_monthly_external_inflow": "46866.92",
     "estimated_monthly_income": "35500.00",
     "estimated_monthly_income_basis": "Median monthly external inflow over full months (excludes own-account transfers, refunds, loan disbursals and investment redemptions; includes cash deposits).",
     "income_stability": {
@@ -1940,7 +1940,7 @@
         "amount": "200000.00",
         "count": 3,
         "pct_of_credits": "26.23",
-        "type": "EXTERNAL"
+        "type": "RETURNED"
       },
       {
         "source": "SUDESH DEV",
@@ -2019,15 +2019,15 @@
         "count": 12,
         "pct_of_debits": "22.65",
         "monthly_average": "16762.00",
-        "average_confidence": 0.45
+        "average_confidence": 0.65
       },
       {
-        "category": "RETURN_CHARGES",
-        "label": "Return / bounce charges",
-        "amount": "200708.00",
-        "count": 6,
-        "pct_of_debits": "22.60",
-        "monthly_average": "16725.67",
+        "category": "RETURNED_INSTRUMENT",
+        "label": "Returned cheque / payment reversal",
+        "amount": "200000.00",
+        "count": 3,
+        "pct_of_debits": "22.52",
+        "monthly_average": "16666.67",
         "average_confidence": 0.9
       },
       {
@@ -2042,10 +2042,10 @@
       {
         "category": "UPI_TRANSFER",
         "label": "UPI transfer to individuals",
-        "amount": "131774.26",
-        "count": 45,
-        "pct_of_debits": "14.84",
-        "monthly_average": "10981.19",
+        "amount": "127674.22",
+        "count": 33,
+        "pct_of_debits": "14.38",
+        "monthly_average": "10639.52",
         "average_confidence": 0.5
       },
       {
@@ -2069,10 +2069,10 @@
       {
         "category": "UTILITIES",
         "label": "Utilities & bills",
-        "amount": "22897.02",
-        "count": 24,
-        "pct_of_debits": "2.58",
-        "monthly_average": "1908.09",
+        "amount": "28447.59",
+        "count": 38,
+        "pct_of_debits": "3.20",
+        "monthly_average": "2370.63",
         "average_confidence": 0.75
       },
       {
@@ -2083,15 +2083,6 @@
         "pct_of_debits": "0.20",
         "monthly_average": "147.30",
         "average_confidence": 0.85
-      },
-      {
-        "category": "UPI_MERCHANT",
-        "label": "UPI merchant payment",
-        "amount": "1450.53",
-        "count": 2,
-        "pct_of_debits": "0.16",
-        "monthly_average": "120.88",
-        "average_confidence": 0.55
       },
       {
         "category": "SHOPPING",
@@ -2110,6 +2101,15 @@
         "pct_of_debits": "0.09",
         "monthly_average": "66.15",
         "average_confidence": 0.7
+      },
+      {
+        "category": "RETURN_CHARGES",
+        "label": "Return / bounce charges",
+        "amount": "708.00",
+        "count": 3,
+        "pct_of_debits": "0.08",
+        "monthly_average": "59.00",
+        "average_confidence": 0.9
       }
     ],
     "top_destinations": [
@@ -2121,7 +2121,7 @@
         "type": "THIRD_PARTY"
       },
       {
-        "destination": "REJECT",
+        "destination": "DEBIT TRXN REJECT FUNDS",
         "count": 3,
         "amount": "200000.00",
         "pct_of_debits": "22.52",
@@ -2135,10 +2135,10 @@
         "type": "THIRD_PARTY"
       },
       {
-        "destination": "VISA VPS",
-        "count": 17,
-        "amount": "75097.17",
-        "pct_of_debits": "8.46",
+        "destination": "RAJ MANDIR",
+        "count": 8,
+        "amount": "47161.00",
+        "pct_of_debits": "5.31",
         "type": "THIRD_PARTY"
       },
       {
@@ -2177,7 +2177,7 @@
         "type": "THIRD_PARTY"
       },
       {
-        "destination": "VISA VIN",
+        "destination": "VIN",
         "count": 2,
         "amount": "16500.00",
         "pct_of_debits": "1.86",
@@ -2279,24 +2279,24 @@
         "date": "2025-10-31",
         "amount": "100000.00",
         "type": "DEBIT",
-        "counterparty": "REJECT",
-        "category": "RETURN_CHARGES"
+        "counterparty": null,
+        "category": "RETURNED_INSTRUMENT"
       },
       {
         "transaction_id": "T00007",
         "date": "2025-10-31",
         "amount": "50000.00",
         "type": "DEBIT",
-        "counterparty": "REJECT",
-        "category": "RETURN_CHARGES"
+        "counterparty": null,
+        "category": "RETURNED_INSTRUMENT"
       },
       {
         "transaction_id": "T00008",
         "date": "2025-10-31",
         "amount": "50000.00",
         "type": "DEBIT",
-        "counterparty": "REJECT",
-        "category": "RETURN_CHARGES"
+        "counterparty": null,
+        "category": "RETURNED_INSTRUMENT"
       },
       {
         "transaction_id": "T00046",
@@ -2349,6 +2349,7 @@
     ],
     "insights": [
       "Largest outflow category: EMI / loan repayment (22.65% of debits).",
+      "22.52% of debits are reversals of returned (bounced) instruments, not spending.",
       "22.65% of outflows go to EMI, loan or credit-card repayments."
     ]
   },
@@ -2358,8 +2359,8 @@
       {
         "lender_or_payee": "TOYOTAFINANCIALSERVI",
         "type": "LOAN_EMI",
-        "basis": "nach_debit_unspecified",
-        "confidence": 0.55,
+        "basis": "nach_lender_name",
+        "confidence": 0.75,
         "estimated_monthly_amount": "16762.00",
         "occurrences": 12,
         "months_seen": 12,
@@ -2368,7 +2369,7 @@
         "last_date": "2026-10-10",
         "typical_day_of_month": 10,
         "status": "SEEN_RECENTLY",
-        "evidence_level": "POSSIBLE",
+        "evidence_level": "PROBABLE",
         "evidence": [
           {
             "transaction_id": "T00018",
@@ -2452,13 +2453,12 @@
     "estimated_emi_to_income_pct": "47.22",
     "foir_pct": "47.22",
     "foir_status": "CALCULATED",
-    "foir_probable_only_pct": null,
+    "foir_probable_only_pct": "47.22",
     "foir_confidence": "LOW",
     "foir_income_used": "35500.00",
     "foir_income_basis": "Median monthly external inflow over full months (excludes own-account transfers, refunds, loan disbursals and investment redemptions; includes cash deposits).",
     "foir_notes": [
       "FOIR = estimated monthly EMI ÷ estimated monthly income × 100.",
-      "Includes recurring NACH/ECS debits with no lender or EMI wording (possible EMIs); these may also be SIPs, insurance or subscriptions.",
       "Monthly income is volatile, so the income used for FOIR is uncertain.",
       "Only debits from this account are visible; obligations paid from other accounts are not included."
     ],
@@ -2466,6 +2466,10 @@
     "loan_repayment_debits": {
       "count": 12,
       "amount": "201144.00"
+    },
+    "unspecified_auto_debits": {
+      "count": 0,
+      "amount": "0.00"
     },
     "credit_card_payments": {
       "count": 0,
@@ -2475,53 +2479,236 @@
     "note": "Obligations are estimated from recurring debits only. They are not verified loan liabilities; outstanding principal, interest rate and sanctioned amount cannot be derived from a bank statement."
   },
   "bounces": {
-    "confirmed_event_count": 6,
-    "confirmed_incident_count": 1,
+    "incidents": [
+      {
+        "incident_id": "R001",
+        "reference": "413909",
+        "date": "2025-10-31",
+        "instrument": "CHEQUE",
+        "direction": "DEPOSITED_INSTRUMENT_RETURNED",
+        "status": "CONFIRMED",
+        "evidence": "REJECTED_ENTRY",
+        "returned_amount": "50000.00",
+        "charges_total": "236.00",
+        "charge_count": 1,
+        "reason": "FUNDS INSUFFICIENT",
+        "original": {
+          "transaction_id": "T00006",
+          "date": "2025-10-31",
+          "amount": "50000.00",
+          "type": "CREDIT",
+          "source_page": 1
+        },
+        "entries": [
+          {
+            "transaction_id": "T00008",
+            "date": "2025-10-31",
+            "amount": "50000.00",
+            "type": "DEBIT",
+            "kind": "REJECTED_INSTRUMENT",
+            "role": "REJECTED_INSTRUMENT",
+            "reference": "413909",
+            "source_page": 1,
+            "status": "CONFIRMED",
+            "channel": "OTHER",
+            "nach_ecs": false,
+            "cheque": false,
+            "incident_id": "R001"
+          },
+          {
+            "transaction_id": "T00010",
+            "date": "2025-10-31",
+            "amount": "236.00",
+            "type": "DEBIT",
+            "kind": "RETURN_CHARGE",
+            "role": "RETURN_CHARGE",
+            "reference": "413909",
+            "source_page": 1,
+            "status": "CONFIRMED",
+            "channel": "CHARGES",
+            "nach_ecs": false,
+            "cheque": false,
+            "incident_id": "R001"
+          }
+        ],
+        "source_pages": [
+          1
+        ],
+        "confidence": 0.95
+      },
+      {
+        "incident_id": "R002",
+        "reference": "413910",
+        "date": "2025-10-31",
+        "instrument": "CHEQUE",
+        "direction": "DEPOSITED_INSTRUMENT_RETURNED",
+        "status": "CONFIRMED",
+        "evidence": "REJECTED_ENTRY",
+        "returned_amount": "100000.00",
+        "charges_total": "236.00",
+        "charge_count": 1,
+        "reason": "FUNDS INSUFFICIENT",
+        "original": {
+          "transaction_id": "T00005",
+          "date": "2025-10-31",
+          "amount": "100000.00",
+          "type": "CREDIT",
+          "source_page": 1
+        },
+        "entries": [
+          {
+            "transaction_id": "T00009",
+            "date": "2025-10-31",
+            "amount": "100000.00",
+            "type": "DEBIT",
+            "kind": "REJECTED_INSTRUMENT",
+            "role": "REJECTED_INSTRUMENT",
+            "reference": "413910",
+            "source_page": 1,
+            "status": "CONFIRMED",
+            "channel": "OTHER",
+            "nach_ecs": false,
+            "cheque": false,
+            "incident_id": "R002"
+          },
+          {
+            "transaction_id": "T00011",
+            "date": "2025-10-31",
+            "amount": "236.00",
+            "type": "DEBIT",
+            "kind": "RETURN_CHARGE",
+            "role": "RETURN_CHARGE",
+            "reference": "413910",
+            "source_page": 1,
+            "status": "CONFIRMED",
+            "channel": "CHARGES",
+            "nach_ecs": false,
+            "cheque": false,
+            "incident_id": "R002"
+          }
+        ],
+        "source_pages": [
+          1
+        ],
+        "confidence": 0.95
+      },
+      {
+        "incident_id": "R003",
+        "reference": "413915",
+        "date": "2025-10-31",
+        "instrument": "CHEQUE",
+        "direction": "DEPOSITED_INSTRUMENT_RETURNED",
+        "status": "CONFIRMED",
+        "evidence": "REJECTED_ENTRY",
+        "returned_amount": "50000.00",
+        "charges_total": "236.00",
+        "charge_count": 1,
+        "reason": "FUNDS INSUFFICIENT",
+        "original": {
+          "transaction_id": "T00004",
+          "date": "2025-10-31",
+          "amount": "50000.00",
+          "type": "CREDIT",
+          "source_page": 1
+        },
+        "entries": [
+          {
+            "transaction_id": "T00007",
+            "date": "2025-10-31",
+            "amount": "50000.00",
+            "type": "DEBIT",
+            "kind": "REJECTED_INSTRUMENT",
+            "role": "REJECTED_INSTRUMENT",
+            "reference": "413915",
+            "source_page": 1,
+            "status": "CONFIRMED",
+            "channel": "OTHER",
+            "nach_ecs": false,
+            "cheque": false,
+            "incident_id": "R003"
+          },
+          {
+            "transaction_id": "T00012",
+            "date": "2025-10-31",
+            "amount": "236.00",
+            "type": "DEBIT",
+            "kind": "RETURN_CHARGE",
+            "role": "RETURN_CHARGE",
+            "reference": "413915",
+            "source_page": 1,
+            "status": "CONFIRMED",
+            "channel": "CHARGES",
+            "nach_ecs": false,
+            "cheque": false,
+            "incident_id": "R003"
+          }
+        ],
+        "source_pages": [
+          1
+        ],
+        "confidence": 0.95
+      }
+    ],
+    "confirmed_incident_count": 3,
+    "rejected_instrument_count": 3,
+    "charge_only_incident_count": 0,
+    "deposited_instrument_return_count": 3,
+    "deposited_instrument_return_amount": "200000.00",
+    "outgoing_payment_return_count": 0,
+    "outgoing_payment_return_amount": "0.00",
     "incident_dates": [
       "2025-10-31"
     ],
     "nach_ecs_return_count": 0,
-    "cheque_return_count": 0,
-    "returned_payment_count": 0,
-    "returned_payment_amount": null,
-    "return_charge_count": 3,
-    "return_charges_total": "708.00",
-    "nach_ecs_related_count": 0,
-    "unclear_events": [],
-    "unclear_count": 0,
+    "cheque_return_count": 3,
+    "returned_payment_amount": "200000.00",
+    "returned_payment_count": 3,
+    "confirmed_event_count": 6,
     "confirmed_events": [
       {
         "transaction_id": "T00007",
         "date": "2025-10-31",
         "amount": "50000.00",
         "type": "DEBIT",
-        "kind": "RETURN_DEBIT",
+        "kind": "REJECTED_INSTRUMENT",
+        "role": "REJECTED_INSTRUMENT",
+        "reference": "413915",
+        "source_page": 1,
         "status": "CONFIRMED",
         "channel": "OTHER",
         "nach_ecs": false,
-        "cheque": false
+        "cheque": false,
+        "incident_id": "R003"
       },
       {
         "transaction_id": "T00008",
         "date": "2025-10-31",
         "amount": "50000.00",
         "type": "DEBIT",
-        "kind": "RETURN_DEBIT",
+        "kind": "REJECTED_INSTRUMENT",
+        "role": "REJECTED_INSTRUMENT",
+        "reference": "413909",
+        "source_page": 1,
         "status": "CONFIRMED",
         "channel": "OTHER",
         "nach_ecs": false,
-        "cheque": false
+        "cheque": false,
+        "incident_id": "R001"
       },
       {
         "transaction_id": "T00009",
         "date": "2025-10-31",
         "amount": "100000.00",
         "type": "DEBIT",
-        "kind": "RETURN_DEBIT",
+        "kind": "REJECTED_INSTRUMENT",
+        "role": "REJECTED_INSTRUMENT",
+        "reference": "413910",
+        "source_page": 1,
         "status": "CONFIRMED",
         "channel": "OTHER",
         "nach_ecs": false,
-        "cheque": false
+        "cheque": false,
+        "incident_id": "R002"
       },
       {
         "transaction_id": "T00010",
@@ -2529,10 +2716,14 @@
         "amount": "236.00",
         "type": "DEBIT",
         "kind": "RETURN_CHARGE",
+        "role": "RETURN_CHARGE",
+        "reference": "413909",
+        "source_page": 1,
         "status": "CONFIRMED",
         "channel": "CHARGES",
         "nach_ecs": false,
-        "cheque": false
+        "cheque": false,
+        "incident_id": "R001"
       },
       {
         "transaction_id": "T00011",
@@ -2540,10 +2731,14 @@
         "amount": "236.00",
         "type": "DEBIT",
         "kind": "RETURN_CHARGE",
+        "role": "RETURN_CHARGE",
+        "reference": "413910",
+        "source_page": 1,
         "status": "CONFIRMED",
         "channel": "CHARGES",
         "nach_ecs": false,
-        "cheque": false
+        "cheque": false,
+        "incident_id": "R002"
       },
       {
         "transaction_id": "T00012",
@@ -2551,18 +2746,27 @@
         "amount": "236.00",
         "type": "DEBIT",
         "kind": "RETURN_CHARGE",
+        "role": "RETURN_CHARGE",
+        "reference": "413915",
+        "source_page": 1,
         "status": "CONFIRMED",
         "channel": "CHARGES",
         "nach_ecs": false,
-        "cheque": false
+        "cheque": false,
+        "incident_id": "R003"
       }
     ],
+    "return_charge_count": 3,
+    "return_charges_total": "708.00",
+    "nach_ecs_related_count": 0,
+    "unclear_events": [],
+    "unclear_count": 0,
     "pattern_based_reversals": [],
     "pattern_based_count": 0,
     "events_by_month": {
-      "2025-10": 6
+      "2025-10": 3
     },
-    "note": "Confirmed events are based on explicit narration. Pattern-based reversals are indicative only. A return charge alone does not establish which obligation was missed or prove a loan default."
+    "note": "Incidents group the entries of one returned instrument by its reference, so a rejected cheque and its return charge count as one bounce and the amount is counted once. Confirmed means explicit return wording. Pattern-based reversals are indicative only. A return charge alone does not establish which obligation was missed or prove a loan default."
   },
   "cashflow": {
     "credit_to_debit_ratio": "0.86",
@@ -2608,7 +2812,7 @@
         "date": "2025-10-31",
         "amount": "100000.00",
         "type": "DEBIT",
-        "counterparty": "REJECT",
+        "counterparty": null,
         "threshold": "50000.00",
         "multiple_of_median": "58.40"
       },
@@ -2635,7 +2839,7 @@
         "date": "2025-10-31",
         "amount": "50000.00",
         "type": "DEBIT",
-        "counterparty": "REJECT",
+        "counterparty": null,
         "threshold": "50000.00",
         "multiple_of_median": "29.20"
       },
@@ -2644,7 +2848,7 @@
         "date": "2025-10-31",
         "amount": "50000.00",
         "type": "DEBIT",
-        "counterparty": "REJECT",
+        "counterparty": null,
         "threshold": "50000.00",
         "multiple_of_median": "29.20"
       }
@@ -2833,84 +3037,6 @@
   },
   "risk_indicators": [
     {
-      "code": "PAYMENT_RETURN_EVIDENCE",
-      "severity": "HIGH",
-      "title": "Returned payments / return charges",
-      "description": "6 transaction(s) explicitly reference a return, bounce or return charge (3 charge(s), ₹708.00).",
-      "evidence": [
-        {
-          "transaction_id": "T00007",
-          "date": "2025-10-31",
-          "amount": "50000.00",
-          "type": "DEBIT",
-          "kind": "RETURN_DEBIT",
-          "status": "CONFIRMED",
-          "channel": "OTHER",
-          "nach_ecs": false,
-          "cheque": false
-        },
-        {
-          "transaction_id": "T00008",
-          "date": "2025-10-31",
-          "amount": "50000.00",
-          "type": "DEBIT",
-          "kind": "RETURN_DEBIT",
-          "status": "CONFIRMED",
-          "channel": "OTHER",
-          "nach_ecs": false,
-          "cheque": false
-        },
-        {
-          "transaction_id": "T00009",
-          "date": "2025-10-31",
-          "amount": "100000.00",
-          "type": "DEBIT",
-          "kind": "RETURN_DEBIT",
-          "status": "CONFIRMED",
-          "channel": "OTHER",
-          "nach_ecs": false,
-          "cheque": false
-        },
-        {
-          "transaction_id": "T00010",
-          "date": "2025-10-31",
-          "amount": "236.00",
-          "type": "DEBIT",
-          "kind": "RETURN_CHARGE",
-          "status": "CONFIRMED",
-          "channel": "CHARGES",
-          "nach_ecs": false,
-          "cheque": false
-        },
-        {
-          "transaction_id": "T00011",
-          "date": "2025-10-31",
-          "amount": "236.00",
-          "type": "DEBIT",
-          "kind": "RETURN_CHARGE",
-          "status": "CONFIRMED",
-          "channel": "CHARGES",
-          "nach_ecs": false,
-          "cheque": false
-        },
-        {
-          "transaction_id": "T00012",
-          "date": "2025-10-31",
-          "amount": "236.00",
-          "type": "DEBIT",
-          "kind": "RETURN_CHARGE",
-          "status": "CONFIRMED",
-          "channel": "CHARGES",
-          "nach_ecs": false,
-          "cheque": false
-        }
-      ],
-      "confidence": 0.85,
-      "limitations": [
-        "A return charge alone does not identify which obligation was missed or prove a loan default."
-      ]
-    },
-    {
       "code": "INCOME_VOLATILITY",
       "severity": "MEDIUM",
       "title": "Volatile monthly inflows",
@@ -3012,6 +3138,40 @@
       ]
     },
     {
+      "code": "PAYMENT_RETURN_EVIDENCE",
+      "severity": "LOW",
+      "title": "Returned payments / return charges",
+      "description": "3 cheque(s)/payment(s) received by the holder returned unpaid (₹2,00,000.00). 3 return charge(s) totalling ₹708.00; each returned instrument is counted once.",
+      "evidence": [
+        {
+          "incident_id": "R001",
+          "reference": "413909",
+          "date": "2025-10-31",
+          "direction": "DEPOSITED_INSTRUMENT_RETURNED",
+          "returned_amount": "50000.00"
+        },
+        {
+          "incident_id": "R002",
+          "reference": "413910",
+          "date": "2025-10-31",
+          "direction": "DEPOSITED_INSTRUMENT_RETURNED",
+          "returned_amount": "100000.00"
+        },
+        {
+          "incident_id": "R003",
+          "reference": "413915",
+          "date": "2025-10-31",
+          "direction": "DEPOSITED_INSTRUMENT_RETURNED",
+          "returned_amount": "50000.00"
+        }
+      ],
+      "confidence": 0.85,
+      "limitations": [
+        "A return charge alone does not identify which obligation was missed or prove a loan default.",
+        "A bounced cheque received from a third party reflects the drawer's funds."
+      ]
+    },
+    {
       "code": "LARGE_TRANSACTIONS",
       "severity": "INFO",
       "title": "Transactions much larger than usual",
@@ -3040,7 +3200,7 @@
           "date": "2025-10-31",
           "amount": "100000.00",
           "type": "DEBIT",
-          "counterparty": "REJECT",
+          "counterparty": null,
           "threshold": "50000.00",
           "multiple_of_median": "58.40"
         },
@@ -3067,7 +3227,7 @@
           "date": "2025-10-31",
           "amount": "50000.00",
           "type": "DEBIT",
-          "counterparty": "REJECT",
+          "counterparty": null,
           "threshold": "50000.00",
           "multiple_of_median": "29.20"
         },
@@ -3076,7 +3236,7 @@
           "date": "2025-10-31",
           "amount": "50000.00",
           "type": "DEBIT",
-          "counterparty": "REJECT",
+          "counterparty": null,
           "threshold": "50000.00",
           "multiple_of_median": "29.20"
         }
@@ -3137,9 +3297,19 @@
     "direction_inferred": 0,
     "reordered_within_day": 9,
     "categorized_pct": 100.0,
-    "low_confidence_categories": 111,
+    "low_confidence_categories": 85,
+    "category_basis_counts": {
+      "NARRATION_RULE": 24,
+      "MERCHANT_NAME": 42,
+      "CHANNEL_ONLY": 85,
+      "LINKED_EVENT": 3
+    },
+    "channel_only_categories": 85,
     "transaction_flags": {
-      "REORDERED_WITHIN_DAY": 9
+      "RETURNED_UNPAID": 3,
+      "REORDERED_WITHIN_DAY": 9,
+      "RETURN_REJECTION": 3,
+      "RETURN_CHARGE": 3
     }
   },
   "limitations": [

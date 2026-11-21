@@ -1,7 +1,7 @@
 {
-  "report_id": "BSA-20261023-DFAD768141",
+  "report_id": "BSA-20261023-8A0188EEB8",
   "engine_version": "1.0.0",
-  "generated_at": "2026-10-23T13:28:14+05:30",
+  "generated_at": "2026-10-23T15:42:15+05:30",
   "status": "VERIFIED",
   "source_sha256": "26879f7879169127cc47073fcb26fe79cd97d214b17fc7ee1bda3351a9ef6fb7",
   "metadata": {
@@ -2162,11 +2162,20 @@
       {
         "category": "EMI_LOAN",
         "label": "EMI / loan repayment",
-        "amount": "55735.00",
-        "count": 5,
-        "pct_of_debits": "1.03",
-        "monthly_average": "4644.58",
-        "average_confidence": 0.66
+        "amount": "33441.00",
+        "count": 3,
+        "pct_of_debits": "0.62",
+        "monthly_average": "2786.75",
+        "average_confidence": 0.8
+      },
+      {
+        "category": "NACH_AUTO_DEBIT",
+        "label": "Auto-debit (purpose not stated)",
+        "amount": "22294.00",
+        "count": 2,
+        "pct_of_debits": "0.41",
+        "monthly_average": "1857.83",
+        "average_confidence": 0.3
       },
       {
         "category": "UPI_MERCHANT",
@@ -2511,7 +2520,7 @@
         "lender_or_payee": "CTSHRITRAN",
         "type": "LOAN_EMI",
         "basis": "nach_debit_unspecified",
-        "confidence": 0.45,
+        "confidence": 0.3,
         "estimated_monthly_amount": "11147.00",
         "occurrences": 2,
         "months_seen": 2,
@@ -2554,8 +2563,12 @@
     ],
     "recurring_loan_obligation_count": 1,
     "loan_repayment_debits": {
-      "count": 5,
-      "amount": "55735.00"
+      "count": 3,
+      "amount": "33441.00"
+    },
+    "unspecified_auto_debits": {
+      "count": 2,
+      "amount": "22294.00"
     },
     "credit_card_payments": {
       "count": 0,
@@ -2565,27 +2578,347 @@
     "note": "Obligations are estimated from recurring debits only. They are not verified loan liabilities; outstanding principal, interest rate and sanctioned amount cannot be derived from a bank statement."
   },
   "bounces": {
-    "confirmed_event_count": 12,
-    "confirmed_incident_count": 8,
+    "incidents": [
+      {
+        "incident_id": "R001",
+        "reference": "0509257031207251006136",
+        "date": "2025-09-09",
+        "instrument": "NACH_ECS",
+        "direction": "UNKNOWN",
+        "status": "CONFIRMED",
+        "evidence": "RETURN_CHARGE_ONLY",
+        "returned_amount": null,
+        "charges_total": "590.00",
+        "charge_count": 1,
+        "reason": null,
+        "original": null,
+        "entries": [
+          {
+            "transaction_id": "T00017",
+            "date": "2025-09-09",
+            "amount": "590.00",
+            "type": "DEBIT",
+            "kind": "RETURN_CHARGE",
+            "role": "RETURN_CHARGE",
+            "reference": "0509257031207251006136",
+            "source_page": 2,
+            "status": "CONFIRMED",
+            "channel": "NACH",
+            "nach_ecs": true,
+            "cheque": false,
+            "incident_id": "R001"
+          }
+        ],
+        "source_pages": [
+          2
+        ],
+        "confidence": 0.75
+      },
+      {
+        "incident_id": "R002",
+        "reference": "0511257031207251006136",
+        "date": "2025-11-07",
+        "instrument": "NACH_ECS",
+        "direction": "UNKNOWN",
+        "status": "CONFIRMED",
+        "evidence": "RETURN_CHARGE_ONLY",
+        "returned_amount": null,
+        "charges_total": "589.98",
+        "charge_count": 3,
+        "reason": null,
+        "original": null,
+        "entries": [
+          {
+            "transaction_id": "T00035",
+            "date": "2025-11-07",
+            "amount": "58.68",
+            "type": "DEBIT",
+            "kind": "RETURN_CHARGE",
+            "role": "RETURN_CHARGE",
+            "reference": "0511257031207251006136",
+            "source_page": 3,
+            "status": "CONFIRMED",
+            "channel": "NACH",
+            "nach_ecs": true,
+            "cheque": false,
+            "incident_id": "R002"
+          },
+          {
+            "transaction_id": "T00037",
+            "date": "2025-12-31",
+            "amount": "5.01",
+            "type": "DEBIT",
+            "kind": "RETURN_CHARGE",
+            "role": "RETURN_CHARGE",
+            "reference": "0511257031207251006136",
+            "source_page": 3,
+            "status": "CONFIRMED",
+            "channel": "NACH",
+            "nach_ecs": true,
+            "cheque": false,
+            "incident_id": "R002"
+          },
+          {
+            "transaction_id": "T00039",
+            "date": "2026-02-26",
+            "amount": "526.29",
+            "type": "DEBIT",
+            "kind": "RETURN_CHARGE",
+            "role": "RETURN_CHARGE",
+            "reference": "0511257031207251006136",
+            "source_page": 3,
+            "status": "CONFIRMED",
+            "channel": "NACH",
+            "nach_ecs": true,
+            "cheque": false,
+            "incident_id": "R002"
+          }
+        ],
+        "source_pages": [
+          3
+        ],
+        "confidence": 0.75
+      },
+      {
+        "incident_id": "R003",
+        "reference": "0501267031207251006136",
+        "date": "2026-02-26",
+        "instrument": "NACH_ECS",
+        "direction": "UNKNOWN",
+        "status": "CONFIRMED",
+        "evidence": "RETURN_CHARGE_ONLY",
+        "returned_amount": null,
+        "charges_total": "590.00",
+        "charge_count": 1,
+        "reason": null,
+        "original": null,
+        "entries": [
+          {
+            "transaction_id": "T00043",
+            "date": "2026-02-26",
+            "amount": "590.00",
+            "type": "DEBIT",
+            "kind": "RETURN_CHARGE",
+            "role": "RETURN_CHARGE",
+            "reference": "0501267031207251006136",
+            "source_page": 3,
+            "status": "CONFIRMED",
+            "channel": "NACH",
+            "nach_ecs": true,
+            "cheque": false,
+            "incident_id": "R003"
+          }
+        ],
+        "source_pages": [
+          3
+        ],
+        "confidence": 0.75
+      },
+      {
+        "incident_id": "R004",
+        "reference": "0502267031207251006136",
+        "date": "2026-02-26",
+        "instrument": "NACH_ECS",
+        "direction": "UNKNOWN",
+        "status": "CONFIRMED",
+        "evidence": "RETURN_CHARGE_ONLY",
+        "returned_amount": null,
+        "charges_total": "590.00",
+        "charge_count": 1,
+        "reason": null,
+        "original": null,
+        "entries": [
+          {
+            "transaction_id": "T00042",
+            "date": "2026-02-26",
+            "amount": "590.00",
+            "type": "DEBIT",
+            "kind": "RETURN_CHARGE",
+            "role": "RETURN_CHARGE",
+            "reference": "0502267031207251006136",
+            "source_page": 3,
+            "status": "CONFIRMED",
+            "channel": "NACH",
+            "nach_ecs": true,
+            "cheque": false,
+            "incident_id": "R004"
+          }
+        ],
+        "source_pages": [
+          3
+        ],
+        "confidence": 0.75
+      },
+      {
+        "incident_id": "R005",
+        "reference": "0512257031207251006136",
+        "date": "2026-02-26",
+        "instrument": "NACH_ECS",
+        "direction": "UNKNOWN",
+        "status": "CONFIRMED",
+        "evidence": "RETURN_CHARGE_ONLY",
+        "returned_amount": null,
+        "charges_total": "590.00",
+        "charge_count": 1,
+        "reason": null,
+        "original": null,
+        "entries": [
+          {
+            "transaction_id": "T00041",
+            "date": "2026-02-26",
+            "amount": "590.00",
+            "type": "DEBIT",
+            "kind": "RETURN_CHARGE",
+            "role": "RETURN_CHARGE",
+            "reference": "0512257031207251006136",
+            "source_page": 3,
+            "status": "CONFIRMED",
+            "channel": "NACH",
+            "nach_ecs": true,
+            "cheque": false,
+            "incident_id": "R005"
+          }
+        ],
+        "source_pages": [
+          3
+        ],
+        "confidence": 0.75
+      },
+      {
+        "incident_id": "R006",
+        "reference": "0504267031207251006136",
+        "date": "2026-04-07",
+        "instrument": "NACH_ECS",
+        "direction": "UNKNOWN",
+        "status": "CONFIRMED",
+        "evidence": "RETURN_CHARGE_ONLY",
+        "returned_amount": null,
+        "charges_total": "589.98",
+        "charge_count": 2,
+        "reason": null,
+        "original": null,
+        "entries": [
+          {
+            "transaction_id": "T00067",
+            "date": "2026-04-07",
+            "amount": "93.89",
+            "type": "DEBIT",
+            "kind": "RETURN_CHARGE",
+            "role": "RETURN_CHARGE",
+            "reference": "0504267031207251006136",
+            "source_page": 5,
+            "status": "CONFIRMED",
+            "channel": "NACH",
+            "nach_ecs": true,
+            "cheque": false,
+            "incident_id": "R006"
+          },
+          {
+            "transaction_id": "T00070",
+            "date": "2026-04-13",
+            "amount": "496.09",
+            "type": "DEBIT",
+            "kind": "RETURN_CHARGE",
+            "role": "RETURN_CHARGE",
+            "reference": "0504267031207251006136",
+            "source_page": 5,
+            "status": "CONFIRMED",
+            "channel": "NACH",
+            "nach_ecs": true,
+            "cheque": false,
+            "incident_id": "R006"
+          }
+        ],
+        "source_pages": [
+          5
+        ],
+        "confidence": 0.75
+      },
+      {
+        "incident_id": "R007",
+        "reference": "0506267031207251006136",
+        "date": "2026-06-12",
+        "instrument": "NACH_ECS",
+        "direction": "UNKNOWN",
+        "status": "CONFIRMED",
+        "evidence": "RETURN_CHARGE_ONLY",
+        "returned_amount": null,
+        "charges_total": "589.96",
+        "charge_count": 3,
+        "reason": null,
+        "original": null,
+        "entries": [
+          {
+            "transaction_id": "T00119",
+            "date": "2026-06-12",
+            "amount": "19.89",
+            "type": "DEBIT",
+            "kind": "RETURN_CHARGE",
+            "role": "RETURN_CHARGE",
+            "reference": "0506267031207251006136",
+            "source_page": 8,
+            "status": "CONFIRMED",
+            "channel": "NACH",
+            "nach_ecs": true,
+            "cheque": false,
+            "incident_id": "R007"
+          },
+          {
+            "transaction_id": "T00120",
+            "date": "2026-06-12",
+            "amount": "1.00",
+            "type": "DEBIT",
+            "kind": "RETURN_CHARGE",
+            "role": "RETURN_CHARGE",
+            "reference": "0506267031207251006136",
+            "source_page": 8,
+            "status": "CONFIRMED",
+            "channel": "NACH",
+            "nach_ecs": true,
+            "cheque": false,
+            "incident_id": "R007"
+          },
+          {
+            "transaction_id": "T00123",
+            "date": "2026-06-15",
+            "amount": "569.07",
+            "type": "DEBIT",
+            "kind": "RETURN_CHARGE",
+            "role": "RETURN_CHARGE",
+            "reference": "0506267031207251006136",
+            "source_page": 8,
+            "status": "CONFIRMED",
+            "channel": "NACH",
+            "nach_ecs": true,
+            "cheque": false,
+            "incident_id": "R007"
+          }
+        ],
+        "source_pages": [
+          8
+        ],
+        "confidence": 0.75
+      }
+    ],
+    "confirmed_incident_count": 7,
+    "rejected_instrument_count": 0,
+    "charge_only_incident_count": 7,
+    "deposited_instrument_return_count": 0,
+    "deposited_instrument_return_amount": "0.00",
+    "outgoing_payment_return_count": 0,
+    "outgoing_payment_return_amount": "0.00",
     "incident_dates": [
       "2025-09-09",
       "2025-11-07",
-      "2025-12-31",
       "2026-02-26",
       "2026-04-07",
-      "2026-04-13",
-      "2026-06-12",
-      "2026-06-15"
+      "2026-06-12"
     ],
-    "nach_ecs_return_count": 12,
+    "nach_ecs_return_count": 7,
     "cheque_return_count": 0,
-    "returned_payment_count": 0,
     "returned_payment_amount": null,
-    "return_charge_count": 12,
-    "return_charges_total": "4129.92",
-    "nach_ecs_related_count": 12,
-    "unclear_events": [],
-    "unclear_count": 0,
+    "returned_payment_count": 0,
+    "confirmed_event_count": 12,
     "confirmed_events": [
       {
         "transaction_id": "T00017",
@@ -2593,10 +2926,14 @@
         "amount": "590.00",
         "type": "DEBIT",
         "kind": "RETURN_CHARGE",
+        "role": "RETURN_CHARGE",
+        "reference": "0509257031207251006136",
+        "source_page": 2,
         "status": "CONFIRMED",
         "channel": "NACH",
         "nach_ecs": true,
-        "cheque": false
+        "cheque": false,
+        "incident_id": "R001"
       },
       {
         "transaction_id": "T00035",
@@ -2604,10 +2941,14 @@
         "amount": "58.68",
         "type": "DEBIT",
         "kind": "RETURN_CHARGE",
+        "role": "RETURN_CHARGE",
+        "reference": "0511257031207251006136",
+        "source_page": 3,
         "status": "CONFIRMED",
         "channel": "NACH",
         "nach_ecs": true,
-        "cheque": false
+        "cheque": false,
+        "incident_id": "R002"
       },
       {
         "transaction_id": "T00037",
@@ -2615,10 +2956,14 @@
         "amount": "5.01",
         "type": "DEBIT",
         "kind": "RETURN_CHARGE",
+        "role": "RETURN_CHARGE",
+        "reference": "0511257031207251006136",
+        "source_page": 3,
         "status": "CONFIRMED",
         "channel": "NACH",
         "nach_ecs": true,
-        "cheque": false
+        "cheque": false,
+        "incident_id": "R002"
       },
       {
         "transaction_id": "T00039",
@@ -2626,10 +2971,14 @@
         "amount": "526.29",
         "type": "DEBIT",
         "kind": "RETURN_CHARGE",
+        "role": "RETURN_CHARGE",
+        "reference": "0511257031207251006136",
+        "source_page": 3,
         "status": "CONFIRMED",
         "channel": "NACH",
         "nach_ecs": true,
-        "cheque": false
+        "cheque": false,
+        "incident_id": "R002"
       },
       {
         "transaction_id": "T00041",
@@ -2637,10 +2986,14 @@
         "amount": "590.00",
         "type": "DEBIT",
         "kind": "RETURN_CHARGE",
+        "role": "RETURN_CHARGE",
+        "reference": "0512257031207251006136",
+        "source_page": 3,
         "status": "CONFIRMED",
         "channel": "NACH",
         "nach_ecs": true,
-        "cheque": false
+        "cheque": false,
+        "incident_id": "R005"
       },
       {
         "transaction_id": "T00043",
@@ -2648,10 +3001,14 @@
         "amount": "590.00",
         "type": "DEBIT",
         "kind": "RETURN_CHARGE",
+        "role": "RETURN_CHARGE",
+        "reference": "0501267031207251006136",
+        "source_page": 3,
         "status": "CONFIRMED",
         "channel": "NACH",
         "nach_ecs": true,
-        "cheque": false
+        "cheque": false,
+        "incident_id": "R003"
       },
       {
         "transaction_id": "T00042",
@@ -2659,10 +3016,14 @@
         "amount": "590.00",
         "type": "DEBIT",
         "kind": "RETURN_CHARGE",
+        "role": "RETURN_CHARGE",
+        "reference": "0502267031207251006136",
+        "source_page": 3,
         "status": "CONFIRMED",
         "channel": "NACH",
         "nach_ecs": true,
-        "cheque": false
+        "cheque": false,
+        "incident_id": "R004"
       },
       {
         "transaction_id": "T00067",
@@ -2670,10 +3031,14 @@
         "amount": "93.89",
         "type": "DEBIT",
         "kind": "RETURN_CHARGE",
+        "role": "RETURN_CHARGE",
+        "reference": "0504267031207251006136",
+        "source_page": 5,
         "status": "CONFIRMED",
         "channel": "NACH",
         "nach_ecs": true,
-        "cheque": false
+        "cheque": false,
+        "incident_id": "R006"
       },
       {
         "transaction_id": "T00070",
@@ -2681,10 +3046,14 @@
         "amount": "496.09",
         "type": "DEBIT",
         "kind": "RETURN_CHARGE",
+        "role": "RETURN_CHARGE",
+        "reference": "0504267031207251006136",
+        "source_page": 5,
         "status": "CONFIRMED",
         "channel": "NACH",
         "nach_ecs": true,
-        "cheque": false
+        "cheque": false,
+        "incident_id": "R006"
       },
       {
         "transaction_id": "T00119",
@@ -2692,10 +3061,14 @@
         "amount": "19.89",
         "type": "DEBIT",
         "kind": "RETURN_CHARGE",
+        "role": "RETURN_CHARGE",
+        "reference": "0506267031207251006136",
+        "source_page": 8,
         "status": "CONFIRMED",
         "channel": "NACH",
         "nach_ecs": true,
-        "cheque": false
+        "cheque": false,
+        "incident_id": "R007"
       },
       {
         "transaction_id": "T00120",
@@ -2703,10 +3076,14 @@
         "amount": "1.00",
         "type": "DEBIT",
         "kind": "RETURN_CHARGE",
+        "role": "RETURN_CHARGE",
+        "reference": "0506267031207251006136",
+        "source_page": 8,
         "status": "CONFIRMED",
         "channel": "NACH",
         "nach_ecs": true,
-        "cheque": false
+        "cheque": false,
+        "incident_id": "R007"
       },
       {
         "transaction_id": "T00123",
@@ -2714,12 +3091,21 @@
         "amount": "569.07",
         "type": "DEBIT",
         "kind": "RETURN_CHARGE",
+        "role": "RETURN_CHARGE",
+        "reference": "0506267031207251006136",
+        "source_page": 8,
         "status": "CONFIRMED",
         "channel": "NACH",
         "nach_ecs": true,
-        "cheque": false
+        "cheque": false,
+        "incident_id": "R007"
       }
     ],
+    "return_charge_count": 12,
+    "return_charges_total": "4129.92",
+    "nach_ecs_related_count": 12,
+    "unclear_events": [],
+    "unclear_count": 0,
     "pattern_based_reversals": [
       {
         "status": "POSSIBLE",
@@ -2743,12 +3129,11 @@
     "events_by_month": {
       "2025-09": 1,
       "2025-11": 1,
-      "2025-12": 1,
-      "2026-02": 4,
-      "2026-04": 2,
-      "2026-06": 3
+      "2026-02": 3,
+      "2026-04": 1,
+      "2026-06": 1
     },
-    "note": "Confirmed events are based on explicit narration. Pattern-based reversals are indicative only. A return charge alone does not establish which obligation was missed or prove a loan default."
+    "note": "Incidents group the entries of one returned instrument by its reference, so a rejected cheque and its return charge count as one bounce and the amount is counted once. Confirmed means explicit return wording. Pattern-based reversals are indicative only. A return charge alone does not establish which obligation was missed or prove a loan default."
   },
   "cashflow": {
     "credit_to_debit_ratio": "0.80",
@@ -3098,122 +3483,62 @@
       "code": "PAYMENT_RETURN_EVIDENCE",
       "severity": "HIGH",
       "title": "Returned payments / return charges",
-      "description": "12 transaction(s) explicitly reference a return, bounce or return charge (12 charge(s), ₹4,129.92).",
+      "description": "7 returned payment(s) made by the account holder or of unstated direction. 12 return charge(s) totalling ₹4,129.92; each returned instrument is counted once.",
       "evidence": [
         {
-          "transaction_id": "T00017",
+          "incident_id": "R001",
+          "reference": "0509257031207251006136",
           "date": "2025-09-09",
-          "amount": "590.00",
-          "type": "DEBIT",
-          "kind": "RETURN_CHARGE",
-          "status": "CONFIRMED",
-          "channel": "NACH",
-          "nach_ecs": true,
-          "cheque": false
+          "direction": "UNKNOWN",
+          "returned_amount": null
         },
         {
-          "transaction_id": "T00035",
+          "incident_id": "R002",
+          "reference": "0511257031207251006136",
           "date": "2025-11-07",
-          "amount": "58.68",
-          "type": "DEBIT",
-          "kind": "RETURN_CHARGE",
-          "status": "CONFIRMED",
-          "channel": "NACH",
-          "nach_ecs": true,
-          "cheque": false
+          "direction": "UNKNOWN",
+          "returned_amount": null
         },
         {
-          "transaction_id": "T00037",
-          "date": "2025-12-31",
-          "amount": "5.01",
-          "type": "DEBIT",
-          "kind": "RETURN_CHARGE",
-          "status": "CONFIRMED",
-          "channel": "NACH",
-          "nach_ecs": true,
-          "cheque": false
-        },
-        {
-          "transaction_id": "T00039",
+          "incident_id": "R003",
+          "reference": "0501267031207251006136",
           "date": "2026-02-26",
-          "amount": "526.29",
-          "type": "DEBIT",
-          "kind": "RETURN_CHARGE",
-          "status": "CONFIRMED",
-          "channel": "NACH",
-          "nach_ecs": true,
-          "cheque": false
+          "direction": "UNKNOWN",
+          "returned_amount": null
         },
         {
-          "transaction_id": "T00041",
+          "incident_id": "R004",
+          "reference": "0502267031207251006136",
           "date": "2026-02-26",
-          "amount": "590.00",
-          "type": "DEBIT",
-          "kind": "RETURN_CHARGE",
-          "status": "CONFIRMED",
-          "channel": "NACH",
-          "nach_ecs": true,
-          "cheque": false
+          "direction": "UNKNOWN",
+          "returned_amount": null
         },
         {
-          "transaction_id": "T00043",
+          "incident_id": "R005",
+          "reference": "0512257031207251006136",
           "date": "2026-02-26",
-          "amount": "590.00",
-          "type": "DEBIT",
-          "kind": "RETURN_CHARGE",
-          "status": "CONFIRMED",
-          "channel": "NACH",
-          "nach_ecs": true,
-          "cheque": false
+          "direction": "UNKNOWN",
+          "returned_amount": null
         },
         {
-          "transaction_id": "T00042",
-          "date": "2026-02-26",
-          "amount": "590.00",
-          "type": "DEBIT",
-          "kind": "RETURN_CHARGE",
-          "status": "CONFIRMED",
-          "channel": "NACH",
-          "nach_ecs": true,
-          "cheque": false
-        },
-        {
-          "transaction_id": "T00067",
+          "incident_id": "R006",
+          "reference": "0504267031207251006136",
           "date": "2026-04-07",
-          "amount": "93.89",
-          "type": "DEBIT",
-          "kind": "RETURN_CHARGE",
-          "status": "CONFIRMED",
-          "channel": "NACH",
-          "nach_ecs": true,
-          "cheque": false
+          "direction": "UNKNOWN",
+          "returned_amount": null
         },
         {
-          "transaction_id": "T00070",
-          "date": "2026-04-13",
-          "amount": "496.09",
-          "type": "DEBIT",
-          "kind": "RETURN_CHARGE",
-          "status": "CONFIRMED",
-          "channel": "NACH",
-          "nach_ecs": true,
-          "cheque": false
-        },
-        {
-          "transaction_id": "T00119",
+          "incident_id": "R007",
+          "reference": "0506267031207251006136",
           "date": "2026-06-12",
-          "amount": "19.89",
-          "type": "DEBIT",
-          "kind": "RETURN_CHARGE",
-          "status": "CONFIRMED",
-          "channel": "NACH",
-          "nach_ecs": true,
-          "cheque": false
+          "direction": "UNKNOWN",
+          "returned_amount": null
         }
       ],
       "confidence": 0.85,
       "limitations": [
-        "A return charge alone does not identify which obligation was missed or prove a loan default."
+        "A return charge alone does not identify which obligation was missed or prove a loan default.",
+        "A bounced cheque received from a third party reflects the drawer's funds."
       ]
     },
     {
@@ -3547,7 +3872,15 @@
     "reordered_within_day": 23,
     "categorized_pct": 98.9,
     "low_confidence_categories": 217,
+    "category_basis_counts": {
+      "CHANNEL_ONLY": 218,
+      "NONE": 3,
+      "MERCHANT_NAME": 22,
+      "NARRATION_RULE": 23
+    },
+    "channel_only_categories": 218,
     "transaction_flags": {
+      "RETURN_CHARGE": 12,
       "REORDERED_WITHIN_DAY": 23
     }
   },

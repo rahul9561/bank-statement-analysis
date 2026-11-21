@@ -15,7 +15,7 @@ bank_statement_engine/   core engine (PyMuPDF + ReportLab only)       → docs/A
 bank_statement_django/   Django + DRF integration (models, API, retention)
 demo_project/            runnable Django project using the app
 examples/                script, Django service and DRF endpoint examples, sample config
-tests/                   171 tests (synthetic fixtures, audit regressions, real samples in input/)
+tests/                   172 tests + one reconciliation test per sample PDF in input/
 output/reports/          generated sample analyses (PDF + JSON) for every statement in input/
 ```
 
@@ -276,12 +276,18 @@ and an indicator scorecard. Sections (default order):
    NACH/ECS debit), loan debits and credit-card payments shown separately. When no recurring EMI
    is detected or income cannot be identified, the report says "None detected" / "Not available"
    / "Insufficient data" — never 0 %. None of these are verified loan liabilities.
-5. **Cheque Return & Payment Bounce Analysis** — confirmed incidents (explicit return/bounce
-   narration), EMI/NACH/ECS and cheque return entries, return charges, returned-payment amount
-   (only when a returned-payment credit exists), each event with date, narration, amount and
-   reference; pattern-based reversals listed separately as *Possible* and unexplained
-   reversal-worded credits as *Unclear*. With no confirmed events it states "No confirmed bounce
-   events detected" and that this does not verify a clean repayment history.
+5. **Cheque Return & Payment Bounce Analysis** — one **incident per returned instrument**:
+   statement lines sharing a cheque/mandate reference (e.g. `REJECT:413909` and
+   `RTN CHG-413909`) are grouped, so a rejected cheque and its charge count as one bounce and the
+   returned amount is counted once; return charges are totalled separately. Where the original
+   instrument is found (same reference and amount, earlier, opposite direction) it is linked and
+   shows *whose* payment failed: a cheque **received** by the holder that bounced (the drawer's
+   funds — the original credit is then excluded from income) or a payment **made** by the holder.
+   A rejection is called a cheque only when the narration or the linked original says so.
+   Incidents evidenced only by a return charge are shown as *Charge only* (amount not available).
+   Pattern-based reversals are listed separately as *Possible* and unexplained reversal-worded
+   credits as *Unclear*. With no events it states "No confirmed bounce events detected" and that
+   this does not verify a clean repayment history.
 6. Monthly cash flow, spending, investments & insurance, money flow, balance behaviour,
    own-account transfers, risk indicators with evidence, transaction details (headers repeat on
    every page), methodology & limitations.
@@ -290,6 +296,27 @@ All amounts use full Indian formatting (₹2,70,422.77); compact lakh/crore nota
 on chart axes. Deliberate differences from the reference: no "credit score" and no "PROCEED"
 verdict (the header shows the reconciliation status instead), full account numbers are masked,
 and values that cannot be calculated show "Not available".
+
+### Categories, channels and confidence
+
+`channel` (how money moved: UPI, CARD, NACH, CHEQUE, …) and `category` (what it was for) are
+separate fields. Each transaction also records `category_rule`, `category_confidence` and
+`category_basis`, the evidence the category rests on:
+
+| Basis | Typical confidence | Example |
+|---|---|---|
+| `NARRATION_RULE` | 0.80–0.90 | `SALARY`, `LIC OF INDIA` (insurance), `RTN CHG` (return charge) |
+| `MERCHANT_NAME` | 0.60–0.75 | `BSESDELHI`, `IGL` (utilities), `SWIGGY` (food) |
+| `LINKED_EVENT` | 0.90 | a `REJECT:<cheque no>` debit linked to the original cheque credit |
+| `SELF_TRANSFER_MATCH` | 0.75 | counterparty matches the holder's name |
+| `CHANNEL_ONLY` | 0.30–0.55 | UPI transfer to a person, card spend, cheque credit, unexplained NACH debit |
+| `NONE` | 0 | nothing matched (`OTHER`) |
+
+A channel alone never establishes purpose, so channel-only categories keep low confidence and
+are counted in `data_quality.low_confidence_categories` (also reported as
+`channel_only_categories`). A NACH debit naming a lender (bank, NBFC, "FINANCIAL SERVICES") is a
+probable EMI; any other NACH debit is `NACH_AUTO_DEBIT` ("purpose not stated"), which the EMI
+analysis still lists as a *possible* obligation. Cheque credits are never treated as salary.
 
 ### Branding: logo and fonts
 
@@ -380,7 +407,7 @@ Django app, redacted logs), but each deployment **must** also:
 
 ```powershell
 python -m pip install pytest
-python -m pytest            # 171 tests (~40 s); the real-sample tests skip automatically if input/ is absent
+python -m pytest            # 172 engine/API tests + one per PDF in input/ (~45 s); real-sample tests skip if input/ is absent
 ```
 
 Tests use synthetic, fictional data (`tests/helpers.py`) with a known opening balance and
