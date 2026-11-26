@@ -106,6 +106,7 @@ class StatementMetadata:
     bank_code: str | None = None
     bank_detection_method: str | None = None
     ifsc: str | None = None
+    branch: str | None = None
     account_number_masked: str | None = None
     account_type: str | None = None
     currency: str = "INR"

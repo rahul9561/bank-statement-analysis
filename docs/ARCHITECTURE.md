@@ -16,6 +16,9 @@ bank_statement_engine/            framework-independent engine (no Django import
 │   ├── layout.py                 line clustering, header → columns, numeric/text calibration,
 │   │                             header-less layout inference, row segmentation
 │   ├── generic.py                GenericTableParser (works for all 10 sample banks)
+│   ├── standard_chartered.py     Standard Chartered (SCBL): year-less "Mon DD" dates, posting date
+│   │                             printed only on change, Deposit left of Withdrawal, Brought
+│   │                             Forward / Total rows fed to the printed summary
 │   ├── metadata.py               bank / IFSC / masked account / period / printed summary
 │   ├── registry.py               BankProfile list, ParserRegistry (bank-specific parsers plug in here)
 │   └── base.py                   RawRow, ParsedStatement, StatementParser ABC

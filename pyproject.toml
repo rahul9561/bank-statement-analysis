@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "bank-statement-engine"
-version = "1.0.0"
+version = "1.0.1"
 description = "Reusable analysis engine for Indian bank statement PDFs, with an optional Django/DRF integration."
 readme = "README.md"
 requires-python = ">=3.10"

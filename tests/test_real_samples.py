@@ -24,6 +24,7 @@ EXPECTED = {
     "utkarsh_small_financestatement_bank_statement_e8a13fe07212.pdf": ("UTKARSH", 1209),
     "aniket.pdf": ("KOTAK", 1481),
     "newreporticic.pdf": ("ICICI", 154),
+    "sc.bank.pdf": ("SCB", 619),
 }
 
 

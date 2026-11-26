@@ -204,6 +204,10 @@ class BankStatementAnalyzer:
         meta.parser = parsed.parser
         meta.extraction_method = extraction["method"]
         meta.ocr_pages = extraction["ocr_pages"]
+        meta.branch = meta.branch or parsed.branch
+        for name, (value, page) in parsed.printed_figures.items():
+            setattr(meta.printed_summary, name, value)
+            meta.printed_summary.pages[name] = page
         sections = parsed.sections()
         if sections:
             meta.period_start = min(p[0] for _, p in sections)

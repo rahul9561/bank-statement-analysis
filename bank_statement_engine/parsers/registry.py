@@ -12,6 +12,7 @@ from dataclasses import dataclass, field
 
 from .base import StatementParser
 from .generic import GenericTableParser
+from .standard_chartered import StandardCharteredParser
 
 
 @dataclass(frozen=True)
@@ -38,6 +39,7 @@ BANK_PROFILES: tuple[BankProfile, ...] = (
     BankProfile("EQUITAS", "Equitas Small Finance Bank", ("ESFB",), (r"\bEQUITAS\s+SMALL\s+FINANCE\s+BANK\b", r"equitas\.bank\.in"), True),
     BankProfile("PNB", "Punjab National Bank", ("PUNB",), (r"\bPUNJAB\s+NATIONAL\s+BANK\b", r"pnbindia\.in"), True),
     BankProfile("UTKARSH", "Utkarsh Small Finance Bank", ("UTKS",), (r"\bUTKARSH\s+SMALL\s+FINANCE\s+BANK\b", r"utkarsh\.bank\.in"), True),
+    BankProfile("SCB", "Standard Chartered Bank", ("SCBL",), (r"\bSTANDARD\s+CHARTERED\s+BANK\b", r"\bsc\.com/in\b"), True),
     BankProfile("BOB", "Bank of Baroda", ("BARB",), (r"\bBANK\s+OF\s+BARODA\b",)),
     BankProfile("CANARA", "Canara Bank", ("CNRB",), (r"\bCANARA\s+BANK\b",)),
     BankProfile("UNION", "Union Bank of India", ("UBIN",), (r"\bUNION\s+BANK\s+OF\s+INDIA\b",)),
@@ -107,7 +109,9 @@ class ParserRegistry:
         return list(self._parsers)
 
 
-#: Default registry. No bank-specific parser is currently required: all sample
-#: layouts (including SBI, whose header is drawn as graphics) are handled by the
-#: generic parser with data-driven column calibration/inference.
+#: Default registry. Most sample layouts (including SBI, whose header is drawn as
+#: graphics) are handled by the generic parser with data-driven column
+#: calibration/inference; bank-specific parsers are registered only where the
+#: generic parser cannot read the layout.
 registry = ParserRegistry()
+registry.register(StandardCharteredParser)

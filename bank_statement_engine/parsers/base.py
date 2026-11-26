@@ -50,6 +50,12 @@ class ParsedStatement:
     #: several statements have more than one distinct period.
     page_periods: dict[int, tuple[date, date]] = field(default_factory=dict)
     warnings: list[str] = field(default_factory=list)
+    #: Figures a bank-specific parser read from labelled table rows (e.g. "Balance Brought
+    #: Forward", a "Total" row): ``PrintedSummary`` field name -> (value, page). They take
+    #: precedence over the label search in non-table text.
+    printed_figures: dict[str, tuple[Decimal, int]] = field(default_factory=dict)
+    #: Branch name printed in the statement header, when a parser reads it.
+    branch: str | None = None
 
     def sections(self) -> list[tuple[int, tuple[date, date]]]:
         """``(first_page, period)`` for each distinct consecutive statement period."""
